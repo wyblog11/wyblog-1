@@ -4,6 +4,8 @@ date: 2023-01-26 20:05:10
 published: true
 hideInList: true
 isTop: false
+description: 最新artalk部署方式
+swiper_index: 1 #置顶轮播图顺序，非负整数，数字越大越靠前
 ---
 artalk部署方式：
 1.在leancloud国际版去注册一个应用(没有就注册一个账号)
