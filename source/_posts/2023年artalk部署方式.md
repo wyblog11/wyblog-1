@@ -1,7 +1,6 @@
 ---
 title: '2023年artalk部署方式'
 date: 2023-01-26 20:05:10
-categories: [artalk]
 published: true
 hideInList: true
 isTop: false
