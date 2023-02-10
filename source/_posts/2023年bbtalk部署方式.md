@@ -1,7 +1,6 @@
 ---
 title: '2023年bbtalk部署方式'
 date: 2023-01-27 20:05:10
-categories: [bbtalk]
 published: true
 hideInList: true
 isTop: false
