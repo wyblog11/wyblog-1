@@ -5,10 +5,6 @@ categories: [artalk]
 published: true
 hideInList: true
 isTop: false
-swiper_desc: 最新版artalk部署方式
-description: 1
-swiper_index: 8
-swiper_cover: https://www.wyblog1.tk/Cover/cover01.jpg
 ---
 artalk部署方式：
 1.在leancloud国际版去注册一个应用(没有就注册一个账号)
