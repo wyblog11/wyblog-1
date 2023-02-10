@@ -3,6 +3,7 @@ title: '2023年bbtalk部署方式'
 date: 2023-01-27 20:05:10
 published: true
 hideInList: true
+categories: [bbtalk]
 isTop: false
 description: 最新bbtalk部署方式
 swiper_index: 2 #置顶轮播图顺序，非负整数，数字越大越靠前
