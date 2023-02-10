@@ -5,6 +5,7 @@ published: true
 hideInList: true
 categories: [bbtalk]
 isTop: false
+cover: https://images.boysec.cn/cover2.webp
 description: 最新bbtalk部署方式
 swiper_index: 2 #置顶轮播图顺序，非负整数，数字越大越靠前
 ---
