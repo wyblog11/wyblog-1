@@ -1,9 +1,9 @@
 menu:
-   主页: / || fa-duotone fa-house
-   说说 || fa-duotone fa-messages:
-     ispeak: /ispeak/ || fa-duotone fa-messages
-     artitalk: /artitalk/ || fa-duotone fa-messages
-     bbtalk: /bbtalk/ || fa-duotone fa-messages
+   主页: / || fa-regular fa-house
+   说说||fa-regular fa-messages:
+     ispeak: /ispeak/ || fa-regular fa-messages
+     artitalk: /artitalk/ || fa-regular fa-messages
+     bbtalk: /bbtalk/ || fa-regular fa-messages
 
 # hexo-butterfly-swiper
 # see https://akilar.top/posts/8e1264d1/
