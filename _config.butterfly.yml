@@ -52,3 +52,13 @@ categoryBar:
     - descr: artitalk部署
       cover: https://assets.akilar.top/image/cover2.webp
   custom_css: https://npm.elemecdn.com/hexo-butterfly-categories-card@1.0.0/lib/categorybar.css
+
+preloader:
+  enable: true
+  # source
+  # 1. fullpage-loading
+  # 2. pace (progress bar)
+  # else all
+  source: 1
+  # pace theme (see https://codebyzach.github.io/pace/)
+  pace_css_url: 
