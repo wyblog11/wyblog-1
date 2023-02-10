@@ -1,6 +1,3 @@
----
-sidebar: []
----
 > 欢迎来到我的小站呀，很高兴遇见你！🤝
 ## 只是一张名片
 <img src="https://api.azpay.cn/814/2.php" height="150">
