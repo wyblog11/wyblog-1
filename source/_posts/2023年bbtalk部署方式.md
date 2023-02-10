@@ -6,9 +6,6 @@ published: true
 hideInList: true
 isTop: false
 description: 1
-swiper_index: 7
-swiper_desc: 最新版bbtalk部署方式
-swiper_cover: https://www.wyblog1.tk/Cover/cover02.jpg
 ---
 bbtalk部署方式：
 1.在leancloud国际版去注册一个应用(没有就注册一个账号)
