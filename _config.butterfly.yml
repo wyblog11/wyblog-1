@@ -30,9 +30,12 @@ swiper:
 
 inject:
   head:
+     - <link rel="stylesheet" href="/css/cat.css">
      - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wyblog11/661111@main/source/css/custom.css">
   bottom:   
      - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wyblog11/661111@main/source/css/custom/custom.css">
+     - <script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script>
+     - <script defer data-pjax src="/js/cat.js"></script>
 
 # hexo-butterfly-categories-card
 # see https://akilar.top/posts/a9131002/
