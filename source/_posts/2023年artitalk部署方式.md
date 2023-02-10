@@ -5,6 +5,7 @@ categories: [artitalk]
 published: true
 hideInList: true
 isTop: false
+cover: https://images.boysec.cn/cover1.webp
 description: 最新artalk部署方式
 swiper_index: 1 #置顶轮播图顺序，非负整数，数字越大越靠前
 ---
