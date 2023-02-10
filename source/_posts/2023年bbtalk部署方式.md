@@ -4,7 +4,8 @@ date: 2023-01-27 20:05:10
 published: true
 hideInList: true
 isTop: false
-description: 1
+description: 最新bbtalk部署方式
+swiper_index: 2 #置顶轮播图顺序，非负整数，数字越大越靠前
 ---
 bbtalk部署方式：
 1.在leancloud国际版去注册一个应用(没有就注册一个账号)
