@@ -1,3 +1,8 @@
+menu:
+   主页: / || fas fa-home
+   说说||fas fa-list:
+     ispeak: /ispeak/ || fas fa-music
+
 # hexo-butterfly-swiper
 # see https://akilar.top/posts/8e1264d1/
 swiper:
