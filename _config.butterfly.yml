@@ -1,9 +1,15 @@
 menu:
-   主页: / || fa-regular fa-house
-   说说||fa-regular fa-messages:
-     ispeak: /ispeak/ || fa-regular fa-messages
-     artitalk: /artitalk/ || fa-regular fa-messages
-     bbtalk: /bbtalk/ || fa-regular fa-messages
+   主页: / || fa-solid fa-house-chimney
+   文章 || fa-solid fa-book-reader:
+    归档: /archives/ || fa-solid fa-box-archive
+    分类: /categories/ || fa-solid fa-folder-open
+   社交 || fa-solid fa-cubes:
+    友链: /links/ || fa-solid fa-link
+    友圈: /friends/ || fa-solid fa-blog
+    短文: /ispeak/ || fa-solid fa-comment-alt
+   说说 || fa-solid fa-desktop:
+    artitalk: /artitalk/ || fa-solid fa-link
+    bbtalk: /bbtalk/ || fa-solid fa-blog
 
 # hexo-butterfly-swiper
 # see https://akilar.top/posts/8e1264d1/
