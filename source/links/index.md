@@ -1,22 +1,37 @@
 ---
-title: 朋友圈
-comments: true
-aside: false
+layout: page
+title: 心怀感恩，砥砺前行
 sidebar: []
 ---
-<div id="hexo-circle-of-friends-root"></div>
-<script>
-    let UserConfig = {
-        // 填写你的api地址
-        private_api_url: 'https://fcircle.wyblog1.tk/',
-        // 点击加载更多时，一次最多加载几篇文章，默认10
-        page_turning_number: 12,
-        // 头像加载失败时，默认头像地址
-        error_img: 'https://sdn.geekzu.org/avatar/57d8260dfb55501c37dde588e7c3852c',
-        // 进入页面时第一次的排序规则
-        sort_rule: 'created'
-    }
-</script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zhheo/JS-Heo@master/mainColor/heoMainColor.css">
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/zhheo/JS-Heo@master/moments5/app.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/zhheo/JS-Heo@master/moments5/bundle.js"></script>
+{% sites only:qz %}
+
+{% sites only:ny %}
+
+{% sites only:bthc %}
+
+{% sites only:dl %}
+
+{% sites only:pyq2d %}
+
+{% sites only:zlys %}
+
+{% folding cyan open, 友链 %}
+
+{% radio checked, 名称：无影博客 ； %}
+{% radio checked, 网址：https://blog.wyblog1.tk/ ； %}
+{% radio checked, 站标：https://661111.github.io/media/images/custom-headerLogo.ico ； %}
+{% radio checked, 缩图：https://image.thum.io/get/width/1024/crop/768/https://effulgent-kringle-368d41.netlify.app ； %}
+
+
+{% endfolding %}
+
+{% folding cyan open, 申请友链 %}
+
+{% radio checked, 名称： ； %}
+{% radio checked, 网址： ； %}
+{% radio checked, 站标： ； %}
+{% radio checked, 缩图(可选)： ； %}
+
+
+{% endfolding %}
+
