@@ -348,7 +348,7 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: twikoo.wyblog1.tk
+  envId: https://twikoo.wyblog1.tk
   region:
   visitor: false
   option:
@@ -374,7 +374,7 @@ remark42:
 # Artalk
 # https://artalk.js.org/guide/frontend/config.html
 artalk:
-  server: artalk.wyblog1.tk
+  server: https://artalk.wyblog1.tk
   site:
   visitor: false
   option:
