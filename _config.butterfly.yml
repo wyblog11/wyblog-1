@@ -48,7 +48,7 @@ categoryBar:
   row: 1 #显示行数，默认两行，超过行数切换为滚动显示
   message:
     - descr: bbtalk部署
-      cover: https://assets.akilar.top/image/cover1.webp
+      cover: https://images.boysec.cn/cover1.webp
     - descr: artitalk部署
-      cover: https://assets.akilar.top/image/cover2.webp
+      cover: https://images.boysec.cn/cover2.webp
   custom_css: https://npm.elemecdn.com/hexo-butterfly-categories-card@1.0.0/lib/categorybar.css
