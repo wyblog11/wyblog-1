@@ -1027,26 +1027,3 @@ CDN:
     prismjs_autoloader: https://npm.elemecdn.com/prismjs/plugins/autoloader/prism-autoloader.min.js
     # artalk_js:
     # artalk_css:
-     
-
-    
-
-
-#主页设置
-#path：博客索引页的根路径。（默认值=“”）
-#per_page：每页显示的帖子。（0=禁用分页）
-#order_by：发布订单。（默认情况下按日期降序排列）
-index_generator:
-  path: ''
-  per_page: 14
-  order_by: -date
-# 源计划-方舟：首页轮播图
-# see https://akilar.top/posts/658f52d0/
-swiperBar:
-  enable: true # 开关
-  timemode: updated #date/updated
-  error_img: https://blog.4t.pw/img/cover.png #默认封面。记得换成自己的。
-  default_descr: 就算再怎么看我也不知道怎么描述它好啦！
-  swiper_css: https://npm.elemecdn.com/swiper@8.4.2/swiper-bundle.min.css #swiper css依赖
-  swiper_js: https://npm.elemecdn.com/swiper@8.4.2/swiper-bundle.min.js #swiper js依赖
-  swiper_init_js: https://blog.4t.pw/js/custom/swiper_init.js # swiper初始化方法
