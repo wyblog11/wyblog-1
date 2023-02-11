@@ -103,7 +103,7 @@ electric_clock:
     type: class
     name: sticky_layout
     index: 0
-  loading: https://unpkg.zhimg.com/hexo-butterfly-clock/lib/loading.gif #加载动画自定义
-  clock_css: https://unpkg.zhimg.com/hexo-butterfly-clock/lib/clock.min.css
-  clock_js: https://unpkg.zhimg.com/hexo-butterfly-clock/lib/clock.min.js
+  loading: https://unpkg.com/hexo-butterfly-clock/lib/loading.gif #加载动画自定义
+  clock_css: https://unpkg.com/hexo-butterfly-clock/lib/clock.min.css
+  clock_js: https://unpkg.com/hexo-butterfly-clock/lib/clock.min.js
   ip_api: https://pv.sohu.com/cityjson?ie=utf-8
