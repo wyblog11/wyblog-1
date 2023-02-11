@@ -107,3 +107,12 @@ electric_clock:
   clock_css: https://unpkg.com/hexo-butterfly-clock/lib/clock.min.css
   clock_js: https://unpkg.com/hexo-butterfly-clock/lib/clock.min.js
   ip_api: https://pv.sohu.com/cityjson?ie=utf-8
+
+preloader:
+  enable: true
+  # source
+  # 1. fullpage-loading
+  # 2. pace (progress bar)
+  source: 2
+  # pace theme (see https://codebyzach.github.io/pace/)
+  pace_css_url: https://fastly.jsdelivr.net/gh/xlenco/JS-X@main/pace.js/pace.css
