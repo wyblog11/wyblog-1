@@ -118,16 +118,3 @@ preloader:
   source: 3
   # pace theme (see https://codebyzach.github.io/pace/)
   pace_css_url: https://fastly.jsdelivr.net/gh/xlenco/JS-X@main/pace.js/pace.css
-
- bilibili:
-   # 是否启用
-   enable: true
-   # 你的B站 vmid
-   vmid: 1945630406
-   # 拓展JSON的文件名（/source/_data/*.json）
-   extra: 'extra_bangumis'
-   # 锁止追番列表，缺省为false
-   locks:
-     wantLock: false
-     ingLock: false
-     edLock: false
