@@ -31,7 +31,7 @@ swiper:
 inject:
   head:
      - <link rel="stylesheet" href="/css/cat.css">
-     - <link rel="stylesheet" href="/css/head.css">
+     - <link rel="stylesheet" href="/css/head.css" media="defer" onload="this.media='all'">
      - <link rel="stylesheet" href="/css/custom.css">
   bottom:   
      - <link rel="stylesheet" href="/css/custom/custom.css">
