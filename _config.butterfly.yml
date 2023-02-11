@@ -30,6 +30,7 @@ swiper:
 
 inject:
   head:
+     - <link rel="stylesheet" href="/css/side.css">
      - <link rel="stylesheet" href="/css/cat.css">
      - <link rel="stylesheet" href="/css/head.css" media="defer" onload="this.media='all'">
      - <link rel="stylesheet" href="/css/custom.css">
