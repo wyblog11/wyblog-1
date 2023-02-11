@@ -33,10 +33,13 @@ inject:
      - <link rel="stylesheet" href="/css/cat.css">
      - <link rel="stylesheet" href="/css/head.css" media="defer" onload="this.media='all'">
      - <link rel="stylesheet" href="/css/custom.css">
+     - <link rel="stylesheet" href="/css/universe.css">
   bottom:   
      - <link rel="stylesheet" href="/css/custom/custom.css">
      - <script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script>
      - <script defer data-pjax src="/js/cat.js"></script>
+     - <canvas id="universe"></canvas>
+     - <script defer src="/js/universe.js"></script>
 
 # hexo-butterfly-categories-card
 # see https://akilar.top/posts/a9131002/
