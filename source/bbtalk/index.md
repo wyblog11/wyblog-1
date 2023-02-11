@@ -4,6 +4,7 @@ date: 2022-08-21 14:11:00
 update: 2022-08-21 14:11:00
 aside: false
 comments: false
+layout: page
 ---
 <div id="bbtalk"></div>
 <!-- 引用 bbtalk -->
