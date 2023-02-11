@@ -7,7 +7,6 @@
   },
   "dependencies": {
     "hexo": "^5.4.0",
-    "hexo-butterfly-article-double-row": "^1.0.1",
     "hexo-butterfly-clock": "^1.0.7",
     "hexo-filter-gitcalendar": "^1.0.0",
     "hexo-butterfly-categories-card": "^1.0.0",
