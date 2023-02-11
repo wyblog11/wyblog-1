@@ -117,6 +117,3 @@ preloader:
   source: 2
   # pace theme (see https://codebyzach.github.io/pace/)
   pace_css_url: https://fastly.jsdelivr.net/gh/xlenco/JS-X@main/pace.js/pace.css
-
-butterfly_article_double_row:
-  enable: true
