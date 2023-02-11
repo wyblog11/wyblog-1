@@ -46,7 +46,7 @@ categoryBar:
   enable_page: / # 应用页面
   layout: # 挂载容器类型
     type: id
-    name: recent-posts
+    name: categoryBar
     index: 0
   column: odd # odd：3列 | even：4列
   row: 1 #显示行数，默认两行，超过行数切换为滚动显示
@@ -72,7 +72,7 @@ gitcalendar:
   # butterfly挂载容器
   layout: # 挂载容器类型
     type: id
-    name: recent-posts
+    name: gitcalendar
     index: 0
   user: 612901 #git用户名
   apiurl: 'https://github.wyblog1.tk/'	# 这是我的API，最好自己弄一个
