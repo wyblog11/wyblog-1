@@ -47,8 +47,6 @@ html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside
     !=partial('includes/third-party/search/index', {}, {cache: true})
     include ./additional-js.pug
     include ./rightside.pug
-    include ./rightside.pug
-//- 上面的是本来就有的，对齐上面的缩进，加上下面的内容
 .contact-info
   .option
     i.fas.fa-rocket
@@ -67,3 +65,4 @@ html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside
     .text.aplayertext
       .strip
       .aplayer.no-destroy(mutex='true', listfolded='true', data-id='你的网易云歌单id', data-preload="none" , data-server='netease', data-volume='0.25', data-order='random', data-type='playlist', data-fixed='true', data-autoplay='false')
+    
