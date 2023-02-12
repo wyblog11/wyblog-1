@@ -118,3 +118,6 @@ wowjs:
   animate_css: https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/animate.min.css
   wow_js: https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow.min.js
   wow_init_js: https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow_init.js
+
+butterfly_article_double_row:
+  enable: true
