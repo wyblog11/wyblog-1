@@ -589,8 +589,8 @@ display_mode: light
 
 # Beautify (美化頁面顯示)
 beautify:
-  enable: true
-  field: site # site/post
+  enable: false
+  field: post 
   title-prefix-icon: # '\f0c1'
   title-prefix-icon-color: # '#F47466'
 
@@ -604,7 +604,7 @@ font:
 
 # Font settings for the site title and site subtitle
 # 左上角網站名字 主頁居中網站名字
-blog_title_font: 无影博客
+blog_title_font: 
   font_link:
   font-family:
 
