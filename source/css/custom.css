@@ -36,3 +36,6 @@
     left: 50%;
     transform: translateX(-50%);
 }
+#nav .menus_items .menus_item:hover .menus_item_child{
+  display: flex;
+}
