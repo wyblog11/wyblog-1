@@ -12,13 +12,13 @@
 /* 平板尺寸自适应(不启用侧边栏宽度限制) */
 @media screen and (max-width: 900px) {
   .aside-content {
-    max-width: none !important;
+    max-width: true !important;
     padding: 0 5px 0 5px;
   }
 }
 /* 除了首页以外其他页面隐藏卡片，并采用宽屏显示 */
 #archive,
-#page,
+page,
 #category,
 #tag {
   width: 100%;
