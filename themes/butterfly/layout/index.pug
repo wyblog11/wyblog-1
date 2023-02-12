@@ -1,7 +1,6 @@
 extends includes/layout.pug
 
 block content
-  include includes/index1.pug
   include ./includes/mixins/post-ui.pug
   #recent-posts.recent-posts
     #bber-talk
@@ -10,3 +9,4 @@ block content
       script(src='/js/bbtalk.js')
     +postUI
     include includes/pagination.pug
+    include includes/index1.pug
