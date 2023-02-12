@@ -36,13 +36,7 @@ inject:
      - <link rel="stylesheet" href="/css/head.css" media="defer" onload="this.media='all'">
      - <link rel="stylesheet" href="/css/custom.css">
      - <link rel="stylesheet" href="/css/universe.css">
-     - <style id="themeColor"></style> # 主题色
      - <style id="rightSide"></style> # 侧边栏
-     - <style id="transPercent"></style> # 透明度调节
-     - <style id="blurNum"></style> # 模糊半径调节
-     - <style id="settingStyle"></style> # 模糊效果开关
-     - <span id="fps"></span> # 帧率检测
-     - <style id="defineBg"></style> # 自定义背景选项
   bottom:   
      - <link rel="stylesheet" href="/css/custom/custom.css">
      - <script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script>
@@ -51,7 +45,7 @@ inject:
      - <script defer src="/js/universe.js"></script>
      - <script src="/js/sun_moon.js" async></script>
      - <script defer src="https://cdn1.tianli0.top/gh/nextapps-de/winbox/dist/winbox.bundle.min.js"></script> # winbox支持
-     - <script defer data-pjax src="/static/js/meihua.js"></script> # 美化模块  
+     - <script defer data-pjax src="https://www.fomal.cc/static/js/meihua.js"></script> # 美化模块  
 
 # hexo-butterfly-categories-card
 # see https://akilar.top/posts/a9131002/
