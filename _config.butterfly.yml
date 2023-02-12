@@ -1,13 +1,13 @@
 menu:
    主页: / || fa-solid fa-house-chimney
-   文章 || fa-solid fa-book-reader:
+   文章 || fa-solid fa-book-reader || hide:
     归档: /archives/ || fa-solid fa-box-archive
     分类: /categories/ || fa-solid fa-folder-open
-   社交 || fa-solid fa-cubes:
+   社交 || fa-solid fa-cubes || hide:
     友链: /links/ || fa-solid fa-link
     友圈: /friends/ || fa-solid fa-blog
     短文: /ispeak/ || fa-solid fa-comment-alt
-   说说 || fa-solid fa-desktop:
+   说说 || fa-solid fa-desktop || hide:
     artitalk: /artitalk/ || fa-solid fa-link
     bbtalk: /bbtalk/ || fa-solid fa-blog
 
