@@ -4,8 +4,8 @@
 }
 /* 侧边卡片栏宽度 */
 .aside-content {
-  max-width: 200px;
-  min-width: 200px;
+  max-width: 300px;
+  min-width: 201px;
 }
 /* 个人信息卡片背景图 */
 [data-theme="light"] #aside-content > .card-widget.card-info {
