@@ -2,25 +2,21 @@
 .layout {
   max-width: 1400px;
 }
-
-/* 除了首页以外其他页面隐藏卡片，并采用宽屏显示 */
-#archive,
-page,
-#category,
-#tag {
-  width: 100%;
+/* 侧边卡片栏宽度 */
+.aside-content {
+  max-width: 200px;
+  min-width: 200px;
 }
-.page:not(.page.home) .aside-content {
-  display: none;
+/* 个人信息卡片背景图 */
+[data-theme="light"] #aside-content > .card-widget.card-info {
+  background-image: url(https://sourcebucket.s3.ladydaily.com/img/snowflower.webp);
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-size: 100%;
 }
-
-/* 黑夜模式适配 */
 [data-theme="dark"] #aside-content > .card-widget.card-info {
-  background: #191919ee;
-}
-
-/* 个人信息Follow me按钮 */
-#aside-content > .card-widget.card-info > #card-info-btn {
-  background-color: #3eb8be;
-  border-radius: 8px;
+  background-image: url(https://sourcebucket.s3.ladydaily.com/img/aurora.webp);
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-size: 100%;
 }
