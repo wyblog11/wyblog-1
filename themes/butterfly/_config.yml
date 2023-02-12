@@ -344,7 +344,7 @@ facebook_comments:
 twikoo:
   envId: https://twikoo.wyblog1.tk
   region:
-  visitor: false
+  visitor: true
   option:
 
 # Giscus
@@ -369,8 +369,8 @@ remark42:
 # https://artalk.js.org/guide/frontend/config.html
 artalk:
   server: https://artalk.wyblog1.tk
-  site:
-  visitor: false
+  site: 无影的artalk
+  visitor: true
   option:
 
 # Chat Services
@@ -556,9 +556,9 @@ canvas_nest:
 # Typewriter Effect (打字效果)
 # https://github.com/disjukr/activate-power-mode
 activate_power_mode:
-  enable: true
+  enable: false
   colorful: true # open particle animation (冒光特效)
-  shake: true #  open shake (抖動特效)
+  shake: false #  open shake (抖動特效)
   mobile: true
 
 # Mouse click effects: fireworks (鼠標點擊效果: 煙火特效)
