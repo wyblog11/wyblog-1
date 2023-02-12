@@ -2,19 +2,6 @@
 .layout {
   max-width: 1400px;
 }
-/* 个人信息卡片背景图 */
-[data-theme="light"] #aside-content > .card-widget.card-info {
-  background-image: url(https://sourcebucket.s3.ladydaily.com/img/snowflower.webp);
-  background-repeat: no-repeat;
-  background-attachment: inherit;
-  background-size: 100%;
-}
-[data-theme="dark"] #aside-content > .card-widget.card-info {
-  background-image: url(https://sourcebucket.s3.ladydaily.com/img/aurora.webp);
-  background-repeat: no-repeat;
-  background-attachment: inherit;
-  background-size: 100%;
-}
 /* 个人状态 */
 .card-info-avatar .author-status-box {
   position: absolute;
