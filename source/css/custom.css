@@ -22,11 +22,17 @@
   background-attachment: inherit;
   background-size: 100%;
 }
-
 /* 平板尺寸自适应(不启用侧边栏宽度限制) */
 @media screen and (max-width: 900px) {
   .aside-content {
     max-width: none !important;
     padding: 0 5px 0 5px;
   }
+}
+/* nav */
+#nav .menus_items {
+    position: absolute;
+    width: fit-content;
+    left: 50%;
+    transform: translateX(-50%);
 }
