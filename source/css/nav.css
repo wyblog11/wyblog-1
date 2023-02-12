@@ -9,3 +9,6 @@
     display: flex;
     flex-wrap:nowrap;
 }
+#nav *::after{
+    background-color: transparent!important;
+}
