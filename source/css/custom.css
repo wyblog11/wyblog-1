@@ -22,13 +22,6 @@
   background-attachment: inherit;
   background-size: 100%;
 }
-/* 平板尺寸自适应(不启用侧边栏宽度限制) */
-@media screen and (max-width: 1400px) {
-  .aside-content {
-    max-width: none;
-    padding: 0 5px 0 5px;
-  }
-}
 /* 日间模式不生效 */
 [data-theme="light"] #site-name,
 [data-theme="light"] #site-title,
