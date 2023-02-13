@@ -29,3 +29,9 @@
     padding: 0 5px 0 5px;
   }
 }
+#archive,#page,#category,#tag{
+    width:100%;
+}
+.page .aside-content{
+    display: none;
+}
