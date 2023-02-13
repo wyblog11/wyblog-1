@@ -1,11 +1,11 @@
 /* 全局宽度 */
 .layout {
-  max-width: 1400px;
+  max-width: 1500px;
 }
 
 /* 侧边卡片栏宽度 */
 .aside-content {
-  max-width: 250px;
+  max-width: 280px;
   min-width: 200px;
 }
 
