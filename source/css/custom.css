@@ -5,8 +5,8 @@
 
 /* 侧边卡片栏宽度 */
 .aside-content {
-  max-width: 318px;
-  min-width: 300px;
+  max-width: 250px;
+  min-width: 200px;
 }
 
 /* 个人信息卡片背景图 */
@@ -28,10 +28,4 @@
     max-width: none !important;
     padding: 0 5px 0 5px;
   }
-}
-#home,#archive,#page,#category,#tag{
-    width:100%;
-}
-.page .aside-content{
-    display: none;
 }
