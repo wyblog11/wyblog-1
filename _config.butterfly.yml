@@ -1,15 +1,15 @@
 menu:
-   主页: / || fa-solid fa-house-chimney
-   文章 || fa-solid fa-book-reader || hide:
-    归档: /archives/ || fa-solid fa-box-archive
-    分类: /categories/ || fa-solid fa-folder-open
-   社交 || fa-solid fa-cubes || hide:
-    友链: /links/ || fa-solid fa-link
-    友圈: /friends/ || fa-solid fa-blog
-    短文: /ispeak/ || fa-solid fa-comment-alt
-   说说 || fa-solid fa-desktop || hide:
-    artitalk: /artitalk/ || fa-solid fa-link
-    bbtalk: /bbtalk/ || fa-solid fa-blog
+   主页: / || icon-sousuo || faa-tada
+   文章 || icon-xiegenjin || faa-tada || hide:
+    归档: /archives/ || icon-shoujianxiang || faa-tada
+    分类: /categories/ || icon-shoujianxiang || faa-tada
+   社交 || icon-shejiao || faa-tada || hide:
+    友链: /links/ || icon-pengyou || faa-tada
+    友圈: /friends/ || icon-iconfontzhizuobiaozhunbduan36 || faa-tada
+    短文: /ispeak/ || icon-xiegenjin || faa-tada
+   说说 || icon-jurassic_message || faa-tada || hide:
+    artitalk: /artitalk/ || icon-shejiao || faa-tada
+    bbtalk: /bbtalk/ || icon-shejiao || faa-tada
 
 # hexo-butterfly-swiper
 # see https://akilar.top/posts/8e1264d1/
@@ -47,7 +47,7 @@ inject:
      - <script defer src="/js/universe.js"></script>
      - <script src="/js/sun_moon.js" async></script>
      - <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js">
-     - <script async src="//at.alicdn.com/t/c/font_3895868_g0gj1nl8nhn.css"></script> 
+     - <script async src="//at.alicdn.com/t/c/font_3895868_kwcyruvfkam.css"></script> 
 
 # hexo-butterfly-categories-card
 # see https://akilar.top/posts/a9131002/
