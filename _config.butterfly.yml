@@ -1,5 +1,5 @@
 menu:
-   主页: / || icon-sousuo
+   主页: / || icon-shouye
    文章 || icon-xiegenjin || hide:
     归档: /archives/ || icon-shoujianxiang
     分类: /categories/ || icon-shoujianxiang
