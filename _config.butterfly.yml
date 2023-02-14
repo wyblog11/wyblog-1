@@ -45,6 +45,7 @@ inject:
      - <canvas id="universe"></canvas>
      - <script defer src="/js/universe.js"></script>
      - <script src="/js/sun_moon.js" async></script>
+     - <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js">
 
 # hexo-butterfly-categories-card
 # see https://akilar.top/posts/a9131002/
@@ -95,14 +96,6 @@ gitcalendar:
   container: .recent-post-item(style='width:100%;height:auto;padding:10px;') #父元素容器，需要使用pug语法
   gitcalendar_css: https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.css
   gitcalendar_js: https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.js	
-preloader:
-  enable: true
-  # source
-  # 1. fullpage-loading
-  # 2. pace (progress bar)
-  source: 3
-  # pace theme (see https://codebyzach.github.io/pace/)
-  pace_css_url: https://fastly.jsdelivr.net/gh/xlenco/JS-X@main/pace.js/pace.css
 wowjs:
   enable: true #控制动画开关。true是打开，false是关闭
   priority: 10 #过滤器优先级
