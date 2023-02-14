@@ -429,3 +429,10 @@ svg.icon {
   fill: currentColor;
   overflow: hidden;
 }
+@font-face {
+  font-family: 'iconfont';  /* Project id 3895868 */
+  src: 
+       url('//at.alicdn.com/t/c/font_3895868_g0gj1nl8nhn.woff2?t=1676371824646') format('woff2'),
+       url('//at.alicdn.com/t/c/font_3895868_g0gj1nl8nhn.woff?t=1676371824646') format('woff'),
+       url('//at.alicdn.com/t/c/font_3895868_g0gj1nl8nhn.ttf?t=1676371824646') format('truetype');
+}
