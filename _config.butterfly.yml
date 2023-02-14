@@ -3,6 +3,7 @@ menu:
    文章 || icon-xiegenjin || faa-tada　|| hide:
     归档: /archives/ || icon-shoujianxiang　|| faa-tada
     分类: /categories/ || icon-shoujianxiang　|| faa-tada
+    游客访问: /census/ || icon-tongji ||
    社交 || icon-shejiao || hide:
     友链: /links/ || icon-pengyou || faa-tada
     友圈: /friends/ || icon-iconfontzhizuobiaozhunbduan36　|| faa-tada
