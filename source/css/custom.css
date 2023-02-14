@@ -1,3 +1,8 @@
+/* 翻页按钮居中 */
+#pagination {
+  width: 100%;
+  margin: auto;
+}
 /* 一级菜单居中 */
 #nav .menus_items {
   position: absolute !important;
