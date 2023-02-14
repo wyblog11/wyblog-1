@@ -1,15 +1,15 @@
 menu:
-   主页: / || icon-shouye
-   文章 || icon-xiegenjin || hide:
-    归档: /archives/ || icon-shoujianxiang
-    分类: /categories/ || icon-shoujianxiang
+   主页: / || icon-shouye　|| faa-tada
+   文章 || icon-xiegenjin || faa-tada　|| hide:
+    归档: /archives/ || icon-shoujianxiang　|| faa-tada
+    分类: /categories/ || icon-shoujianxiang　|| faa-tada
    社交 || icon-shejiao || hide:
-    友链: /links/ || icon-pengyou 
-    友圈: /friends/ || icon-iconfontzhizuobiaozhunbduan36
-    短文: /ispeak/ || icon-xiegenjin
+    友链: /links/ || icon-pengyou || faa-tada
+    友圈: /friends/ || icon-iconfontzhizuobiaozhunbduan36　|| faa-tada
+    短文: /ispeak/ || icon-xiegenjin　|| faa-tada
    说说 || icon-jurassic_message || hide:
-    artitalk: /artitalk/ || icon-shejiao 
-    bbtalk: /bbtalk/ || icon-shejiao 
+    artitalk: /artitalk/ || icon-shejiao || faa-tada
+    bbtalk: /bbtalk/ || icon-shejiao || faa-tada
 
 # hexo-butterfly-swiper
 # see https://akilar.top/posts/8e1264d1/
