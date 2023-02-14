@@ -1,3 +1,10 @@
+@font-face {
+    font-family: YSHST;
+    src: url(https://blog.cjg010316.top/font/优设好身体.woff2);
+    font-weight: 400;
+    font-style: normal;
+    font-display: block
+}
 /* 个人信息卡片背景图 */
 [data-theme="light"] #aside-content > .card-widget.card-info {
   background-image: url(https://sourcebucket.s3.ladydaily.com/img/snowflower.webp);
