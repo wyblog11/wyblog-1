@@ -47,7 +47,7 @@ inject:
      - <script defer src="/js/universe.js"></script>
      - <script src="/js/sun_moon.js" async></script>
      - <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js">
-     - <script async src="//at.alicdn.com/t/font_2264842_b004iy0kk2b.js"></script> 
+     - <script async src="//at.alicdn.com/t/c/font_3895868_g0gj1nl8nhn.css"></script> 
 
 # hexo-butterfly-categories-card
 # see https://akilar.top/posts/a9131002/
