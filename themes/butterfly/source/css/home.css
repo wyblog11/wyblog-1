@@ -8,15 +8,3 @@
 .recent-posts{
   width:auto!important;
 }
-@media screen and (max-width: 900px){
-    .card-widget:not(#card-toc){
-        display:none!important;
-    }
-    /*因为目录可以用侧边栏展开，所以不能隐藏*/
-}
-#archive,#page,#category,#tag{
-    width:100%;
-}
-.page .aside-content{
-    display: none;
-}
