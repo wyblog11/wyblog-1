@@ -234,21 +234,3 @@ artalk:
 # 主页卡片样式
 # Docs: https://akilar.top/posts/d6b69c49/
 index_card_style: multicard # slidecard | multicard
-
-# Home page setting
-# path: Root path for your blogs index page. (default = '')
-# per_page: Posts displayed per page. (0 = disable pagination)
-# order_by: Posts order. (Order by date descending by default)
-index_generator:
-  path: ''
-  per_page: 12
-  order_by: -date
-
-# Display the article introduction on homepage
-# 1: description
-# 2: both (if the description exists, it will show description, or show the auto_excerpt)
-# 3: auto_excerpt (default)
-# false: do not show the article introduction
-index_post_content:
-  method: 2
-  length: 500 # if you set method to 2 or 3, the length need to config
