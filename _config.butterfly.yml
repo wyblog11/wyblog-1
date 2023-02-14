@@ -38,7 +38,6 @@ inject:
      - <link rel="stylesheet" href="/css/custom.css">
      - <link rel="stylesheet" href="/css/universe.css">
      - <style id="rightSide"></style> # 侧边栏
-     - <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js">
   bottom:   
      - <link rel="stylesheet" href="/css/custom/custom.css">
      - <script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script>
