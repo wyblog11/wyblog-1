@@ -2,16 +2,13 @@
     max-width:270px;
     min-width:260px;
 }
-.recent-posts{
-  width:auto!important;
-}
 .layout.hide-aside{ 
     max-width:1200px; 
 } 
 .layout{
     display:flex;
     margin:0px;
-    padding:0.35rem 2.5px;
+    padding:0.35rem 1px;
     max-width:1200px;
 }
 #nav-right{
