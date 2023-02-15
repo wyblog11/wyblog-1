@@ -80,7 +80,7 @@ categoryBar:
   custom_css: https://npm.elemecdn.com/hexo-butterfly-categories-card@1.0.0/lib/categorybar.css
 
 # The banner image of home page
-index_img: true
+index_img: https://source.fomal.cc/img/home_bg.webp
 # Footer Background
 footer_bg: false
 
