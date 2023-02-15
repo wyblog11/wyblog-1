@@ -1,12 +1,12 @@
 .layout.hide-aside { 
-   max-width: 1245px; 
-  } 
+    max-width: 1245px; 
+} 
 .layout {
-   display: flex;
-   margin: 0px auto;
-   padding: 0.35rem 2.5px;
-   max-width: 1245px;
-  }
+    display: flex;
+    margin: 0px auto;
+    padding: 0.35rem 2.5px;
+    max-width: 1245px;
+}
 @font-face {
     font-family: YSHST;
     src: url(https://blog.cjg010316.top/font/优设好身体.woff2);
