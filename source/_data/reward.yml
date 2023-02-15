@@ -1,0 +1,6 @@
+- class_name: 赞赏
+  reward_list:
+    - name: 无影博客
+      amount: 999999999999
+      datatime: 2022-08-19
+      suffix: 
