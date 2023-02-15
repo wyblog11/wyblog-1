@@ -45,6 +45,10 @@ inject:
      - <script async src="//at.alicdn.com/t/c/font_3895868_7yxmkxsu9a.js"></script> 
      - <script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
   bottom:   
+     - <script charset="UTF-8" id="LA_COLLECT" src="https://sdk.51.la/js-sdk-pro.min.js"></script>
+     - <script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
+     - <script> LA.init({id:"JyPwGVBiTFkmpfwz",ck:"JyPwGVBiTFkmpfwz"})</script>
+     - <script>new LingQue.Monitor().init({id:"YOU ID",sendSuspicious:true});</script>
      - <link rel="stylesheet" href="/css/custom/custom.css">
      - <script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script>
      - <script defer data-pjax src="/js/cat.js"></script>
