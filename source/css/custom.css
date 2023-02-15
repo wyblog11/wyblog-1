@@ -3,7 +3,7 @@
 } 
 .layout {
     display: flex;
-    margin: 0px auto;
+    margin: 0px;
     padding: 0.35rem 2.5px;
     max-width: 2000px;
 }
