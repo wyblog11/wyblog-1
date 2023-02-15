@@ -30,14 +30,6 @@
           |
           span(data-show) 蓦然回首
 
-  .hello-about.touying
-    .cursor(style='translate:none;rotate:none;scale:none;transform:translate(721px,180px)')
-    .shapes
-      .shape.shape-1(style='translate:none;rotate:none;scale:none;transform:translate(721px,180px)')
-      .shape.shape-2(style='translate:none;rotate:none;scale:none;transform:translate(721px,180px)')
-      .shape.shape-3(style='translate:none;rotate:none;scale:none;transform:translate(721px,180px)')
-    .content
-      h1 怕冷爱上雪
 
   .author-content
     .author-content-item.skills.touying
@@ -131,29 +123,6 @@
             img.flink-avatar(src='https://s2.loli.net/2022/11/12/YBMzJhbXEPprU87.webp')
             span.site-title 紫罗兰的永恒花园
       | 因为这部番，2018 年的一个夏天我看完以后心情久久不能释怀，为薇尔莉特与爱感到一种说不上来的味道，多年以后在看这部番，才明白原来这就是爱，喜欢这部番不仅仅是因为它制作的用心，不论是人物细节还是场景细节，不管是 op 还是 ed 都非常好听，最后的结局或许才是让我不能忘怀的原因，薇尔莉特，希望收到来自家人，朋友，恋人的那封 "信" ~
-
-      
-  .author-content
-    .author-content-item.single.reward.touying
-      .author-content-item-tips 致谢
-      span.author-content-item-title 赞赏名单
-      .author-content-item-description 感谢因为有你们，让我更加有创作的动力。
-        each i in site.data.reward
-          - let rawData = [...i.reward_list]
-          .reward-list-all
-            - let reward_list_amount = i.reward_list.sort((a,b)=>b.amount -  a.amount)
-            each item, index in reward_list_amount
-              .reward-list-item.touying
-                .reward-list-item-name=item.name
-                .reward-list-bottom-group
-                  if item.amount >= 50
-                    .reward-list-item-money(style='background:var(--heo-pink)')=`¥${item.amount}`
-                  else
-                    .reward-list-item-money=`¥${item.amount + (item.suffix ? item.suffix : "")}`
-                  .datatime.reward-list-item-time(datatime=item.datatime)=new Date(item.datatime).toISOString().slice(0, -14)
-          .reward-list-updateDate
-            | 最新更新时间：
-            time.datatime.reward-list-updateDate-time(datatime=rawData[0].datatime)=new Date(rawData[0].datatime).toISOString().slice(0, -14)
 
 script(src=url_for(theme.CDN.option.countup_js))
 script(src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/gsap/3.9.1/gsap.min.js")
