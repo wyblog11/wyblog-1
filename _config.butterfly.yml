@@ -32,6 +32,8 @@ swiper:
 
 inject:
   head:
+     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+	  - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/bb/showbb_in_index.css">
      - <link rel="stylesheet" href="/css/home.css">
      - <link rel="stylesheet" href="/css/nav.css">
      - <link rel="stylesheet" href="/css/side.css">
