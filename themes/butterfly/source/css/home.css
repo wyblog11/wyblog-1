@@ -9,7 +9,7 @@
     display:flex;
     margin:0px;
     padding:0.35rem 1px;
-    max-width:0px;
+    max-width:1000px;
 }
 #nav-right{
     flex:1 1 auto;
