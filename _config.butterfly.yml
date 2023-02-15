@@ -241,15 +241,6 @@ artalk:
   visitor: true
   option:
 
-# Display the article introduction on homepage
-# 1: description
-# 2: both (if the description exists, it will show description, or show the auto_excerpt)
-# 3: auto_excerpt (default)
-# false: do not show the article introduction
-index_post_content:
-  method: 2
-  length: 500 # if you set method to 2 or 3, the length need to config
-
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
 font:
