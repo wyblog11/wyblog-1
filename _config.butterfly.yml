@@ -241,10 +241,6 @@ artalk:
   visitor: true
   option:
 
-# 主页卡片样式
-# Docs: https://akilar.top/posts/d6b69c49/
-index_card_style: multicard # slidecard | multicard
-
 # Display the article introduction on homepage
 # 1: description
 # 2: both (if the description exists, it will show description, or show the auto_excerpt)
