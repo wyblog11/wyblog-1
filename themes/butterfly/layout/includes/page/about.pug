@@ -26,7 +26,10 @@
           |
           span 生活
           |
+          span(data-up) 程序
+          |
           span(data-show) 体验
+
   .hello-about
     .cursor(style='translate:none;rotate:none;scale:none;transform:translate(721px,180px)')
     .shapes
@@ -35,6 +38,7 @@
       .shape.shape-3(style='translate:none;rotate:none;scale:none;transform:translate(721px,180px)')
     .content
       h1 Hello there!
+
   .author-content
     .author-content-item.skills
       .card-content
@@ -69,8 +73,8 @@
         .careers-group
           .careers-item
             .circle(style='background:#357ef5')
-            .name EDU,软件工程专业
-        img.author-content-img.no-lightbox(alt='生涯', src='https://img02.anzhiy.cn/adminuploads/1/2022/09/26/6330e9bcc39cc.png')
+            .name 前端
+
   .author-content
     .about-statistic.author-content-item
       .card-content
@@ -78,6 +82,8 @@
         span.author-content-item-title 访问统计
         #statistic
         .post-tips
+          | 统计信息来自
+          a(href='https://invite.51.la/1NzKqTeb?target=V6', target='_blank', rel='noopener nofollow') 51la网站统计
         .banner-button-group
           a.banner-button(onclick='pjax.loadUrl("/archives/")', data-pjax-state)
             i.fas.fa-circle-arrow-up-right
@@ -94,13 +100,14 @@
           |
           span.selfInfo-content#selfInfo-content-year(style='color:#43a6c6') 2008
         div
-          span.selfInfo-title 湖南信息学院
+          span.selfInfo-title 坝头中学
           |
-          span.selfInfo-content(style='color:#c69043') 软件工程
+          span.selfInfo-content(style='color:#c69043') 学习
         div
           span.selfInfo-title 现在职业
           |
           span.selfInfo-content(style='color:#b04fe6') 初三学生👨‍🎓
+
   .author-content
     .author-content-item.personalities
       .author-content-item-tips 性格
@@ -113,6 +120,9 @@
         a(target='_blank', rel='noopener external nofollow', href='https://www.16personalities.com/ch/esfj-%E4%BA%BA%E6%A0%BC') 执政官
       .image
         img.no-lightbox(src='https://npm.elemecdn.com/anzhiyu-blog@2.0.8/img/svg/ESFJ-A.svg')
+    .author-content-item.myphoto
+      img.author-content-img.no-lightbox(alt='自拍', src='https://img02.anzhiy.cn/adminuploads/1/2022/09/24/632e9643611ec.jpg')
+
   .author-content
     .author-content-item.maxim
       .author-content-item-tips 座右铭
@@ -125,29 +135,36 @@
         .author-content-item-tips 特长
         span.buff-title
           span(style='opacity:.6;margin-bottom:8px')
-            | 比较会安装windows10系统
-            span.inline-word 有时候弄不好,会作死
+            | 玩
+            span.inline-word 电脑
           |
           span
             | 二次元指数
             span.inline-word MAX
       .card-background-icon
         i.fas.fa-dice-d20
+
   .author-content
     .author-content-item.game-yuanshen
       .card-content
         .author-content-item-tips 爱好游戏
-        span.author-content-item-title 球球大作战,迷你世界,我的世界
+        span.author-content-item-title 原神
+        .content-bottom
+          .icon-group
+            .loading-bar(role='presentation', aria-hidden='true')
+              img.no-lightbox(src='https://yuanshen.site/imgs/loading-bar.png', alt='Loading...', longdesc='https://ys.mihoyo.com/main/')
+          .tips.game-yuanshen-uid UID: 125766904
     .author-content-item.comic-content
       .card-content
         .author-content-item-tips 爱好番剧
-        span.author-content-item-title 开心锤锤
+        span.author-content-item-title 紫罗兰的永恒花园
         .content-bottom
           .banner-button-group
-            a.banner-button(onclick='window.open("https://www.bilibili.com/bangumi/play/ss39308/?spm_id_from=333.999.0.0")', data-pjax-state)
+            a.banner-button(onclick='window.open("https://www.bilibili.com/bangumi/play/ep173286?from=search&seid=10927182858100936967&from_spmid=666.25.episode.0")', data-pjax-state)
               i.fas.fa-circle-arrow-up-right
               |
               span.banner-button-text 立即追番
+
   .author-content
     .author-content-item.like-technology
       .card-content
@@ -158,7 +175,9 @@
     .author-content-item.like-music
       .card-content
         .author-content-item-tips 音乐偏好
-        span.author-content-item-title 好听的
+        span.author-content-item-title 许嵩、民谣、
+        |
+        span.author-content-item-title 华语流行
         .content-bottom
           .tips 跟 安知鱼 一起欣赏更多音乐
         .banner-button-group
@@ -166,10 +185,26 @@
             i.fas.fa-circle-arrow-up-right
             |
             span.banner-button-text 更多推荐
+
   .author-content
     .create-site-post.author-content-item.single
       .author-content-item-tips 心路历程
       | 欢迎来到我的博客 😝
+      strong 坝头中学
+      | 的
+      strong 学生
+      | 
+      psw
+      del
+      |  给大家推荐一部番：
+      .site-card-group
+        a.site-card(target='_blank', href='链接', data-title='名称')
+          .wrapper.cover
+            img.cover.fadeIn(src='图片')
+          .info
+            img.flink-avatar(src='https://static.hdslb.com/images/favicon.ico', style='top: 19px')
+            span.site-title 番据名称
+      | 
       .checkbox.blue.checked
         input(type='checkbox', checked)
         p
@@ -190,9 +225,22 @@
       .checkbox.times.red.checked
         input(type='checkbox', checked)
         p 擅长PS、Pr、Ae、Au、Ai、Dw、An、Id等软件的安装与卸载🎃
+      .checkbox.times.red.checked
+        input(type='checkbox', checked)
+        p 精通Html、CSS、JavaScript、Vue、React、PHP、Java、Python、C、C++、C#、Go、TypeScript等单词的拼写🎲
+      .checkbox.times.red.checked
         input(type='checkbox', checked)
         p 熟悉Windows、Linux、Mac、Android、IOS等系统的开关机👻
       span.p.h3 todoList
+      .checkbox.checked
+        input(type='checkbox', checked)
+        p 原生微信小程序
+      .checkbox.checked
+        input(type='checkbox', checked)
+        p vue3、vite、 pinia
+      .checkbox.checked
+        input(type='checkbox', checked)
+        p 重装文档重写
       .checkbox
         input(type='checkbox')
         p Electron
@@ -211,7 +259,58 @@
       .checkbox
         input(type='checkbox')
         p Flutter
+      .checkbox
+        input(type='checkbox')
+        p 智慧城市大前端
+      .checkbox
+        input(type='checkbox')
+        p react18系统学习
+      .checkbox
+        input(type='checkbox')
+        p 工业企业生产管理
+      .checkbox
+        input(type='checkbox')
+        p 语言的魅力
 
+  .author-content
+    .author-content-item.single.reward
+      .author-content-item-tips 致谢
+      span.author-content-item-title 赞赏名单
+      .author-content-item-description 感谢因为有你们，让我更加有创作的动力。
+        each i in site.data.reward
+          - let rawData = [...i.reward_list]
+          .reward-list-all
+            - let reward_list_amount = i.reward_list.sort((a,b)=>b.amount -  a.amount)
+            each item, index in reward_list_amount
+              .reward-list-item
+                .reward-list-item-name=item.name
+                .reward-list-bottom-group
+                  if item.amount >= 50
+                    .reward-list-item-money(style='background:var(--anzhiyu-yellow)')=`¥${item.amount}`
+                  else
+                    .reward-list-item-money=`¥${item.amount + (item.suffix ? item.suffix : "")}`
+                  .datatime.reward-list-item-time(datatime=item.datatime)=new Date(item.datatime).toISOString().slice(0, -14)
+          .reward-list-updateDate
+            | 最新更新时间：
+            time.datatime.reward-list-updateDate-time(datatime=rawData[0].datatime)=new Date(rawData[0].datatime).toISOString().slice(0, -14)
+      .post-reward
+        button.tip-button.reward-button
+          span.tip-button__text 不给糖果就捣蛋
+          .coin-wrapper
+            .coin
+              .coin__middle
+              .coin__back
+              .coin__front
+          .reward-main
+            ul.reward-all
+              li.reward-item
+                a(href='https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png', target='_blank')
+                  img.post-qr-code-img(alt='wechat', src='https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png')
+                .post-qr-code-desc wechat
+              li.reward-item
+                a(href='https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png', target='_blank')
+                  img.post-qr-code-img(alt='alipay', src='https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png')
+                .post-qr-code-desc alipay
 
 script(src=url_for(theme.CDN.option.countup_js))
 script.
@@ -227,12 +326,15 @@ script.
     fetch('https://v6-widget.51.la/v6/{掩码ID}/quote.js').then(res => res.text()).then((data) => {
         let title = ['最近活跃', '今日人数', '今日访问', '昨日人数', '昨日访问', '本月访问', '总访问量']
         let num = data.match(/(<\/span><span>).*?(\/span><\/p>)/g)
+
         num = num.map((el) => {
           let val = el.replace(/(<\/span><span>)/g, '')
           let str = val.replace(/(<\/span><\/p>)/g, '')
           return str
         })
+
         let statisticEl = document.getElementById('statistic')
+
         // 自定义不显示哪个或者显示哪个，如下为不显示 最近活跃访客 和 总访问量
         let statistic = []
         for (let i = 0; i < num.length; i++) {
@@ -250,6 +352,7 @@ script.
               }))
             })
         }
+
         function statisticUP () {
           let statisticElment = document.querySelector('.about-statistic.author-content-item');
           if(isInViewPortOfOne(statisticElment)) {
@@ -260,6 +363,7 @@ script.
             document.removeEventListener('scroll', throttleStatisticUP);
           }
         }
+
         const selfInfoContentYear = new CountUp('selfInfo-content-year', 0, 2002, 0, 2, {
           useEasing: true,
           useGrouping: false,
@@ -268,6 +372,7 @@ script.
           prefix: '',
           suffix: ''
         })
+
         function scrollSelfInfoContentYear() {
           let selfInfoContentYearElment = document.querySelector('.author-content-item.selfInfo.single');
           if (selfInfoContentYearElment && isInViewPortOfOne(selfInfoContentYearElment)) {
@@ -277,24 +382,31 @@ script.
         }
         const throttleStatisticUP = btf.throttle(statisticUP, 200)
         document.addEventListener('scroll', throttleStatisticUP, {passive: true})
+
         const throttleScrollSelfInfoContentYear = btf.throttle(scrollSelfInfoContentYear, 200)
         document.addEventListener('scroll', throttleScrollSelfInfoContentYear, {passive: true})
     });
+
     var pursuitInterval = null;
       pursuitInterval = setInterval(function () {
         const show = document.querySelector('span[data-show]')
         const next = show.nextElementSibling || document.querySelector('.first-tips')
         const up = document.querySelector('span[data-up]')
+
         if (up) {
           up.removeAttribute('data-up')
         }
+
         show.removeAttribute('data-show')
         show.setAttribute('data-up', '')
+
         next.setAttribute('data-show', '')
       }, 2000)
+
       document.addEventListener('pjax:send', function(){
         clearInterval(pursuitInterval);
       });
+
       var helloAboutEl = document.querySelector('.hello-about')
       helloAboutEl.addEventListener("mousemove", evt => {
         const mouseX = evt.offsetX;
@@ -303,6 +415,7 @@ script.
           x: mouseX,
           y: mouseY,
         })
+
         gsap.to(".shape", {
           x: mouseX,
           y: mouseY,
