@@ -3,7 +3,7 @@
     min-width:260px;
 }
 .layout.hide-aside{ 
-    max-width:1200px; 
+    max-width:1400px; 
 } 
 #nav-right{
     flex:1 1 auto;
