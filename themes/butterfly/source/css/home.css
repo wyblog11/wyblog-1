@@ -3,13 +3,13 @@
 } 
 /* 全局宽度 */
 .layout {
-  max-width: 1400px;
+  max-width: 1500px;
 }
 
 /* 侧边卡片栏宽度 */
 .aside-content {
   max-width: 268px;
-  min-width: 2580px;
+  min-width: 258px;
 }
 
 /* 平板尺寸自适应(不启用侧边栏宽度限制) */
