@@ -1,6 +1,12 @@
-
+.aside-content{
+    max-width:270px;
+    min-width:260px;
+}
+.recent-posts{
+  width:auto!important;
+}
 .layout.hide-aside{ 
-    max-width:2000px; 
+    max-width:1500px; 
 } 
 .layout{
     display:flex;
