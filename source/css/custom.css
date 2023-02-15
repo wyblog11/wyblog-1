@@ -1,11 +1,11 @@
 .layout.hide-aside { 
-    max-width: 1245px; 
+    max-width: 2000px; 
 } 
 .layout {
     display: flex;
     margin: 0px auto;
     padding: 0.35rem 2.5px;
-    max-width: 1245px;
+    max-width: 2000px;
 }
 @font-face {
     font-family: YSHST;
