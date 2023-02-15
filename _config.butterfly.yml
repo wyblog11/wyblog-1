@@ -10,7 +10,9 @@ menu:
    说说 || icon-jurassic_message || hide:
     artitalk: /artitalk/ || icon-shejiao || faa-tada
     bbtalk: /bbtalk/ || icon-shejiao || faa-tada
-
+   更多 || icon-jurassic_message || hide:
+    artitalk: /artitalk/ || icon-shejiao || faa-tada
+    bbtalk: /bbtalk/ || icon-shejiao || faa-tada
 # hexo-butterfly-swiper
 # see https://akilar.top/posts/8e1264d1/
 swiper:
