@@ -46,6 +46,7 @@ inject:
   bottom:   
      - <link rel="stylesheet" href="/css/custom/custom.css">
      - <script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script>
+     - <script async data-pjax src="/js/txmap.js"></script>
      - <canvas id="universe"></canvas>
      - <script defer src="/js/universe.js"></script>
      - <script src="/js/sun_moon.js" async></script>
