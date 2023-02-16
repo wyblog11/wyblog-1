@@ -32,28 +32,19 @@ swiper:
 
 inject:
   head:
-     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
-     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/bb/showbb_in_index.css">
      - <link rel="stylesheet" href="/css/home.css">
      - <link rel="stylesheet" href="/css/nav.css">
-     - <link rel="stylesheet" href="/css/side.css">
      - <link rel="stylesheet" href="/css/cat.css">
      - <link rel="stylesheet" href="/css/head.css" media="defer" onload="this.media='all'">
      - <link rel="stylesheet" href="/css/custom.css">
      - <link rel="stylesheet" href="/css/universe.css">
-     - <style id="rightSide"></style> # 侧边栏
      - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css"  media="defer" onload="this.media='all'">
      - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_3895868_7yxmkxsu9a.css" media="defer" onload="this.media='all'">
      - <script async src="//at.alicdn.com/t/c/font_3895868_7yxmkxsu9a.js"></script> 
      - <script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
   bottom:   
-     - <script charset="UTF-8" id="LA_COLLECT" src="https://sdk.51.la/js-sdk-pro.min.js"></script>
-     - <script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
-     - <script> LA.init({id:"JyPwGVBiTFkmpfwz",ck:"JyPwGVBiTFkmpfwz"})</script>
-     - <script>new LingQue.Monitor().init({id:"YOU ID",sendSuspicious:true});</script>
      - <link rel="stylesheet" href="/css/custom/custom.css">
      - <script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script>
-     - <script defer data-pjax src="/js/cat.js"></script>
      - <canvas id="universe"></canvas>
      - <script defer src="/js/universe.js"></script>
      - <script src="/js/sun_moon.js" async></script>
