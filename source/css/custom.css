@@ -1,3 +1,8 @@
+/* 翻页按钮居中 */
+#pagination {
+  width: 100%;
+  margin: auto;
+}
 @font-face {
     font-family: YSHST;
     src: url(https://blog.cjg010316.top/font/优设好身体.woff2);
