@@ -113,9 +113,9 @@
   background: #49b1f5;
   background: linear-gradient(
     to right,
-    rgb(232, 234, 246),
-    rgb(197, 202, 233),
-    rgb(159, 168, 218)
+    rgb(18, 194, 233),
+    rgb(196, 113, 237),
+    rgb(246, 79, 89)
   );
   animation: gradient 2s ease infinite;
   background-size: 200%;
