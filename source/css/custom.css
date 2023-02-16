@@ -1,3 +1,26 @@
+/* 页脚与头图透明 */
+#footer {
+  background: transparent !important;
+}
+#page-header {
+  background: transparent !important;
+}
+
+/* 白天模式遮罩透明 */
+#footer::before {
+  background: transparent !important;
+}
+#page-header::before {
+  background: transparent !important;
+}
+
+/* 夜间模式遮罩透明 */
+[data-theme="dark"] #footer::before {
+  background: transparent !important;
+}
+[data-theme="dark"] #page-header::before {
+  background: transparent !important;
+}
 /* 欢迎信息 */
 #welcome-info {
   background: linear-gradient(45deg, #b9f4f3, #e3fbf9);
@@ -145,10 +168,3 @@ svg.icon {
   fill: currentColor;
   overflow: hidden;
 }
-
-@import 'https://cdn.jsdelivr.net/gh/wyblog11/661111@main/themes/butterfly/source/css/_custom/about/about.css'
-@import 'https://cdn.jsdelivr.net/gh/wyblog11/661111@main/themes/butterfly/source/css/_custom/about/careers.css'
-@import 'https://cdn.jsdelivr.net/gh/wyblog11/661111@main/themes/butterfly/source/css/_custom/about/genshinimpact.css'
-@import 'https://cdn.jsdelivr.net/gh/wyblog11/661111@main/themes/butterfly/source/css/_custom/about/hello-about.css'
-@import 'https://cdn.jsdelivr.net/gh/wyblog11/661111@main/themes/butterfly/source/css/_custom/about/skills.css'
-@import 'https://cdn.jsdelivr.net/gh/wyblog11/661111@main/themes/butterfly/source/css/_custom/about/site.css'
