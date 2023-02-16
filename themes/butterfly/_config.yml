@@ -665,6 +665,8 @@ aside:
     order: -1 # Sort of order. 1, asc for ascending; -1, desc for descending
     limit: 8 # if set 0 will show all
     sort_order: # Don't modify the setting unless you know how it works
+  card_weibo:
+    enable: true
   card_webinfo:
     enable: true
     post_count: true
