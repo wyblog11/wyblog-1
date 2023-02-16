@@ -248,7 +248,7 @@ blog_title_font:
 
 # 主页卡片样式
 # Docs: https://akilar.top/posts/d6b69c49/
-index_card_style: multicard # slidecard | multicard
+index_card_style: slidecard # slidecard | multicard
 
 
 # Display the article introduction on homepage
