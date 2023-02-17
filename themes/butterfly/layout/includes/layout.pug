@@ -56,8 +56,9 @@ html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside
   .option
     i.fas.fa-music
     .blokbottom
-    .text.aplayertext
-       script.
+    .text.aplayertext  
+      .strip
+        script.
           const ap = new APlayer({
             container: document.getElementById('aplayer'),
             fixed: false,
@@ -74,5 +75,4 @@ html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside
               }
             ]
           });  
-      .strip
       #aplayer.aplayer.no-destroy(mutex='true', listfolded='true', data-id='6609736315', data-preload="none" , data-server='netease', data-volume='0.25', data-order='random', data-type='playlist', data-fixed='true', data-autoplay='false')
