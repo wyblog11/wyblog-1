@@ -32,6 +32,7 @@ swiper:
 
 inject:
   head:
+     - <script async src="/js/console.js"></script>
      - <link rel="stylesheet" href="/css/home.css">
      - <link rel="stylesheet" href="/css/nav.css">
      - <link rel="stylesheet" href="/css/cat.css">
