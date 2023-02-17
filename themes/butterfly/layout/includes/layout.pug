@@ -7,9 +7,9 @@ doctype html
 html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside)
   head
     include ./head.pug
-  body
     if theme.preloader
-      !=partial('includes/loading/loading', {}, {cache: true})
+      !=partial('includes/loading/loading', {}, {cache: true})    
+  body
 
     if theme.background
       #web_bg
