@@ -45,6 +45,7 @@ inject:
      - <script async src="//at.alicdn.com/t/c/font_3895868_7yxmkxsu9a.js"></script> 
      - <script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
   bottom:   
+     - <script type="text/javascript" src="/js/rightmenu.js"></script>
      - <link rel="stylesheet" href="/css/custom/custom.css">
      - <script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script>
      - <script async data-pjax src="/js/txmap.js"></script>
