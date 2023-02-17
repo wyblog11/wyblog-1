@@ -45,6 +45,7 @@ html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside
 
     include ./rightside.pug
     !=partial('includes/third-party/search/index', {}, {cache: true})
+    !=partial('includes/rightmenu',{}, {cache:true})
     include ./additional-js.pug
 //- 上面的是本来就有的，对齐上面的缩进，加上下面的内容
 .contact-info
