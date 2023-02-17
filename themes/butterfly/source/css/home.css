@@ -76,12 +76,11 @@
 }
 #site-name{
     position: relative;
-    font-size: 30px; /*一定要把字体调大点，否则效果惨不忍睹！*/
+    font-size: 24px; /*一定要把字体调大点，否则效果惨不忍睹！*/
 }
 :root{
-    --lyx-theme:#3D5AFE /*我的主题色*/
+    --lyx-theme:#ed709b /*我的主题色*/
 }
-
 .nav-fixed #nav{
     transform: translateY(58px)!important;
     -webkit-transform: translateY(58px)!important;
@@ -96,4 +95,3 @@
     -ms-transition: none!important;
     -o-transition: none!important;
 }
-
