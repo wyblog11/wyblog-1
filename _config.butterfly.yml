@@ -72,9 +72,9 @@ categoryBar:
   custom_css: https://npm.elemecdn.com/hexo-butterfly-categories-card@1.0.0/lib/categorybar.css
 
 # The banner image of home page
-index_img: https://source.fomal.cc/img/home_bg.webp
+index_img: false
 # Footer Background
-footer_bg: https://source.fomal.cc/img/home_bg.webp
+footer_bg: false
 
 background: url(https://source.fomal.cc/img/home_bg.webp)
 
@@ -248,7 +248,7 @@ blog_title_font:
 
 # 主页卡片样式
 # Docs: https://akilar.top/posts/d6b69c49/
-index_card_style: slidecard # slidecard | multicard
+index_card_style: multicard # slidecard | multicard
 
 
 # Display the article introduction on homepage
