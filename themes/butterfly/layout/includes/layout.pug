@@ -47,16 +47,3 @@ html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside
     !=partial('includes/third-party/search/index', {}, {cache: true})
      !=partial('includes/rightmenu',{}, {cache:true})
     include ./additional-js.pug
-//- 上面的是本来就有的，对齐上面的缩进，加上下面的内容
-.contact-info
-  .option
-    i.fas.fa-rocket
-    .bloktop
-    .text 还不造有啥用滴悬浮模块
-      .strip
-  .option
-    i.fas.fa-music
-    .blokbottom
-    .text.aplayertext
-      .strip
-      aplayer.aplayer.no-destroy(mutex='true', listfolded='true', data-id='6609736315', data-preload="none" , data-server='netease', data-volume='0.25', data-order='random', data-type='playlist', data-fixed='true', data-autoplay='false')
