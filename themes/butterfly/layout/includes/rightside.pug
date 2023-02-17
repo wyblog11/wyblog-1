@@ -13,7 +13,7 @@ mixin rightsideItem(array)
         if darkmode.enable && darkmode.button
           a.icon-V.hidden(onclick='switchNightMode()',  title=_p('rightside.night_mode_title'))
             svg(width='25', height='25', viewBox='0 0 1024 1024')
-              use#modeicon(xlink:href='#icon-yejing')
+              use#modeicon(xlink:href='i.fa.fa-moon')
       when 'hideAside'
         if aside.enable && aside.button && page.aside !== false
           button#hide-aside-btn(type="button" title=_p('rightside.aside'))
