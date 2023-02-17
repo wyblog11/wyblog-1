@@ -46,3 +46,33 @@ html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside
     include ./rightside.pug
     !=partial('includes/third-party/search/index', {}, {cache: true})
     include ./additional-js.pug
+//- 上面的是本来就有的，对齐上面的缩进，加上下面的内容
+.contact-info
+  .option
+    i.fas.fa-rocket
+    .bloktop
+    .text 还不造有啥用滴悬浮模块
+      .strip
+  .option
+    i.fas.fa-music
+    .blokbottom
+    .text.aplayertext
+      .strip
+      #aplayer.aplayer.no-destroy(mutex='true', listfolded='true', data-id='6609736315', data-preload="none" , data-server='netease', data-volume='0.25', data-order='random', data-type='playlist', data-fixed='true', data-autoplay='false')
+        script.
+          const ap = new APlayer({
+            container: document.getElementById('aplayer'),
+            fixed: true,
+            order: 'random',
+            preload: 'none',
+            volume: 0.25,
+            audio: [
+              {
+              name: '算你狠',
+              artist: '应嘉俐',
+              url: '/music/songs/1.mp3',
+              lrc: '/music/lrc/1.lrc',
+              cover: '/music/images/songs/1.webp'
+              }
+            ]
+          });  
