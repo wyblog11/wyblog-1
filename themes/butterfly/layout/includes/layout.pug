@@ -66,14 +66,14 @@ html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside
     .text.aplayertext
       .strip
       #aplayer.aplayer.no-destroy(mutex='true', listfolded='true', data-id='6609736315', data-preload="none" , data-server='netease', data-volume='0.25', data-order='random', data-type='playlist', data-fixed='true', data-autoplay='false')
-  script.
-    const ap = new APlayer({
-      container: document.getElementById('aplayer'),
-      fixed: true,
-      order: 'random',
-      preload: 'none',
-      volume: 0.25,
-      audio: [
+        script.
+          const ap = new APlayer({
+            container: document.getElementById('aplayer'),
+            fixed: true,
+            order: 'random',
+            preload: 'none',
+            volume: 1,
+            audio: [
         {
         name: '算你狠',
         artist: '应嘉俐',
