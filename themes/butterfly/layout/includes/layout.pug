@@ -47,3 +47,39 @@ html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside
     !=partial('includes/third-party/search/index', {}, {cache: true})
      !=partial('includes/rightmenu',{}, {cache:true})
     include ./additional-js.pug
+//- 上面的是本来就有的，对齐上面的缩进，加上下面的内容
+.contact-info
+  .option
+    i.fas.fa-rocket
+    .bloktop
+    .text 还不造有啥用滴悬浮模块
+      .strip
+  .option
+    i.fas.fa-cube
+    .blok
+    .text
+      .strip
+      <div class="post-reward"><button class="tip-button reward-button"><span class="tip-button__text">投喂</span><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a class="about-reward" href="/img/weixin.webp" target="_blank"><img class="post-qr-code-img" src="/img/weixin.webp" alt="微信"></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a class="about-reward" href="/img/alipay.webp" target="_blank"><img class="post-qr-code-img" src="/img/alipay.webp" alt="支付宝"></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></button></div>
+  .option
+    i.fas.fa-music
+    .blokbottom
+    .text.aplayertext
+      .strip
+      #aplayer.aplayer.no-destroy(mutex='true', listfolded='true', data-id='6609736315', data-preload="none" , data-server='netease', data-volume='0.25', data-order='random', data-type='playlist', data-fixed='true', data-autoplay='false')
+  script.
+    const ap = new APlayer({
+      container: document.getElementById('aplayer'),
+      fixed: true,
+      order: 'random',
+      preload: 'none',
+      volume: 0.25,
+      audio: [
+        {
+        name: '越权访问-崩坏：星穹铁道',
+        artist: 'Hanser',
+        url: '/music/songs/1.mp3',
+        lrc: '/music/lrc/1.lrc',
+        cover: '/music/images/songs/1.webp'
+        }
+      ]
+    });
