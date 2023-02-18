@@ -1,6 +1,6 @@
 menu:
    文章 || icon-xiegenjin || faa-tada　|| hide:
-    归档: /archives/ || icon-shoujianxiang　|| faa-tada
+    归档: /archives/ || icon-shoujianxiang
     分类: /categories/ || icon-shoujianxiang　|| faa-tada
     游客访问: /census/ || icon-tongji || faa-tada
    社交 || icon-shejiao || hide:
@@ -36,6 +36,7 @@ inject:
      - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_3895868_7yxmkxsu9a.css" media="defer" onload="this.media='all'">
      - <script async src="//at.alicdn.com/t/c/font_3895868_7yxmkxsu9a.js"></script> 
      - <script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
+     - <link rel="stylesheet" href="/css/custom.css">
   bottom:   
      - <script type="text/javascript" src="/js/rightmenu.js"></script>
      - <script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script>
