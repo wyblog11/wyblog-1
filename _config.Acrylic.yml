@@ -65,8 +65,6 @@ index_img: false
 # Footer Background
 footer_bg: false
 
-background: url(https://source.fomal.cc/img/home_bg.webp)
-
 # hexo-filter-gitcalendar
 gitcalendar:
   enable: true # 开关
