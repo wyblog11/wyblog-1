@@ -233,3 +233,8 @@ svg.icon {
   fill: currentColor;
   overflow: hidden;
 }
+
+.loading-img {
+  background: url(https://www.wyblog1.tk/media/images/custom-headerLogo.ico) no-repeat center center;
+  background-size: cover;
+}
