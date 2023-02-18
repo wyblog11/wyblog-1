@@ -883,24 +883,19 @@ hometop:
   categoryGroup:
     enable: true
     category_list:
-      - name: 必看精选
-        path: /tags/必看/
+      - name: artitalk
+        path: /categories/artitalk/
         shadow: var(--heo-shadow-blue)
         class: bikan
         icon: fas fa-dove
-      - name: 热门文章
-        path: /tags/热门/
+      - name: bbtalk
+        path: /categories/bbtalk/
         shadow: var(--heo-shadow-red)
         class: remen
         icon: fas fa-burn
-      - name: 实用教程
-        path: /tags/教程/
-        shadow: var(--heo-shadow-green)
-        class: shiyong
-        icon: fas fa-book
   topgroup:
     enable: true
-    class: both #card/post/both
+    class: card #card/post/both
     #如果为both则都填
     #如果为card
     card:
