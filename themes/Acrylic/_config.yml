@@ -2,26 +2,14 @@
 
 # Main menu navigation (導航目錄)
 # see https://butterfly.js.org/posts/4aa8abbe/#導航菜單
-menu:
-  文库:
-    文章列表: /archives/ || fas fa-box-archive
-    全部分类: /categories/ || fas fa-cube
-    全部标签: /tags/ || fas fa-tags
-    即刻短文: /essay/ || fas fa-bars-staggered
-  专栏:
-    设计报告: /tags/设计报告/ || fas fa-swatchbook
-    设计分享: /tags/Heocan/ || fas fa-object-group
-    设计工具: /tags/Sketch/ || fas fa-palette
-    视频混剪: /tags/混剪/ || fas fa-scissors
-  友链:
-    友链鱼塘: /fcircle/ || fas fa-fish-fins
-    友情链接: /link/ || fas fa-user-group
-    宝藏博主: javascript:travelling() || fas fa-bus
-  我的:
-    在线工具: /tlink/ || fas fa-screwdriver-wrench
-    电影推荐: /movies/ || fas fa-clapperboard
-    关于本站: /about/ || fas fa-sailboat
-    音乐界面: /music/ || fas fa-sailboat
+#menu:
+#  文库:
+#    文章列表: /archives/ || fas fa-box-archive
+#    全部分类: /categories/ || fas fa-cube
+#    全部标签: /tags/ || fas fa-tags
+#    即刻短文: /essay/ || fas fa-bars-staggered
+#  专栏:
+#    视频混剪: /tags/混剪/ || fas fa-scissors
 
 # Code Blocks (代碼相關)
 # --------------------------------------
