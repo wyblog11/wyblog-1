@@ -895,7 +895,22 @@ hometop:
         icon: fas fa-burn
   topgroup:
     enable: true
-    class: card #card/post/both
+    class: both #card/post/both
+    both:
+      swiper:
+        enable: true # 开关
+        priority: 5 #过滤器优先权
+        enable_page: / # 应用页面
+        timemode: date #date/updated
+        layout: # 挂载容器类型
+          type: id
+          name: recent-posts
+          index: 0
+        default_descr: 再怎么看我也不知道怎么描述它的啦！
+        swiper_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css #swiper css依赖
+        swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js #swiper js依赖
+        custom_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css # 适配主题样式补丁
+        custom_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js # swiper初始化方法
     #如果为both则都填
     #如果为card
     card:
