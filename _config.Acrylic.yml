@@ -30,6 +30,7 @@ swiper:
   custom_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css # 适配主题样式补丁
   custom_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js # swiper初始化方法
 
+
 inject:
   head:
      - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css"  media="defer" onload="this.media='all'">
@@ -37,6 +38,9 @@ inject:
      - <script async src="//at.alicdn.com/t/c/font_3895868_7yxmkxsu9a.js"></script> 
      - <script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
      - <link rel="stylesheet" href="/css/custom.css">
+     - <link rel="stylesheet" href="/css/swiperstyle.css" media="print" onload="this.media='all'">
+     - <link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-swiper-anzhiyu-pro/lib/swiper.min.css" media="print" onload="this.media='all'">
+     - <link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-swiper-anzhiyu-pro/lib/categoryGroup.css" media="print" onload="this.media='all'">
   bottom:   
      - <script type="text/javascript" src="/js/rightmenu.js"></script>
      - <script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script>
