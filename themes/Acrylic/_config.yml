@@ -895,8 +895,10 @@ hometop:
         icon: fas fa-burn
   topgroup:
     enable: true
-    class: both #card/post/both
-    both:
+    class: card #card/post/both
+    #如果为both则都填
+    #如果为card
+    card:
       swiper:
         enable: true # 开关
         priority: 5 #过滤器优先权
@@ -911,15 +913,22 @@ hometop:
         swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js #swiper js依赖
         custom_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css # 适配主题样式补丁
         custom_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js # swiper初始化方法
-    #如果为both则都填
-    #如果为card
-    card:
-      tips: 新品推荐
-      title: 让亚克力化作效率工具
-      bg: http://photoimage.2lc.top/LightPicture/2023/02/22c99eaf9576e7e5.png
-      link: https://blog.zhheo.com/p/671f98c8.html
-      buttontext: 更多推荐
-      icon: fas fa-circle-plus
+    categoryBar:
+      enable: true # 开关
+      priority: 5 #过滤器优先权
+      enable_page: / # 应用页面
+      layout: # 挂载容器类型
+        type: id
+        name: recent-posts
+        index: 0
+      column: odd # odd：3列 | even：4列
+      row: 1 #显示行数，默认两行，超过行数切换为滚动显示
+      message:
+        - descr: bbtalk部署
+          cover: https://images.boysec.cn/cover1.webp
+        - descr: artitalk部署
+          cover: https://images.boysec.cn/cover2.webp
+    custom_css: https://npm.elemecdn.com/hexo-butterfly-categories-card@1.0.0/lib/categorybar.css    
     #如果为post
     post:
       class:
