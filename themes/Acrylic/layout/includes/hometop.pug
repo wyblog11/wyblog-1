@@ -1,80 +1,63 @@
 #home_top
   include ./ispeak.pug
-  .recent-top-post-group#recent-top-post-group
-    .recent-post-top#recent-post-top
-      if theme.hometop.banner.enable
-        #bannerGroup
-          #banners
-            if theme.hometop.banner.class == "people"
-              canvas#peoplecanvas
-                script(src="https://cdn.cbd.int/cdn/expire-1-M/gsap/3.9.1/gsap.min.js") 
-                script(src="/js/people.js") 
-            if theme.hometop.banner.class == "creativity"
-              .banners-title
-                .banners-title-big=theme.hometop.banner.title_up
-                .banners-title-big=theme.hometop.banner.title_dn
-                .banners-title-small=theme.hometop.banner.tips
-              .tags-group-all
+  .swiper_container_card(style='height: auto;width: 100%')
+    #bannerGroup
+      #random
+        #random-banner
+            .banners-title
+                .banners-title-big 人间值得
+                .banners-title-big 未来可期
+                .banners-title-small wyblog1.tk
+            #skills-style-group-all
                 .tags-group-wrapper
-                   if site.data.creativity
                     each i in site.data.creativity
-                      - const evenNum = i.creativity_list.filter((x, index) => index % 2 === 0);
-                      - const oddNum = i.creativity_list.filter((x, index) => index % 2 === 1);
-                      each item, index in i.creativity_list
-                        if ((index+1 <= evenNum.length) && (index+1 <= oddNum.length))
-                          .tags-group-icon-pair
-                            .tags-group-icon(style=`background: ${evenNum[index].color}`)
-                              img.no-lightbox(title=evenNum[index].name, src=evenNum[index].icon)
-                            .tags-group-icon(style=`background: ${oddNum[index].color}`)
-                              img.no-lightbox(title=oddNum[index].name, src=oddNum[index].icon)
-            a#banner-hover(onclick='toRandomPost()', data-pjax-state)
-              span.bannerText 随便逛逛
-              i.fas.fa-arrow-right.banner-righticon
-          if theme.hometop.categoryGroup.enable
-            .categoryGroup
-              each item in theme.hometop.categoryGroup.category_list
+                        - const evenNum = i.creativity_list.filter((x, index) => index % 2 === 0);
+                        - const oddNum = i.creativity_list.filter((x, index) => index % 2 === 1);
+                        each item, index in i.creativity_list
+                            if ((index+1 <= evenNum.length) && (index+1 <= oddNum.length))
+                                .tags-group-icon-pair
+                                    .tags-group-icon(style=`background: ${evenNum[index].color}`)
+                                        img.no-lightbox(title=evenNum[index].name, src=evenNum[index].icon)
+                                    .tags-group-icon(style=`background: ${oddNum[index].color}`)
+                                        img.no-lightbox(title=oddNum[index].name, src=oddNum[index].icon)
+            a#random-hover(style='width:100%;height:auto;', href='javascript:toRandomPost()', rel='external nofollow noreferrer', one-link-mark='yes')
+                i.fa.fa-paper-plane(style='margin-left:10px')
+                div(style='margin-left:10px') 随便逛逛
+                    i.fa-solid.fa-arrow-right(style='margin-left:10px')
+      .categoryGroup
+        each i in site.data.hometop
+            each item, index in i.category
                 .categoryItem(style=`box-shadow:${item.shadow}`)
-                  a.categoryButton(onclick=`pjax.loadUrl("${item.path}");` href='javascript:void(0);' class=`${item.class}`)
-                    span.categoryButtonText=item.name
-                    i(class=`${item.icon}`)
-      if theme.hometop.topgroup.enable
+                    a.categoryButton(onclick=`pjax.loadUrl("${item.path}");` href='javascript:void(0);' class=`${item.class}`)
+                        span.categoryButtonText=item.name
+                        i(class=`${item.icon}`)
+    #swiper_container_blog
+        #swiper_container.blog-slider.swiper-container-fade.swiper-container-horizontal
+            .blog-slider__wrp.swiper-wrapper(style='transition-duration: 0ms;')
+                //- 文章卡片
+                each i in site.data.hometop
+                    each item, index in i.post_list
+                        .blog-slider__item.swiper-slide(style='width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;')
+                            a.blog-slider__img(onclick=`pjax.loadUrl("` + item.link + `");` href='javascript:void(0);'    title=item.title)
+                                img(width='48' height='48'  src=item.cover alt='图片' onerror=`this.src=` + error_img + `; this.onerror = null;`)
+                            .blog-slider__content
+                                span.blog-slider__code= item.date
+                                a.blog-slider__title(onclick=`pjax.loadUrl("` + item.link+ `");` href='javascript:void(0);'   alt='')= item.title
+                                .blog-slider__text= item.description ? item.description : default_descr
+                                a.blog-slider__button(onclick=`pjax.loadUrl("` + item.link + `");` href='javascript:void(0);'    alt='') 详情       
+            //- 轮播图组件
+            .blog-slider__pagination.swiper-pagination-clickable.swiper-pagination-bullets 
         .topGroup
-          if theme.hometop.topgroup.class == "card"
-            .todayCard#todayCard(style='z-index: 1;')
-              .todayCard-info
-                .todayCard-tips=theme.hometop.topgroup.card.tips
-                .todayCard-title=theme.hometop.topgroup.card.title
-              .todayCard-cover(style=`background: url(\'${theme.hometop.topgroup.card.bg}\') no-repeat center /cover`)
-              .banner-button-group
-                a.banner-button(href=`${theme.hometop.topgroup.card.link}`, data-pjax-state='external')
-                  i(class=`${theme.hometop.topgroup.card.icon}`)
-                  span.banner-button-text=theme.hometop.topgroup.card.buttontext
-          if site.data.slider
-            if theme.hometop.topgroup.class == "post"
-              each item in site.data.slider
-                .recent-post-item
-                  .post_cover.left_radius
-                    a(href=`${item.link}`, title=`${item.title}`, data-pjax-state)
-                      span.recent-post-top-text(onclick=`pjax.loadUrl("` + item.link + `");`) 荐 
-                      img.post_bg.entered.loaded(data-lazy-src=`${item.cover}`, onerror='this.onerror=null;this.src=\'https://img2.acozycotage.net/i/2023/02/11/pqqw2r-4.webp\'', alt=`${item.title}`, data-ll-status='loaded', src=`${item.title}`)
-                  .recent-post-info(onclick=`pjax.loadUrl("` + item.link + `");`)
-                    a.article-title(href=`${item.link}`, title=`${item.title}`, data-pjax-state)=item.title
-            if theme.hometop.topgroup.class == "both"
-              each item in site.data.slider
-                .recent-post-item
-                  .post_cover.left_radius
-                    a(href=`${item.link}`, title=`${item.title}`, data-pjax-state)
-                      span.recent-post-top-text(onclick=`pjax.loadUrl("` + item.link + `");`) 荐 
-                      img.post_bg.entered.loaded(data-lazy-src=`${item.cover}`, onerror='this.onerror=null;this.src=\'https://img2.acozycotage.net/i/2023/02/11/pqqw2r-4.webp\'', alt=`${item.title}`, data-ll-status='loaded', src=`${item.title}`)
-                  .recent-post-info(onclick=`pjax.loadUrl("` + item.link + `");`)
-                    a.article-title(href=`${item.link}`, title=`${item.title}`, data-pjax-state)=item.title
-
-            .todayCard#todayCard(onclick=`window.open(\'${theme.hometop.topgroup.card.link}\')`, style='z-index: 1;')
-              .todayCard-info
-                .todayCard-tips=theme.hometop.topgroup.card.tips
-                .todayCard-title=theme.hometop.topgroup.card.title
-              .todayCard-cover(style=`background: url(\'${theme.hometop.topgroup.card.bg}\') no-repeat center /cover`)
-              .banner-button-group
-                a.banner-button(onclick=`window.event.cancelBubble=true;heo.hideTodayCard();`, data-pjax-state='external')
-                  i(class=`${theme.hometop.topgroup.card.icon}`)
-                  span.banner-button-text=theme.hometop.topgroup.card.buttontext
+            each i in site.data.hometop
+                each item, index in i.post_list
+                    if index < 4
+                        .top-group-list-item
+                            .post_cover.left_radius
+                                a(onclick=`pjax.loadUrl("` + item.link + `");` href='javascript:void(0);' alt='', title=item.title, data-pjax-state=true)
+                                    span.top-group-text 荐
+                                    img.post_bg(alt=item.title, src=item.cover, onerror=`this.src=` + error_img + `; this.onerror = null;`)
+                            .top-group-info
+                                a.article-title(onclick=`pjax.loadUrl("` + item.link + `");` href='javascript:void(0);'    alt='', title=item.title, data-pjax-state)=item.title
+            .top-group-list-none
+            .top-group-list-none
+            .top-group-list-none
