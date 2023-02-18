@@ -14,10 +14,6 @@ menu:
     artitalk: /artitalk/ || iconfont icon-shejiao || faa-tada
     bbtalk: /bbtalk/ || iconfont icon-shejiao || faa-tada
 
-# 主页卡片样式
-# Docs: https://akilar.top/posts/d6b69c49/
-index_card_style: multicard # slidecard | multicard
-
 inject:
   head:
      - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css"  media="defer" onload="this.media='all'">
@@ -228,7 +224,7 @@ swiper:
   timemode: date #date/updated
   layout: # 挂载容器类型
     type: id
-    name: recent-posts
+    name: home_top
     index: 0
   default_descr: 再怎么看我也不知道怎么描述它的啦！
   swiper_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css #swiper css依赖
@@ -244,7 +240,7 @@ categoryBar:
   enable_page: / # 应用页面
   layout: # 挂载容器类型
     type: id
-    name: recent-posts
+    name: home_top
     index: 0
   column: odd # odd：3列 | even：4列
   row: 1 #显示行数，默认两行，超过行数切换为滚动显示
