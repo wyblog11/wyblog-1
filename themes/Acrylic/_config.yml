@@ -895,7 +895,7 @@ hometop:
         icon: fas fa-burn
   topgroup:
     enable: true
-    class: both #card/post/both
+    class: card #card/post/both
     #如果为both则都填
     #如果为card
     card:
