@@ -1,7 +1,7 @@
 #bbTimeList.bbTimeList.container
-    i.bber-logo.iconfont.icon-bblogo(onclick='pjax.loadUrl("/essay/")' title='即刻短文' style='font-size: 2rem;')
+    i.bber-logo.iconfont.icon-bblogo(onclick='pjax.loadUrl("/ispeak/")' title='即刻短文' style='font-size: 2rem;')
     #bbtalk.swiper-container.swiper-no-swiping.essay_bar_swiper_container(tabindex="-1")
-      #bber-talk.swiper-wrapper(onclick=`pjax.loadUrl("/essay/")`)
+      #bber-talk.swiper-wrapper(onclick=`pjax.loadUrl("/ispeak/")`)
         if site.data.essay
           each i in site.data.essay
             each item, index in i.essay_list
