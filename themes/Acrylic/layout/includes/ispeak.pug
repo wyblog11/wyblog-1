@@ -1,0 +1,10 @@
+#bbTimeList.bbTimeList.container(onclick=`window.open('/ispeak/','_self')`)
+    bblogo(onclick="location='/ispeak/'",title="即刻短文",style="font-size: 2rem;")
+    #bbtalk.swiper-container
+        #bber-talk.swiper-wrapper
+    i.bber-gotobb.fas.fa-arrow-circle-right(onclick="location='/ispeak/'",title="查看全文")
+.js-pjax
+    script.
+        var let jsonUrl = "https://kkapi.wyblog1.tk/api/ispeak?author=63c28a71aa610fa0dc9b6f1a&page=1&pageSize=10"
+    script(src='https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js',data-pjax='')
+    script(src='https://cdn.jsdelivr.net/npm/js-heo@1.0.11/bb/showbb_in_index.js',data-pjax='',defer='')
