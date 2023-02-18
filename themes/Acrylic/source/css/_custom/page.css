@@ -379,7 +379,7 @@ span.tags-punctuation {
   border-radius: 12px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
   .article-sort-item-info a {
     white-space: inherit !important;
   }
