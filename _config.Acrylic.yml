@@ -1,16 +1,16 @@
 menu:
-   文章 || hide:
+   文章 || icon-xiegenjin || faa-tada　|| hide:
     归档: /archives/ || iconfont icon-shoujianxiang
     分类: /categories/ || iconfont icon-shoujianxiang　|| faa-tada
     游客访问: /census/ || iconfont icon-tongji || faa-tada
-   社交 || hide:
+   社交 || icon-shejiao || hide:
     友链: /links/ || iconfont icon-pengyou || faa-tada
     友圈: /friends/ || iconfont icon-iconfontzhizuobiaozhunbduan36　|| faa-tada
     短文: /ispeak/ || iconfont icon-xiegenjin　|| faa-tada
     关于: /about/ || iconfont icon-geren || faa-tada
-   小功能 || hide: 
+   小功能 || icon-gengduo || hide:  
     报纸: https://news.wyblog1.tk/ || iconfont icon-xinwen || faa-tada
-   更多 || hide:
+   更多 || icon-gengduo || hide:
     artitalk: /artitalk/ || iconfont icon-shejiao || faa-tada
     bbtalk: /bbtalk/ || iconfont icon-shejiao || faa-tada
 # hexo-butterfly-swiper
