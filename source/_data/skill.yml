@@ -1,0 +1,19 @@
+class_name: 开启创造力
+class_desc: 技能
+link_list:
+  - name: SQL
+    color: '#4d4d4d'
+    star: 4.5
+    image: /images/user/sql.png
+  - name: ECharts
+    color: 
+    star: 4.5
+    image: /images/user/echarts.png
+  - name: HTML5
+    color: '#d84925'
+    star: 4
+    image: /images/user/html5.png
+  - name: JS
+    color: '#f0c901'
+    star: 4
+    image: /images/user/js.png
