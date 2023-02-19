@@ -18,7 +18,7 @@ menu:
 index_img: false
 
 # Footer Background
-footer_bg: false
+footer_bg: true
 inject:
   head:
      - <script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script> # jQuery
