@@ -79,3 +79,6 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+butterfly_article_double_row:
+  enable: true
