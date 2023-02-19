@@ -8,6 +8,7 @@ isTop: false
 cover: https://images.boysec.cn/cover2.webp
 description: 最新bbtalk部署方式
 swiper_index: 2 #置顶轮播图顺序，非负整数，数字越大越靠前
+top_group_index: 2 #右侧磁帖顺序，需填非负整数，数字越大越靠前
 ---
 bbtalk部署方式：
 1.在leancloud国际版去注册一个应用(没有就注册一个账号)
