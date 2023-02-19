@@ -217,23 +217,6 @@ electric_clock:
   default_rectangle: false # 开启后将一直显示rectangle位置的天气，否则将获取访问者的地理位置与天气
   rectangle: 112.982279,28.19409 # 获取访问者位置失败时会显示该位置的天气，同时该位置为开启default_rectangle后的位置
 
-# hexo-butterfly-swiper
-# see https://akilar.top/posts/8e1264d1/
-swiper:
-  enable: true # 开关
-  priority: 5 #过滤器优先权
-  enable_page: / # 应用页面
-  timemode: date #date/updated
-  layout: # 挂载容器类型
-    type: id
-    name: recent-posts
-    index: 0
-  default_descr: 再怎么看我也不知道怎么描述它的啦！
-  swiper_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css #swiper css依赖
-  swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js #swiper js依赖
-  custom_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css # 适配主题样式补丁
-  custom_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js # swiper初始化方法
-
 # hexo-butterfly-categories-card
 # see https://akilar.top/posts/a9131002/
 categoryBar:
@@ -252,3 +235,38 @@ categoryBar:
     - descr: artitalk部署
       cover: https://images.boysec.cn/cover2.webp
   custom_css: https://npm.elemecdn.com/hexo-butterfly-categories-card@1.0.0/lib/categorybar.css
+swiper:
+    enable: true # 开关
+    randomenable: true # 创造力开关
+    priority: 5 #过滤器优先权
+    enable_page: / # 应用页面
+    timemode: date #date/updated
+    layout: # 挂载容器类型
+      type: id
+      name: home_top
+      index: 1
+    category:
+      - name: 前端
+        path: /categories/前端/
+        shadow: var(--marcus-shadow-blue)
+        class: blue
+        icon: fas fa-dove
+      - name: 中学
+        path: /categories/中学/
+        shadow: var(--marcus-shadow-red)
+        class: red
+        icon: fas fa-burn
+      - name: 生活
+        path: /categories/生活/
+        shadow: var(--marcus-shadow-green)
+        class: green
+        icon: fas fa-book
+    above_title: 人间值得
+    below_title: 未来可期
+    subtitle: BLOG.MARCUS233.TOP
+    default_descr: 再怎么看我也不知道怎么描述它的啦！
+    swiper_css: https://cdn1.tianli0.top/npm/hexo-butterfly-swiper-marcus/lib/swiper.min.css #swiper css依赖
+    swiper_js: https://cdn1.tianli0.top/npm/hexo-butterfly-swiper-marcus/lib/swiper.min.js #swiper js依赖 #swiper js依赖
+    custom_css: https://cdn1.tianli0.top/npm/hexo-butterfly-swiper-marcus/lib/swiperstyle.min.css # 适配主题样式补丁
+    custom_js: https://cdn1.tianli0.top/npm/hexo-butterfly-swiper-marcus/lib/swiper_init.min.js # swiper初始化方法
+    categorygroup_css: https://cdn1.tianli0.top/npm/hexo-butterfly-swiper-marcus/lib/categoryGroup.min.css
