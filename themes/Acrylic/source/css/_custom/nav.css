@@ -43,15 +43,12 @@
 /* #menus > div.menus_items > div:nth-child(1) > ul{
   right: -200px!important;
 }
-
 #menus > div.menus_items > div:nth-child(2) > ul{
   right: -250px!important;
 }
-
 #menus > div.menus_items > div:nth-child(3) > ul{
   right: -140px!important;
 }
-
 #menus > div.menus_items > div:nth-child(4) > ul{
   right: -200px!important;
 } */
@@ -82,7 +79,7 @@
 }
 
 #page-header #nav #nav-group {
-    max-width: 1400px;
+    max-width: 1900px;
     width: 100%;
     display: flex;
     position: relative;
