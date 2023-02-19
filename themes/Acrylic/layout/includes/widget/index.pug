@@ -7,7 +7,6 @@
       .sticky_layout
         include ./card_post_toc.pug
     else
-      !=partial('includes/widget/card_author', {}, {cache: true})
       !=partial('includes/widget/card_weixin', {}, {cache: true})
       !=partial('includes/widget/card_announcement', {}, {cache: true})
       !=partial('includes/widget/card_top_self', {}, {cache: true})
@@ -19,7 +18,6 @@
         !=partial('includes/widget/card_ad', {}, {cache: true})
   else
     //- page
-    !=partial('includes/widget/card_weibo', {}, {cache: true})
     !=partial('includes/widget/card_author', {}, {cache: true})
     !=partial('includes/widget/card_weixin', {}, {cache: true})
     !=partial('includes/widget/card_announcement', {}, {cache: true})
@@ -32,3 +30,5 @@
         !=partial('includes/widget/card_tags', {}, {cache: true})
         hr
         !=partial('includes/widget/card_webinfo', {}, {cache: true})
+        !=partial('includes/widget/card_author', {}, {cache: true})
+        !=partial('includes/widget/card_weibo', {}, {cache: true})
