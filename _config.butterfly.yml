@@ -14,6 +14,12 @@ menu:
     artitalk: /artitalk/ || icon-shejiao || faa-tada
     bbtalk: /bbtalk/ || icon-shejiao || faa-tada
 
+# The banner image of home page
+index_img: 
+
+# Footer Background
+footer_bg: false
+background: url(https://source.fomal.cc/img/home_bg.webp)
 inject:
   head:
      - <script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script> # jQuery
