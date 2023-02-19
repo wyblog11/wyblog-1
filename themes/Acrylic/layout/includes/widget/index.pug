@@ -14,10 +14,12 @@
       .sticky_layout
         if showToc
           include ./card_post_toc.pug
+        !=partial('includes/widget/card_weibo', {}, {cache: true})  
         !=partial('includes/widget/card_recent_post', {}, {cache: true})
         !=partial('includes/widget/card_ad', {}, {cache: true})
   else
     //- page
+    !=partial('includes/widget/card_weibo', {}, {cache: true})
     !=partial('includes/widget/card_author', {}, {cache: true})
     !=partial('includes/widget/card_weixin', {}, {cache: true})
     !=partial('includes/widget/card_announcement', {}, {cache: true})
