@@ -8,7 +8,6 @@
   "dependencies": {
     "hexo": "^5.4.0",
     "hexo-butterfly-article-double-row" :"^1.0.2",
-    "hexo-butterfly-swiper-marcus": "^1.2.1",
     "hexo-butterfly-clock-anzhiyu": "^1.1.8",
     "hexo-generator-search": "^2.4.3",
     "hexo-butterfly-wowjs": "^1.0.5",
