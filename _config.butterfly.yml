@@ -236,3 +236,12 @@ categoryBar:
     - descr: artitalk部署
       cover: https://images.boysec.cn/cover2.webp
   custom_css: https://npm.elemecdn.com/hexo-butterfly-categories-card@1.0.0/lib/categorybar.css
+
+top:
+  enable: true # 开关
+  priority: 5 #过滤器优先权
+  enable_page: / # 应用页面
+  layout: # 挂载容器类型
+    type: id
+    name: home_top
+    index: 1
