@@ -2,8 +2,8 @@ extends includes/layout.pug
 
 block content
   include ./includes/mixins/post-ui.pug
+  include includes/top/top.pug
   #recent-posts.recent-posts
-    include includes/top/top.pug
     include includes/categoryBar.pug
     +postUI
     include includes/pagination.pug
