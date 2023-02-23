@@ -241,7 +241,7 @@ swiper:
     timemode: date #date/updated
     layout: # 挂载容器类型
       type: id
-      name: recent-posts
+      name: home_top
       index: 1
     category:
       - name: bbtalk部署
