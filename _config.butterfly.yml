@@ -222,8 +222,8 @@ categoryBar:
   enable_page: / # 应用页面
   layout: # 挂载容器类型
     type: id
-    name: home
-    index: 0
+    name: recent-posts
+    index: 2
   column: odd # odd：3列 | even：4列
   row: 1 #显示行数，默认两行，超过行数切换为滚动显示
   message:
@@ -241,7 +241,7 @@ swiper:
     timemode: date #date/updated
     layout: # 挂载容器类型
       type: id
-      name: home_top
+      name: recent-posts
       index: 1
     category:
       - name: bbtalk部署
