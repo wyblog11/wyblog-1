@@ -4,11 +4,11 @@
   margin: auto;
 }
 .layout.hide-aside{ 
-    max-width: 2000px; 
+    max-width: 1300px; 
 }
 /* 全局宽度 */
 .layout {
-  max-width: 1400px;
+  max-width: 1300px;
 }
 
 /* 侧边卡片栏宽度 */
