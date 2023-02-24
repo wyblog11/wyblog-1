@@ -11,13 +11,13 @@
 }
 /* 这里的2是代表导航栏的第2个元素，即有子菜单的元素，可以按自己需求修改 */
 .menus_items .menus_item:nth-child(2) .menus_item_child {
-  left: -125px;
+  left: -65px;
 }
 
 #home_top {
   margin: 1rem auto 0;
   padding: 0px 15px;
-  max-width: 1170px;
+  max-width: 1200px;
   width: 100%;
 }
 
@@ -31,11 +31,17 @@
     max-width: 1400px; 
 }
 
+/* 全局宽度 */
+.layout {
+  max-width: 1400px;
+}
+
 /* 侧边卡片栏宽度 */
 .aside-content {
   max-width: 318px;
   min-width: 300px;
 }
+
 /* 平板尺寸自适应(不启用侧边栏宽度限制) */
 @media screen and (max-width: 900px) {
   .aside-content {
