@@ -16,10 +16,6 @@
 .layout.hide-aside{ 
     max-width: 1400px; 
 }
-/* 全局宽度 */
-.layout {
-  max-width: 2000px;
-}
 
 /* 侧边卡片栏宽度 */
 .aside-content {
