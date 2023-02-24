@@ -15,7 +15,7 @@ menu:
     bbtalk: /bbtalk/ || icon-shejiao || faa-tada
 
 # The banner image of home page
-index_img: https://source.fomal.cc/img/home_bg.webp
+index_img: false
 
 # Footer Background
 footer_bg: false
