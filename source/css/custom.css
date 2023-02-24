@@ -1,3 +1,13 @@
+#nav .menus_items {
+    position: absolute;
+    width: fit-content;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#nav .menus_items .menus_item:hover .menus_item_child{
+  display: flex;
+}
+
 /* 翻页按钮居中 */
 #pagination {
   width: 100%;
