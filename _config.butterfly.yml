@@ -299,7 +299,7 @@ footer_beautify:
         class: in
   footer_logo:
     enable: true
-    url: https://www.wyblog1.tk/media/images/custom-headerLogo.ico
+    url: https://img01.anzhiy.cn/useruploads/8/2022/12/15/639adf5b8806a.png
   footer_group:
     enable: true
     footer_group_link:
