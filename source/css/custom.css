@@ -8,6 +8,13 @@
   display: flex !important;
 }
 
+#home_top {
+  margin: 1rem auto 0;
+  padding: 0px 15px;
+  max-width: 1170px;
+  width: 100%;
+}
+
 /* 翻页按钮居中 */
 #pagination {
   width: 100%;
