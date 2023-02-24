@@ -39,12 +39,8 @@ html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside
         else
           - var footer_bg = ''
 
-        footer#footer(style=footer_bg)
+         footer#footer(style=footer_bg)
           !=partial('includes/footer', {}, {cache: true})
 
     else
       include ./404.pug
-
-    include ./rightside.pug
-    !=partial('includes/third-party/search/index', {}, {cache: true})
-    include ./additional-js.pug
