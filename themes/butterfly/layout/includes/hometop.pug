@@ -40,7 +40,6 @@
                 .blog-slider__text= item.description ? item.description : default_descr
                 a.blog-slider__button(onclick=`pjax.loadUrl("` + item.path + `");` href='javascript:void(0);'    alt='') 详情       
         else
-          each item in swiper_list
             .blog-slider__item.swiper-slide(style='width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;')
               a.blog-slider__img(href=item.path title=item.title)
                 img(width='48' height='48'  src=item.cover onerror=`this.src=` + error_img + `; this.onerror = null;` alt='图片')
