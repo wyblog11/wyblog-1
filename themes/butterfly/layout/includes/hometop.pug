@@ -56,14 +56,4 @@
           .top-group-list-none
           .top-group-list-none
           .top-group-list-none
-    else
-      #topGroup
-        .topGroup
-          each item in top_group_list
-            .top-group-list-item
-              .post_cover.left_radius
-                a(href=item.path, title=item.title)
-                  span.top-group-text 荐
-                  img.post_bg(alt=item.title, src=item.cover, onerror=`this.src=` + error_img + `; this.onerror = null;`)
-              .top-group-info
-                a.article-title(href=item.path, alt='', title=item.title)=item.title
+          
