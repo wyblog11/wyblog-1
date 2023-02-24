@@ -1,18 +1,18 @@
 menu:
-   文章 || icon-xiegenjin || faa-tada:
-    归档: /archives/ || icon-shoujianxiang
-    分类: /categories/ || icon-shoujianxiang　|| faa-tada
-    游客访问: /census/ || icon-tongji || faa-tada
-   社交 || icon-shejiao || faa-tada:
-    友链: /links/ || icon-pengyou || faa-tada
-    友圈: /friends/ || icon-iconfontzhizuobiaozhunbduan36　|| faa-tada
-    短文: /ispeak/ || icon-xiegenjin　|| faa-tada
-    关于: /about/ || icon-geren || faa-tada
-   小功能 || icon-gengduo || faa-tada:  
-    报纸: https://news.wyblog1.tk/ || icon-xinwen || faa-tada
-   更多 || icon-gengduo || faa-tada:
-    artitalk: /artitalk/ || icon-shejiao || faa-tada
-    bbtalk: /bbtalk/ || icon-shejiao || faa-tada
+   文章 || iconfont icon-xiegenjin || faa-tada:
+    归档: /archives/ || iconfont icon-shoujianxiang
+    分类: /categories/ || iconfont icon-shoujianxiang　|| faa-tada
+    游客访问: /census/ || iconfont icon-tongji || faa-tada
+   社交 || iconfont icon-shejiao || faa-tada:
+    友链: /links/ || iconfont icon-pengyou || faa-tada
+    友圈: /friends/ || iconfont icon-iconfontzhizuobiaozhunbduan36　|| faa-tada
+    短文: /ispeak/ || iconfont icon-xiegenjin　|| faa-tada
+    关于: /about/ || iconfont icon-geren || faa-tada
+   小功能 || iconfont icon-gengduo || faa-tada:  
+    报纸: https://news.wyblog1.tk/ || iconfont icon-xinwen || faa-tada
+   更多 || iconfont icon-gengduo || faa-tada:
+    artitalk: /artitalk/ || iconfont icon-shejiao || faa-tada
+    bbtalk: /bbtalk/ || iconfont icon-shejiao || faa-tada
 
 # The banner image of home page
 index_img: false
