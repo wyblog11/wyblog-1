@@ -346,7 +346,7 @@ swiper:
   timemode: date #date/updated
   layout: # 挂载容器类型
     type: id
-    name: recent-posts
+    name: home_top
     index: 1
   default_descr: 再怎么看我也不知道怎么描述它的啦！
   swiper_css: https://cdn.cbd.int/hexo-butterfly-swiper-anzhiyu@1.0.4/lib/swiper.min.css #swiper css依赖
