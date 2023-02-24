@@ -233,37 +233,36 @@ categoryBar:
   custom_css: https://npm.elemecdn.com/hexo-butterfly-categories-card@1.0.0/lib/categorybar.css
 
 #hexo-butterfly-footer-marcus
-  swiper:
-    enable: true # 开关
-    randomenable: true # 人潮汹涌开关
-    priority: 5 #过滤器优先权
-    enable_page: / # 应用页面
-    timemode: date #date/updated
-    layout: # 挂载容器类型
-      type: id
-      name: home_top
-      index: 1
-    tag:
-      - name: 必看精选
-        path: /tags/必看/
-        shadow: var(--ihao-shadow-blue)
-        class: blue
-        icon: fas fa-dove
-      - name: 热门文章
-        path: /tags/热门/
-        shadow: var(--ihao-shadow-red)
-        class: red
-        icon: fas fa-burn
-      - name: 实用教程
-        path: /tags/教程/
-        shadow: var(--ihao-shadow-green)
-        class: green
-        icon: fas fa-book
-    default_descr: 再怎么看我也不知道怎么描述它的啦！
-    swiper_css: https://cdn.cbd.int/hexo-butterfly-swiper-ihao/lib/swiper.min.css #swiper css依赖
-    swiper_js: https://npm.elemecdn.com/ihao-blog@1.0.0/js/swiper.min.js #swiper js依赖 #swiper js依赖
-    custom_css: https://cdn.cbd.int/hexo-butterfly-swiper-ihao/lib/swiperstyle.css # 适配主题样式补丁
-    custom_js: https://cdn.cbd.int/hexo-butterfly-swiper-ihao/lib/swiper_init.js # swiper初始化方法
-    gsap_js: https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/gsap/3.9.1/gsap.min.js
-    people_js: https://npm.elemecdn.com/hexo-butterfly-swiper-ihao/lib/people.min.js
-    taggroup_css: https://cdn.cbd.int/hexo-butterfly-swiper-ihao/lib/tagGroup.css
+swiper:
+  enable: true # 开关
+  randomenable: true # 人潮汹涌开关
+  priority: 5 #过滤器优先权
+  enable_page: / # 应用页面
+  layout: # 挂载容器类型
+    type: id
+    name: home_top
+    index: 1
+  tag:
+    - name: 必看精选
+      path: /tags/必看/
+      shadow: var(--ihao-shadow-blue)
+      class: blue
+      icon: fas fa-dove
+    - name: 热门文章
+      path: /tags/热门/
+      shadow: var(--ihao-shadow-red)
+      class: red
+      icon: fas fa-burn
+    - name: 实用教程
+      path: /tags/教程/
+      shadow: var(--ihao-shadow-green)
+      class: green
+      icon: fas fa-book
+  default_descr: 再怎么看我也不知道怎么描述它的啦！
+  swiper_css: https://cdn.cbd.int/hexo-butterfly-swiper-ihao/lib/swiper.min.css #swiper css依赖
+  swiper_js: https://npm.elemecdn.com/ihao-blog@1.0.0/js/swiper.min.js #swiper js依赖 #swiper js依赖
+  custom_css: https://cdn.cbd.int/hexo-butterfly-swiper-ihao/lib/swiperstyle.css # 适配主题样式补丁
+  custom_js: https://cdn.cbd.int/hexo-butterfly-swiper-ihao/lib/swiper_init.js # swiper初始化方法
+  gsap_js: https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/gsap/3.9.1/gsap.min.js
+  people_js: https://npm.elemecdn.com/hexo-butterfly-swiper-ihao/lib/people.min.js
+  taggroup_css: https://cdn.cbd.int/hexo-butterfly-swiper-ihao/lib/tagGroup.css
