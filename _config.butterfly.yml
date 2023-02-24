@@ -265,3 +265,107 @@ swiper:
     custom_js: https://cdn1.tianli0.top/npm/hexo-butterfly-swiper-marcus/lib/swiper_init.min.js # swiper初始化方法
     categorygroup_css: https://cdn1.tianli0.top/npm/hexo-butterfly-swiper-marcus/lib/categoryGroup.min.css
     people_js: https://npm.elemecdn.com/hexo-butterfly-swiper-anzhiyu@1.0.4/lib/people.min.js
+
+#hexo-butterfly-footer-marcus
+#see https://blog.marcus233.top/p/footer.html
+footer_beautify:
+  enable: true
+  priority: 5 #过滤器优先权
+  enable_page: all # 应用页面
+  layout: # 挂载容器类型
+      type: id
+      name: footer
+      index: 1
+  footer_icons:
+    enable: true
+    left:
+      - icon: fa-solid fa-envelope
+        link: mailto:3227988255@qq.top
+        desrc: 发送邮件
+        class: out
+    right:
+      - icon: fa-brands fa-github
+        link: https://github.com/wyblog11
+        desrc: Github主页
+        class: out
+      - icon: fa-brands fa-bilibili
+        link: https://space.bilibili.com/1024450661
+        desrc: 哔哩哔哩主页
+        class: out
+      - icon: fa-solid fa-comment
+        link: /message/
+        desrc: 留言
+        class: in
+  footer_logo:
+    enable: true
+    url: https://www.wyblog1.tk/media/images/custom-headerLogo.ico
+  footer_group:
+    enable: true
+    footer_group_link:
+      - group_title: 直达
+        footer_links: 
+          - text: 空间说说
+            link: /ispeak/
+            class: in
+          - text: 友链订阅
+            link: /fcircle/
+            class: in
+          - text: 切换背景
+            link: /bg/
+            class: in
+      - group_title: 关于
+        footer_links: 
+          - text: 关于我
+            link: /about/
+            class: in
+          - text: RSS订阅
+            link: /atom.xml
+            class: in
+      - group_title: 分类
+        footer_links: 
+          - text: 博客相关
+            link: /categories/博客相关
+            class: in
+          - text: 生活点滴
+            link: /categories/生活点滴
+            class: in 
+          - text: 资源分享
+            link: /categories/资源分享
+            class: in
+          - text: 学习笔记
+            link: /categories/学习笔记
+            class: in 
+          - text: 实用教程
+            link: /categories/实用教程
+            class: in 
+          - text: 查看全部
+            link: /categories/
+            class: in 
+  footer_friend_links:
+    enable: true
+    number: 5
+  footer_bottom:
+    copyright:
+      enable: true
+      author: Marcus
+      link: https://marcus233.top/
+      time: 2022
+    left:
+      - text: github
+        desrc: 本站代码托管
+        link: https://github.com/
+      - text: vercel
+        desrc: hexo代码部署
+        link: https://vercel.net/
+    right:
+      - text: Hexo
+        desrc: 框架
+        link: https://hexo.io/zh-cn/
+      - text: Butterfly
+        desrc: 主题
+        link: https://butterfly.js.org/
+    runtime:
+      enable: true
+      time: 2022/08/09 00:00:00
+  footer_css: https://cdn1.tianli0.top/npm/hexo-butterfly-footer-marcus/lib/footer.min.css
+  footer_js: https://cdn1.tianli0.top/npm/hexo-butterfly-footer-marcus/lib/footer.min.js
