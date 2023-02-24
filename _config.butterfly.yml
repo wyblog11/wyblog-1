@@ -26,6 +26,7 @@ inject:
      - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css"  media="defer" onload="this.media='all'">
      - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_3895868_7yxmkxsu9a.css" media="defer" onload="this.media='all'">
      - <script async src="//at.alicdn.com/t/c/font_3895868_7yxmkxsu9a.js"></script> 
+     - <script src="/js/weibo.js"></script>
      - <script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
      - <link rel="stylesheet" href="/css/custom.css">
   bottom: 
