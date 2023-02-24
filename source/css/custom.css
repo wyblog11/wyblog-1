@@ -14,6 +14,10 @@
   margin: auto;
 }
 
+.layout.hide-aside{ 
+    max-width: 1400px; 
+}
+
 /* 侧边卡片栏宽度 */
 .aside-content {
   max-width: 318px;
