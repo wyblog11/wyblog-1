@@ -259,21 +259,16 @@ swiper:
       name: home_top
       index: 1
     category:
-      - name: 前端
-        path: /categories/前端/
+      - name: artitalk
+        path: /categories/artitalk/
         shadow: var(--marcus-shadow-blue)
         class: blue
         icon: fas fa-dove
-      - name: 中学
-        path: /categories/中学/
+      - name: bbtalk
+        path: /categories/bbtalk/
         shadow: var(--marcus-shadow-red)
         class: red
         icon: fas fa-burn
-      - name: 生活
-        path: /categories/生活/
-        shadow: var(--marcus-shadow-green)
-        class: green
-        icon: fas fa-book
     default_descr: 再怎么看我也不知道怎么描述它的啦！
     swiper_css: https://cdn1.tianli0.top/npm/hexo-butterfly-swiper-marcus/lib/swiper.min.css #swiper css依赖
     swiper_js: https://cdn1.tianli0.top/npm/hexo-butterfly-swiper-marcus/lib/swiper.min.js #swiper js依赖 #swiper js依赖
@@ -281,7 +276,7 @@ swiper:
     custom_js: https://cdn1.tianli0.top/npm/hexo-butterfly-swiper-marcus/lib/swiper_init.min.js # swiper初始化方法
     gsap_js: https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/gsap/3.9.1/gsap.min.js
     people_js: https://npm.elemecdn.com/hexo-butterfly-swiper-ihao/lib/people.min.js
-    taggroup_css: https://cdn.cbd.int/hexo-butterfly-swiper-ihao/lib/tagGroup.css
+    categorygroup_css: https://cdn1.tianli0.top/npm/hexo-butterfly-swiper-marcus/lib/categoryGroup.min.css
 
 # Loading Animation (加载动画)
 preloader:
@@ -319,17 +314,3 @@ theme_color:
   scrollbar_color: 
   meta_theme_color_light: "ffffff"
   meta_theme_color_dark: "#0d0d0d"  
-
-# 统计图表，支持发布文章统计、发布日历、Top标签统计、分类统计、分类雷达。
-# see https://www.npmjs.com/package/hexo-butterfly-charts
-charts:
-  enable: true # 是否启用功能
-  postsChart:
-    title: 文章发布统计 # 设置文章发布统计的标题，默认为空
-    interval: 1 # 横坐标间隔
-  tagsChart:
-    title: Top 10 标签统计 # 设置标签统计的标题，默认为空
-    interval: 1 # 横坐标间隔
-  postsCalendar_Title: #文章发布日历 # 设置发布日历的标题，默认为空
-  categoriesChart_Title: # 设置分类统计的标题，默认为空
-  categoriesRadar_Title: # 设置分类雷达的标题，默认为空
