@@ -23,37 +23,37 @@ class Musics {
     constructor() {
         this.songs = [{
                 id: 1,
-                title: '越权访问-崩坏：星穹铁道 - Hanser',
-                singer: '越权访问-崩坏：星穹铁道 - Hanser',
-                songUrl: './songs/1.mp3',
-                imageUrl: './images/songs/1.webp'
+                title: '算你狠',
+                singer: '算你狠',
+                songUrl: './music/C400000BvMn00Y3zs8.mp3',
+                imageUrl: ''
             },
             {
                 id: 2,
-                title: '妄想Reality（翻自 洛天依） - 炎祾',
-                singer: '妄想Reality（翻自 洛天依） - 炎祾',
-                songUrl: './songs/2.mp3',
+                title: 'just to be in love',
+                singer: 'just to be in love',
+                songUrl: './music/C400001HoQQ20XJjpU.mp3',
                 imageUrl: './images/songs/2.webp'
             },
 			{
                 id: 3,
-                title: '人间失宠 - 昔诺',
-                singer: '人间失宠 - 昔诺',
-                songUrl: './songs/3.mp3',
+                title: '孤人',
+                singer: '孤人',
+                songUrl: './music/C400002Gq7U81GkCu4.mp3',
                 imageUrl: './images/songs/3.webp'
             },
             {
                 id: 4,
-                title: '崩坏世界的歌姬 (Movie Ver.) - 小林未郁',
-                singer: '崩坏世界的歌姬 (Movie Ver.) - 小林未郁',
-                songUrl: './songs/4.mp3',
+                title: '难却',
+                singer: '难却',
+                songUrl: './music/C4000006IqUe4exdjP.mp3',
                 imageUrl: './images/songs/4.webp'
             },
 			{
                 id: 5,
-                title: '玛德琳娜电塔 - 花玲',
-                singer: '玛德琳娜电塔 - 花玲',
-                songUrl: './songs/5.mp3',
+                title: '恋人心',
+                singer: '恋人心',
+                songUrl: './music/C4000044Y3nm2fq1ll.mp3',
                 imageUrl: './images/songs/5.webp'
             },
         ]
