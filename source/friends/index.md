@@ -3,6 +3,7 @@ title: 朋友圈
 comments: true
 aside: false
 layout: page
+top_img: false
 ---
 <div id="hexo-circle-of-friends-root"></div>
 <script>
