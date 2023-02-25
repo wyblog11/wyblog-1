@@ -1,8 +1,18 @@
 # 这里填top表示所有地方都显示，bottom表示只在非文章页面显示，如主页等等
-bottom:
+top:
   - class_name:
     id_name: weibo
     name: 微博热搜
     icon: fa-brands fa-weibo
     order: 1
     html: <link rel="stylesheet" href="/css/weibo.css"><div id="weiboContent"><img src="https://www.leonus.cn/img/loading.gif"></div><script src="/js/weibo.js"></script> # 注意这里，我放了一个加载图片，在加载之前会显示，你可以选择删除或者放一个加载图片。
+  - class_name:
+    id_name: newYear
+    name:
+    icon:
+    order: 1
+    html: '<div id="newYear-main"><div class="mask"></div>
+      <p class="title"></p>
+      <div class="newYear-time"></div>
+      <p class="today" style="text-align: right;"></p>
+      </div>'
