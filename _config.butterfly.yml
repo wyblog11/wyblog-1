@@ -276,7 +276,7 @@ swiper:
     custom_js: https://cdn1.tianli0.top/npm/hexo-butterfly-swiper-marcus/lib/swiper_init.min.js # swiper初始化方法
     gsap_js: https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/gsap/3.9.1/gsap.min.js
     people_js: https://npm.elemecdn.com/hexo-butterfly-swiper-ihao/lib/people.min.js
-    categorygroup_css: https://cdn1.tianli0.top/npm/hexo-butterfly-swiper-marcus/lib/categoryGroup.min.css
+    taggroup_css: https://cdn.cbd.int/hexo-butterfly-swiper-ihao/lib/tagGroup.css
 
 # Loading Animation (加载动画)
 preloader:
