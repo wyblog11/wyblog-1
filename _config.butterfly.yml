@@ -41,6 +41,10 @@ inject:
      - <script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
      - <link rel="stylesheet" href="/css/custom.css">
      - <link rel="stylesheet" href="/css/footer.css">
+     - <script charset="UTF-8" id="LA_COLLECT" src="https://sdk.51.la/js-sdk-pro.min.js"></script>
+     - <script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
+     - <script> LA.init({id:"{YOU ID}",ck:"{YOU CK}"})</script>
+     - <script>new LingQue.Monitor().init({id:"YOU ID",sendSuspicious:true});</script>
   bottom: 
      - <script src="/js/sun_moon.js" async></script>
      - <script defer src="https://cdn1.tianli0.top/gh/nextapps-de/winbox/dist/winbox.bundle.min.js"></script> # winbox支持
