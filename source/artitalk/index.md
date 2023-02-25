@@ -5,6 +5,7 @@ update: 2022-08-21 14:11:00
 aside: false
 comments: false
 layout: page
+top_img: false
 sidebar: 
 ---
 <script type="text/javascript" src="https://unpkg.com/artitalk"></script>
