@@ -10,3 +10,4 @@ swiper_index: 8
 top_img: false
 ---
 <script src="/js/ispeak.js"></script>
+<div id="bbcontainer"><br>········哔哔加载中········<br>（长时间未加载出来请刷新页面）<br>
