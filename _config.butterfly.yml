@@ -265,7 +265,6 @@ swiper:
         class: green
         icon: fas fa-book
     default_descr: 再怎么看我也不知道怎么描述它的啦！
-    default_descr: 再怎么看我也不知道怎么描述它的啦！
     swiper_css: https://cdn.cbd.int/hexo-butterfly-swiper-ihao/lib/swiper.min.css #swiper css依赖
     swiper_js: https://npm.elemecdn.com/ihao-blog@1.0.0/js/swiper.min.js #swiper js依赖 #swiper js依赖
     custom_css: https://cdn.cbd.int/hexo-butterfly-swiper-ihao/lib/swiperstyle.css # 适配主题样式补丁
