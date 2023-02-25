@@ -452,6 +452,7 @@ function createWinbox() {
 {% folding cyan, 查看二次元背景 %}
 <div class="bgbox">
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://sourcebucket.s3.ladydaily.com/img/home_bg.webp)" class="imgbox" onclick="changeBg('url(https\://sourcebucket.s3.ladydaily.com/img/home_bg.webp)')"></a>
+
 </div>
 {% endfolding %}
 
