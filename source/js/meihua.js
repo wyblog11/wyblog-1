@@ -449,6 +449,7 @@ function createWinbox() {
 <center><button onclick="resetBg()" style="background:var(--theme-color);display:block;width:35%;padding:15px 0;border-radius:30px;color:white;"><i class="fa-solid fa-arrows-rotate"></i>&nbsp;恢复默认背景</button></center>
 
 <h3>1. 二次元</h3>
+
 {% folding cyan, 查看二次元背景 %}
 <div class="bgbox">
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://sourcebucket.s3.ladydaily.com/img/home_bg.webp)" class="imgbox" onclick="changeBg('url(https\://sourcebucket.s3.ladydaily.com/img/home_bg.webp)')"></a>
