@@ -587,4 +587,4 @@ function toggleWinbox() {
   } else {
     createWinbox();
   };
-}
+}    
