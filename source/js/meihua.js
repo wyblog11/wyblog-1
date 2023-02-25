@@ -44,7 +44,7 @@ setFont(localStorage.getItem("font"));
 function setFont(n) {
   localStorage.setItem("font", n)
   if (n == "default") {
-    document.documentElement.style.setProperty('--global-font', '-apple-system');
+    document.documentElement.style.setProperty('--meihua-ck', '-meihua-ck');
     document.body.style.fontFamily = "-apple-system, Consolas_1, BlinkMacSystemFont, 'Segoe UI' , 'Helvetica Neue' , Lato, Roboto, 'PingFang SC' , 'Microsoft JhengHei' , 'Microsoft YaHei' , sans-serif";
   }
   else {
@@ -58,9 +58,9 @@ function setFont(n) {
 function setFontBorder() {
   var curFont = localStorage.getItem("font");
   var swfId = "swf_" + curFont;
-  document.getElementById(swfId).style.border = "2px solid var(--theme-color)";
+  document.getElementById(swfId).style.border = "2px solid var(--meihua-ck)";
   Array.prototype.forEach.call(document.getElementsByClassName("swf"), function (ee) {
-    if (ee.id != swfId) ee.style.border = "2px solid var(--border-color)";
+    if (ee.id != swfId) ee.style.border = "2px solid var(--meihua-ck)";
   });
 }
 
