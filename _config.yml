@@ -82,3 +82,11 @@ deploy:
 
 butterfly_article_double_row:
   enable: true
+
+bangumi:
+  enable: true 
+  vmid: 321638084
+  title: '生命不息，追番不止。'
+  quote: 'Where there is life, there is life.'
+  show: 1
+  loading: '/img/bangumi-loading.gif'
