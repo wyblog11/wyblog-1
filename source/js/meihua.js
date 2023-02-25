@@ -7,7 +7,7 @@ if (localStorage.getItem("reset_2") == undefined) {
     new Vue({
       data: function () {
         this.$notify({
-          title: "提示🍒",
+          title: "提示",
           message: " (｡･∀･)ﾉﾞ由于网站部分设置项更新，当前已为您重置所有设置，祝您愉快！",
           position: 'top-left',
           offset: 50,
