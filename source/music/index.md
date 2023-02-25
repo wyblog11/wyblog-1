@@ -1,6 +1,7 @@
 ---
 comments: false
 aside: false
+cover: false
 ---
 {% raw %}
 <!-- 播放器 -->
