@@ -2,6 +2,7 @@
 comments: false
 aside: false
 cover: false
+top_img: false
 ---
 {% raw %}
 <!-- 播放器 -->
