@@ -41,10 +41,6 @@ inject:
      - <script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
      - <link rel="stylesheet" href="/css/custom.css">
      - <link rel="stylesheet" href="/css/footer.css">
-     - <script charset="UTF-8" id="LA_COLLECT" src="https://sdk.51.la/js-sdk-pro.min.js"></script>
-     - <script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
-     - <script> LA.init({id:"{YOU ID}",ck:"{YOU CK}"})</script>
-     - <script>new LingQue.Monitor().init({id:"YOU ID",sendSuspicious:true});</script>
   bottom: 
      - <script src="/js/sun_moon.js" async></script>
      - <script defer src="https://cdn1.tianli0.top/gh/nextapps-de/winbox/dist/winbox.bundle.min.js"></script> # winbox支持
@@ -52,6 +48,10 @@ inject:
      - <script type="text/javascript" src="/js/rightmenu.js"></script>
      - <script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script>
      - <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js">
+     - <script charset="UTF-8" id="LA_COLLECT" src="https://sdk.51.la/js-sdk-pro.min.js"></script>
+     - <script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
+     - <script> LA.init({id:"JyPwGVBiTFkmpfwz",ck:"JyPwGVBiTFkmpfwz"})</script>
+     - <script>new LingQue.Monitor().init({id:"YOU ID",sendSuspicious:true});</script>
 wowjs:
   enable: true #控制动画开关。true是打开，false是关闭
   priority: 10 #过滤器优先级
