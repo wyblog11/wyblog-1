@@ -9,5 +9,5 @@ description: 欢迎来到无影的Speak页面，快来看看无影分享了什�
 swiper_index: 8
 top_img: false
 ---
-<script src="/js/ispeak.js"></script>
+<script async src="/js/ispeak.js"></script> 
 <div id="bbcontainer"><br>········哔哔加载中········<br>（长时间未加载出来请刷新页面）<br>
