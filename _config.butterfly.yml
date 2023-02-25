@@ -42,6 +42,7 @@ inject:
      - <link rel="stylesheet" href="/css/custom.css">
      - <link rel="stylesheet" href="/css/footer.css">
   bottom: 
+     - <script src="/js/sun_moon.js" async></script>
      - <script defer src="https://cdn1.tianli0.top/gh/nextapps-de/winbox/dist/winbox.bundle.min.js"></script> # winbox支持
      - <script defer data-pjax src="/static/js/meihua.js"></script>
      - <script type="text/javascript" src="/js/rightmenu.js"></script>
