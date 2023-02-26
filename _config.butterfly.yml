@@ -13,6 +13,8 @@ menu:
     artitalk: /artitalk/ || iconfont icon-shejiao || faa-tada
     bbtalk: /bbtalk/ || iconfont icon-shejiao || faa-tada
     音乐: /music/ || iconfont icon-yinle || faa-tada
+    木鱼: /muyu/ || iconfont icon-muyu1 || faa-tada
+
 
 # The banner image of home page
 index_img: false
