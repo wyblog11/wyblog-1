@@ -10,8 +10,7 @@ swiper_index: 8
 top_img: false
 --- 
 <script>
-!function(e,t){"object"==typeof exports&&"undefined"!=typeof module?t(exports):"function"==typeof define&&define.amd?define(["exports"],t):t((e=e||self).timeago={})}(this,function(e){"use strict";var r=["second","minute","hour","day","week","month","year"];var a=["秒","分钟","小时","天","周","个月","年"];function t(e,t){n[e]=t}function i(e){return n[e]||n.en_US}var n={},f=[60,60,24,7,365/7/12,12];function o(e){return e instanceof Date?e:!isNaN(e)||/^\d+$/.test(e)?new Date(parseInt(e)):(e=(e||"").trim().replace(/\.\d+/,"").replace(/-/,"/").replace(/-/,"/").replace(/(\d)T(\d)/,"$1 $2").replace(/Z/," UTC").replace(/([+-]\d\d):?(\d\d)/," $1$2"),new Date(e))}function d(e,t){for(var n=e<0?1:0,r=e=Math.abs(e),a=0;e>=f[a]&&a<f.length;a++)e/=f[a];return(0===(a*=2)?9:1)<(e=Math.floor(e))&&(a+=1),t(e,a,r)[n].replace("%s",e.toString())}function l(e,t){return((t?o(t):new Date)-o(e))/1e3}var s="timeago-id";function h(e){return parseInt(e.getAttribute(s))}var p={},v=function(e){clearTimeout(e),delete p[e]};function m(e,t,n,r){v(h(e));var a=r.relativeDate,i=r.minInterval,o=l(t,a);e.innerText=d(o,n);var u,c=setTimeout(function(){m(e,t,n,r)},Math.min(1e3*Math.max(function(e){for(var t=1,n=0,r=Math.abs(e);e>=f[n]&&n<f.length;n++)e/=f[n],t*=f[n];return r=(r%=t)?t-r:t,Math.ceil(r)}(o),i||1),2147483647));p[c]=0,u=c,e.setAttribute(s,u)}t("en_US",function(e,t){if(0===t)return["just now","right now"];var n=r[Math.floor(t/2)];return 1<e&&(n+="s"),[e+" "+n+" ago","in "+e+" "+n]}),t("zh_CN",function(e,t){if(0===t)return["刚刚","片刻后"];var n=a[~~(t/2)];return[e+" "+n+"前",e+" "+n+"后"]}),e.cancel=function(e){e?v(h(e)):Object.keys(p).forEach(v)},e.format=function(e,t,n){return d(l(e,n&&n.relativeDate),i(t))},e.register=t,e.render=function(e,t,n){var r=e.length?e:[e];return r.forEach(function(e){m(e,e.getAttribute("datetime"),i(t),n||{})}),r},Object.defineProperty(e,"__esModule",{value:!0})});
-var Url = 'https://kkapi.wyblog1.tk//api/ispeak?author=63c28a71aa610fa0dc9b6f1a&pageSize=200'
+var Url = 'https://bbapi.chuckle.top/api/ispeak?author=62dfff698999529f10b18d03&pageSize=30'
 var items = []
 
 // 获取数据
@@ -84,4 +83,129 @@ getNew();
 
 <div id="bibi"></div>
 
-<div class="limit">- 只展示最近200条短文 -</div>
+<div class="limit">- 只展示最近30条短文 -</div>
+
+
+
+/* 哔哔页面 */
+
+#bibi button {
+    cursor: pointer;
+    color: #fff;
+    border: 0;
+    margin: 20px auto;
+    border-radius: 0.3125rem;
+    display: block;
+    padding: 0 1rem;
+    height: 40px;
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.5s ease-out;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 1000% 1000%;
+    animation: Gradient 60s linear infinite;
+    outline: 0;
+}
+
+#bibi .bb-info {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+#bibi .bb-card {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 3px 8px 6px rgba(7, 17, 27, 0.06);
+    overflow: hidden;
+    margin-top: 20px;
+    transition: all 0.25s;
+    user-select: none;
+}
+
+#bibi .bb-card:hover {
+    box-shadow: 0 5px 10px 8px #07111b29;
+    transform: translateY(-3px)
+}
+
+#bibi .card-header {
+    display: flex;
+    align-items: center;
+}
+
+#bibi .card-header .avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#bibi .card-header svg {
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+}
+
+#bibi .card-header .card-time {
+    font-size: 12px;
+    text-shadow: #d9d9d9 0 0 1px, #fffffb 0 0 1px, #fffffb 0 0 2px;
+    margin-left: 10px;
+}
+
+#bibi .card-content {
+    padding: 10px 0;
+    white-space: pre-wrap;
+}
+
+#bibi .card-footer {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+#bibi .card-footer .card-label {
+    border-radius: 5px;
+    padding: 0 5px;
+    font-weight: 550;
+    border-radius: 3px;
+    box-shadow: inset 0 -1px 0 rgb(27 31 35 / 12%);
+    font-size: 14px;
+    cursor: pointer;
+    user-select: none;
+    margin-right: 10px;
+}
+
+#article-container .card-content img {
+    margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .card-content .fancybox,
+    .card-content video {
+        display: inline-block;
+        max-width: 40%;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card-content .fancybox,
+    .card-content video {
+        display: inline-block;
+        max-width: 48%;
+        margin: 1%;
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    to {
+        background-position: 0 50%;
+    }
+}        
