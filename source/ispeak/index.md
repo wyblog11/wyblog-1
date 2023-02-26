@@ -84,5 +84,5 @@ getNew();
 <div id="bibi"></div>
 
 <div class="limit">- 只展示最近30条短文 -</div>
-- <link rel="stylesheet" href="/css/bbtalk.css">
+<link rel="stylesheet" href="/css/bbtalk.css">
 <script src="/js/timeago.min.js"></script>     
