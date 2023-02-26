@@ -289,3 +289,38 @@ preloader:
   source: 3
   # pace theme (see https://codebyzach.github.io/pace/)
   pace_css_url: /css/custom.css
+about:
+  info:
+    right:
+      - 🤖️ 数码爱好者
+      - 🔍 分享与热心帮助
+      - 🏠 智能家居小能手
+      - 🔨 开发小萌新
+    left:
+      - 专修交互设计 🤝
+      - 脚踏实地行动派 🏃
+      - 专攻各种困难 🧱
+      - 人狠话不多 💢
+  job: 学生、独立开发者、博主
+  live: 中国，北京市
+  born: 1997
+  school: 大连工业大学
+  can: 产品设计
+  work: UI/产品
+  character: 逻辑学家
+  character2: INTP-T
+  personalities: https://cdn.zhheo.com/public/svg/INTP-T.svg
+  selfie: https://p.zhheo.com/202352d98ec86bef3388a0152b33cf9d06ad082002.png!cover
+  maxim1: 荆棘之路，
+  maxim2: 劈风斩浪。
+  tc1: 玄学流电脑疑难问题
+  tc2: 解决专家
+  tc3: 软件学习能力
+  tc4: MAX
+  uid: 'UID:125766904'
+  fanjuname: 刺客伍六七
+  fanjulink: 'https://www.bilibili.com/bangumi/play/ss36594/?spm_id_from=333.999.0.0'
+  liketechnology: 数码科技
+  liketechnologyand: 手机、电脑软硬件
+  sllctitle: 为什么建站？
+  xllc: 创建这个站的时候，想要就是能够有一个自己能够积累知识、积累兴趣的地方。和他人分享，会让这些成为积累和沉淀。如果能够帮助到更多的人，帮助更多人解决问题，那一定是非常棒的事情。分享这件事我从很早就开始了，起初做的微信公众号，现在做的网站。因为我比较喜欢研究数码和软件，想要探究在互联网上的事物是如何被创造和发展。网络给我带来了非常多的知识和眼界，我也想力所能及的分享一些我生活的琐碎知识。与大多数垂直类的技术博客不同，这里的种类会非常的繁杂，有技能的教程干货、有生活上的吐槽和妙招、有话题上的思考和想法。一般我研究什么、发现了什么都会分享在这里。这些就是创造这个小站的本意，也是我分享生活的方式。有幸能和你相遇在这里，相信我们能共同留下一段美好记忆。
