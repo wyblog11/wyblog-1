@@ -1,15 +1,22 @@
-#footer
-  #footer_deal
-    a.deal_link(href='https://space.bilibili.com/1945630406?spm_id_from=333.1007.0.0' title='哔哩哔哩' target='_blank')
-      i.iconfont.icon-bilibili
-    a.deal_link(href='https://github.com/wyblog11' title='GitHub' target='_blank')
-      i.iconfont.icon-github
-    img.footer_mini_logo.entered.loading(style='border-radius:50%' src='https://www.wyblog1.tk/media/images/custom-headerLogo.ico' onclick='btf.scrollToDest(0, 500)' title='返回顶部')
-    a.deal_link(target='_blank' rel='noopener' href='https://gitee.com/661111' title='Gitee')
+#footer_deal
+  a.deal_link(href="mailto:3227988255@qq.com" title="mail")
+    svg.icon.footer-mail.iconfont.icon-youjian(onclick=`mailto:3227988255@qq.com`,title="mail")
+      use(xlink:href="#icon-youjian")
+  a.deal_link(href="https://github.com/wyblog11" title="github"  target="_blank")
+    svg.icon.footer-github.iconfont.icon-github(onclick=`https://github.com/wyblog11`,title="github")
+      use(xlink:href="#icon-github")
+  img.footer_mini_logo.entered.loading(style="border-radius:50%" src='https://www.wyblog1.tk/media/images/custom-headerLogo.ico' onclick="btf.scrollToDest(0,500)" title="Go top")
+  a.deal_link(href="https://gitee.com/661111" title="gitee"  target="_blank")
+    svg.icon.footer-github.iconfont.icon-github(onclick=`https://gitee.com/661111`,title="github")
+      use(xlink:href="#icon-github")
+  a.deal_link(href="https://space.bilibili.com/1945630406?spm_id_from=333.1007.0.0" title="哔哩哔哩"  target="_blank")
+    svg.icon.footer-github.iconfont.icon-logo-gitee-g-red(onclick=`https://space.bilibili.com/1945630406?spm_id_from=333.1007.0.0`,title="哔哩哔哩")
+      use(xlink:href="#icon-logo-gitee-g-red")
+  a.deal_link(target='_blank' rel='noopener' href='https://gitee.com/661111' title='Gitee')
       i.iconfont.icon-logo-gitee-g-red
-    a.deal_link(href='https://www.kuaishou.com/profile/3xh4ut4ekexbr7a' title='快手' target='_blank')
-      i.iconfont.icon-kuaishou
-  #Jay-footer
+  a.deal_link(href='https://www.kuaishou.com/profile/3xh4ut4ekexbr7a' title='快手' target='_blank')
+    i.iconfont.icon-kuaishou    
+#Jay-footer
     .footer-group
       h3.footer-title 直达
       .footer-links
@@ -26,7 +33,6 @@
       .footer-links
         a.footer-item(href='/about/') 关于我
         a.footer-item(href='/archives/') 文章归档
-        a.footer-item(href='/update/') 更新记录
     .footer-group
       h3.footer-title 服务
       .footer-links
@@ -34,39 +40,66 @@
         a.footer-item(href='https://v6.51.la/' target='_blank') 51la统计
         a.footer-item(href='https://tongji.baidu.com/' target='_blank') 百度统计
         a.footer-item(href='https://bf.zzxworld.com/s/712' target='_blank') BlogFinder
-    .footer-group
-      h3.footer-title
-        | 友链 
-        button(
-          href="javascript:;"
-          onclick="flink_random.randomLink()"
-          title="换一批"
-          class="fa-rotate-righ-button"
-        )
-          i.fa-rotate-right.fa-solid
-      .footer-links#friend-links-in-footer
-        a.footer-item(href="")
-        a.footer-item(href="")
-        a.footer-item(href="")
-        a.footer-item(href="")
-        a.footer-item(href="")
-        a.footer-item(data-pjax-state="" href="/link/") 查看更多
-  #footer-banner
-    .footer-banner-links
-      .footer-banner-left
-        .footer-banner-left
-          #footer-banner-tips
-          .copyright
-            | ©2022 - 2023 By 
-            a.footer-banner-link(href='/') 张洪HEO
-            a(data-pjax-state='')
-      .footer-banner-right
-        a.footer-banner-link(href='https://github.com/jerryc127/hexo-theme-butterfly' title='Pottery') 主题
-        a.footer-banner-link(href='/atom.xml' title='RSS') 订阅
-        a.footer-banner-link(href='/about/' title='关于我' target='_blank') 关于我
-          i.iconfont.icon-occ
-          i.iconfont.icon-occ-by
-          i.iconfont.icon-onc
-          i.iconfont.icon-ond
-  #quit-box(onclick='RemoveRewardMask()')
-  .comment-barrage.needEndHide.hide
+#Jay-footer
+  .footer-group
+    h3.footer-title 推荐✨
+    .footer-links
+      a.footer-item(href="/about/") 我的主页
+      a.footer-item(href="/music/") 我的音乐
+      a.footer-item(href='/bangumis/') 追番
+  .footer-group
+    h3.footer-title 标签
+    .footer-links
+      a.footer-item(href='/categories/artitalk/') artitalk
+      a.footer-item(href='/categories/bbtalk/') bbtalk
+  .footer-group
+    h3.footer-title 网站
+    .footer-links
+      a.footer-item(href="https://wyblog1.tk") 个人主页
+      a.footer-item(href="/link/") 友情链接
+  .footer-group
+    h3.footer-title 导航
+    .footer-links
+      a.footer-item(href="/myshared") 分享页面
+      a.footer-item(href="/atom.xml") RSS订阅
+  .footer-group
+    h3.footer-title
+      | 友链 
+      button(
+        href="javascript:;"
+        onclick="shine.randomLink()"
+        title="换一批"
+        class="fa-rotate-righ-button"
+      )
+        i.fa-rotate-right.fa-solid
+    .footer-links#friend-links-in-footer
+      a.footer-item(href="")
+      a.footer-item(href="")
+      a.footer-item(href="")
+      a.footer-item(href="")
+      a.footer-item(href="")
+      a.footer-item(data-pjax-state="" href="/link/") 查看更多
+#footer-banner
+  .footer-banner-links
+    .footer-banner-left
+        #footer-banner-tips
+          .copyright ©2022 - 2023 By 
+            a.footer-banner-link(
+              href="https://wyblog1.tk/"
+              rel="external nofollow"
+              target="_blank"
+            ) Shine
+         script(src='https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js')
+         script.
+           var typed = new Typed("#footer-banner-tips", {
+             strings: ["Hi, I'm Shine.", "Never forget, there will be echoes."],
+             startDelay: 200,
+             backDelay: 2000,
+             typeSpeed: 100,
+             loop: true,
+             backSpeed: 20
+          })
+
+    .footer-banner-right
+      a.footer-banner-link(href="/atom.xml" title="RSS") 订阅
+      a.footer-banner-link(href="/about/" title="about") 关于
