@@ -1,27 +1,27 @@
 if theme.aside.card_author.enable
-  .card-widget.card-info
-    .is-center
-      .avatar-img
-        img(src=url_for(theme.avatar.img) onerror=`this.onerror=null;this.src='` + url_for(theme.error_img.flink) + `'` alt="avatar")
-      .author-info__name= config.author
-      .author-info__description!= theme.aside.card_author.description || config.description
-
-    .card-info-data.site-data.is-center
-      a(href=url_for(config.archive_dir) + '/')
-        .headline= _p('aside.articles')
-        .length-num= site.posts.length
-      a(href=url_for(config.tag_dir) + '/')
-        .headline= _p('aside.tags')
-        .length-num= site.tags.length
-      a(href=url_for(config.category_dir) + '/')
-        .headline= _p('aside.categories') 
-        .length-num= site.categories.length
-
-    if theme.aside.card_author.button.enable
-      a#card-info-btn(href=theme.aside.card_author.button.link)
-        i(class=theme.aside.card_author.button.icon)
-        span=theme.aside.card_author.button.text
-  
-    if(theme.social)
-        .card-info-social-icons.is-center
-          !=fragment_cache('social', function(){return partial('includes/header/social')}) 
+  .animate__fadeIn.card-info.card-widget.wow(
+    data-wow-delay="0"
+    data-wow-duration=""
+    data-wow-iteration=""
+    data-wow-offset=""
+    style="visibility: visible; animation-name: fadeIn;"
+  )
+    .author-info-top
+      .card-info-avatar
+        a.avatar-img(data-pjax-state="" href="/about")
+          img.entered.loaded(
+            alt="avatar"
+            src="https://s3.bmp.ovh/imgs/2022/11/23/129c19d56d22c637.png"
+            onerror="this.onerror=null,this.src=\"/img/friend_404.gif\""
+          )
+        .author-status-box
+          .author-status
+            g-emoji.g-emoji(alias="palm_tree" fallback-src="/img/tree_icon.png") 🌴
+            span On vacation
+    #author-info__sayhi.author-info__sayhi 晚安😴！我是
+    h1.author-info__name Shine
+    .author-info__description 热爱生活点滴，分享时刻精彩。
+    .banner-button-group
+      a.banner-button(data-pjax-state="" onclick="pjax.loadUrl(/about/)")
+        i.fa-circle-chevron-right.fa-solid
+        span.banner-button-text 了解更多
