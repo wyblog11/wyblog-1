@@ -273,27 +273,6 @@
         input(type='checkbox')
         p 语言的魅力
 
-  .author-content
-    .author-content-item.single.reward
-      .author-content-item-tips 致谢
-      span.author-content-item-title 赞赏名单
-      .author-content-item-description 感谢因为有你们，让我更加有创作的动力。
-        each i in site.data.reward
-          - let rawData = [...i.reward_list]
-          .reward-list-all
-            - let reward_list_amount = i.reward_list.sort((a,b)=>b.amount -  a.amount)
-            each item, index in reward_list_amount
-              .reward-list-item
-                .reward-list-item-name=item.name
-                .reward-list-bottom-group
-                  if item.amount >= 50
-                    .reward-list-item-money(style='background:var(--anzhiyu-yellow)')=`¥${item.amount}`
-                  else
-                    .reward-list-item-money=`¥${item.amount + (item.suffix ? item.suffix : "")}`
-                  .datatime.reward-list-item-time(datatime=item.datatime)=new Date(item.datatime).toISOString().slice(0, -14)
-          .reward-list-updateDate
-            | 最新更新时间：
-            time.datatime.reward-list-updateDate-time(datatime=rawData[0].datatime)=new Date(rawData[0].datatime).toISOString().slice(0, -14)
       .post-reward
         button.tip-button.reward-button
           span.tip-button__text 不给糖果就捣蛋
