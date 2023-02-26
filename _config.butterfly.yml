@@ -35,6 +35,7 @@ inject:
      - <link rel="stylesheet" href="/css/custom.css">
      - <link rel="stylesheet" href="/css/footer.css">
   bottom: 
+      <script async data-pjax src="/js/card_author.js"></script>
      - <script src="/js/sun_moon.js" async></script>
      - <script defer src="https://cdn1.tianli0.top/gh/nextapps-de/winbox/dist/winbox.bundle.min.js"></script> # winbox支持
      - <script type="text/javascript" src="/js/rightmenu.js"></script>
