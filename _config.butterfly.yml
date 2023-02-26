@@ -12,7 +12,7 @@ menu:
     报纸: https://news.wyblog1.tk/ || iconfont icon-xinwen || faa-tada
     artitalk: /artitalk/ || iconfont icon-shejiao || faa-tada
     bbtalk: /bbtalk/ || iconfont icon-shejiao || faa-tada
-    音乐: /music/ || iconfont icon-geren || faa-tada
+    音乐: /music/ || iconfont icon-yinle || faa-tada
 
 # The banner image of home page
 index_img: false
@@ -28,8 +28,8 @@ inject:
      - <script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script> # jQuery
      - <script async data-pjax src="/js/txmap.js"></script> # 腾讯位置API
      - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css"  media="defer" onload="this.media='all'">
-     - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_3895868_pi7jn3uil4.css" media="defer" onload="this.media='all'">
-     - <script async src="//at.alicdn.com/t/c/font_3895868_pi7jn3uil4.js"></script> 
+     - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_3895868_z8yvlwuyh79.css" media="defer" onload="this.media='all'">
+     - <script async src="//at.alicdn.com/t/c/font_3895868_z8yvlwuyh79.js"></script> 
      - <script src="/js/weibo.js"></script>
      - <script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
      - <link rel="stylesheet" href="/css/custom.css">
