@@ -1,0 +1,3 @@
+.transparentpage{
+    background:transparent!important;
+}
