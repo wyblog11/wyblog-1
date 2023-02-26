@@ -25,35 +25,35 @@ class Musics {
                 id: 1,
                 title: '算你狠',
                 singer: '算你狠',
-                songUrl: './music/C400000BvMn00Y3zs8.mp3',
+                songUrl: '/music/C400000BvMn00Y3zs8.mp3',
                 imageUrl: 'https://y.qq.com/music/photo_new/T002R300x300M000002LtBop0fvO3Y_2.jpg?max_age=2592000'
             },
             {
                 id: 2,
                 title: 'just to be in love',
                 singer: 'just to be in love',
-                songUrl: './music/C400001HoQQ20XJjpU.mp3',
+                songUrl: '/music/C400001HoQQ20XJjpU.mp3',
                 imageUrl: 'https://y.qq.com/music/photo_new/T002R300x300M000003bkPld35GSHf_1.jpg?max_age=2592000'
             },
 			{
                 id: 3,
                 title: '孤人',
                 singer: '孤人',
-                songUrl: './music/C400002Gq7U81GkCu4.mp3',
+                songUrl: '/music/C400002Gq7U81GkCu4.mp3',
                 imageUrl: 'https://y.qq.com/music/photo_new/T002R300x300M000003fR94j4c88pj_1.jpg?max_age=2592000'
             },
             {
                 id: 4,
                 title: '难却',
                 singer: '难却',
-                songUrl: './music/C4000006IqUe4exdjP.mp3',
+                songUrl: '/music/C4000006IqUe4exdjP.mp3',
                 imageUrl: 'https://y.qq.com/music/photo_new/T002R300x300M000003k1UYD0Epwsu_2.jpg?max_age=2592000'
             },
 			{
                 id: 5,
                 title: '恋人心',
                 singer: '恋人心',
-                songUrl: './music/C4000044Y3nm2fq1ll.mp3',
+                songUrl: '/music/C4000044Y3nm2fq1ll.mp3',
                 imageUrl: 'https://y.qq.com/music/photo_new/T002R300x300M000004NLEfZ1l1eYA_1.jpg?max_age=2592000'
             },
         ]
