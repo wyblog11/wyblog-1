@@ -10,8 +10,8 @@ menu:
     关于: /about/ || iconfont icon-geren || faa-tada
    小功能 || iconfont icon-gengduo || faa-tada:  
     报纸: https://news.wyblog1.tk/ || iconfont icon-xinwen || faa-tada
-    artitalk: /artitalk/ || iconfont icon-shejiao || faa-tada
-    bbtalk: /bbtalk/ || iconfont icon-shejiao || faa-tada
+    说说: /artitalk/ || iconfont icon-shejiao || faa-tada
+    哔哔点啥: /bbtalk/ || iconfont icon-shejiao || faa-tada
     音乐: /music/ || iconfont icon-yinle || faa-tada
     木鱼: /muyu/ || iconfont icon-muyu1 || faa-tada
 
