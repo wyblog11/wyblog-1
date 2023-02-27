@@ -14,10 +14,14 @@
     left: -65px;
 }
 
+.transparentpage{
+    background:transparent!important;
+}
+
 #home_top {
   margin: 1rem auto 0;
   padding: 0px 15px;
-  max-width: 1325px;
+  max-width: 1360px;
   width: 100%;
 }
 
