@@ -39,6 +39,7 @@ inject:
      - <link rel="stylesheet" href="/css/music.css">
      - <link rel="stylesheet" href="/css/footer.css">
   bottom: 
+     - <script defer src="/js/cursor.js"></script>
      - <script async data-pjax src="/js/flink_random.js"></script>
      - <script async data-pjax src="/js/card_author.js"></script>
      - <script src="/js/sun_moon.js" async></script>
