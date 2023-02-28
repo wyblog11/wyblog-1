@@ -12,3 +12,7 @@ block content
       .article-sort-title= _p('page.category') + ' - ' + page.category
       +articleSort(page.posts)
       include includes/pagination.pug
+      .category-in-bar
+        .category-in-bar-tips
+          | 分类
+        include includes/categoryBar.pug
