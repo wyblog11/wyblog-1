@@ -425,10 +425,6 @@ center#name-container {
   border-radius: 2em;
 }
 
-::-webkit-scrollbar-corner {
-  background-color: transparent;
-}
-
 ::-moz-selection {
   color: #fff;
   background-color: var(--wyblog-gd);
