@@ -6,7 +6,7 @@ var card_author = {
         t
     },
     sayhi: function() {
-        var e = document.getElementById("author-info__sayhi");
+        var e = document.getElementById("author-info__wuying");
         e && (e.innerHTML = card_author.getTimeState() + "！我是")
     },
 }
