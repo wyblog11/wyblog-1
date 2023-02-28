@@ -31,6 +31,7 @@
   },
   "scripts": {
     "dev": "hexo server -p $PORT",
-    "build": "hexo generate"
+    "build": "hexo generate",
+    "link.js": "node link.js"
   }
 }
