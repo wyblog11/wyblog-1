@@ -9,6 +9,7 @@ description: 欢迎来到无影的Speak页面，快来看看无影分享了什�
 swiper_index: 8
 top_img: false
 --- 
+
 <style>
 /* 哔哔页面 */
 #bibi button {
@@ -114,8 +115,10 @@ div#bb_loading img{
   justify-content: flex-start;
 }
 
-</style> 
-<script src="/ispeak/bb.js">
+</style>
+
+<script src="/js/bb.js"></script>
+
 <div id="bibi">
 <div class="bb-info"></div><div id="bb-main"></div>
 </div>
