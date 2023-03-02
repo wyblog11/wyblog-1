@@ -956,7 +956,7 @@ div#author-info__sayhi {
 /************************************************* heo *************************************************/
 .layout > div:first-child:not(.recent-posts) {
     /* border-radius: 0; */
-    padding: 0 1rem !important;
+    padding: 0 5rem !important;
     box-shadow: none !important;
     background: var(--heo-background);
   }
