@@ -40,6 +40,8 @@ inject:
      - <link rel="stylesheet" href="/css/custom.css">
      - <link rel="stylesheet" href="/css/music.css">
      - <link rel="stylesheet" href="/css/footer.css">
+     - <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/categoryBar/categoryBar.css">
+     - <script async src="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/categoryBar/categoryBar.js"></script>
   bottom:  
      - <script defer src="/js/cursor.js"></script>
      - <script async data-pjax src="/js/flink_random.js"></script>
