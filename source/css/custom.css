@@ -954,3 +954,9 @@ div#author-info__sayhi {
       color: #363636;
     }
 /************************************************* heo *************************************************/
+.layout > div:first-child:not(.recent-posts) {
+    /* border-radius: 0; */
+    padding: 0 1rem !important;
+    box-shadow: none !important;
+    background: var(--anzhiyu-background);
+  }
