@@ -117,7 +117,7 @@ div#bb_loading img{
 
 </style>
 
-<script src="/js/bb.js"></script>
+<script src="https://wyblog1.tk/ispeak/bb.js"></script>
 
 <div id="bibi">
 <div class="bb-info"></div><div id="bb-main"></div>
