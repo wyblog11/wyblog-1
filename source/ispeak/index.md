@@ -9,6 +9,7 @@ description: 欢迎来到无影的Speak页面，快来看看无影分享了什�
 swiper_index: 8
 top_img: false
 --- 
+<script src="./timeago.min.js">
 <script src="./bb.js">
 <style>
 /* 哔哔页面 */
