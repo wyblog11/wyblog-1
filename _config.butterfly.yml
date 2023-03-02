@@ -24,7 +24,6 @@ footer_bg: false
 background: url(https://source.fomal.cc/img/home_bg.webp)
 inject:
   head:
-     - <script async data-pjax src="https://zoulicheng.oss-cn-shanghai.aliyuncs.com/cssJs/HeoJS.js"></script>
      - <script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script> # jQuery
      - <script async data-pjax src="https://cdn.wpon.cn/2022-sucai/Gold-ingot.js"></script>  # 新年元宝
      - <script async data-pjax src="/js/newYear.js"></script>  # 新年倒计时
