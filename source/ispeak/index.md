@@ -115,7 +115,7 @@ div#bb_loading img{
 }
 
 </style> 
-<script src="./bb.js">
+<script src="/ispeak/bb.js">
 <div id="bibi">
 <div class="bb-info"></div><div id="bb-main"></div>
 </div>
