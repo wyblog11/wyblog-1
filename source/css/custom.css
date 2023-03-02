@@ -954,3 +954,6 @@ div#author-info__sayhi {
       color: #363636;
     }
 /************************************************* heo *************************************************/
+.transparentpage{
+    background:transparent!important;
+}
