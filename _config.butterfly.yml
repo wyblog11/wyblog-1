@@ -252,6 +252,8 @@ categoryBar:
       cover: https://images.boysec.cn/cover1.webp
     - descr: artitalk部署
       cover: https://images.boysec.cn/cover2.webp
+    - descr: 博客魔改
+      cover: https://www.wyblog1.tk/Cover/cover01.jpg  
   custom_css: https://npm.elemecdn.com/hexo-butterfly-categories-card@1.0.0/lib/categorybar.css
 
 swiper:
@@ -265,18 +267,18 @@ swiper:
       name: home_top
       index: 1
     category:
-      - name: 前端
-        path: /categories/前端/
+      - name: 博客魔改
+        path: /categories/%E5%8D%9A%E5%AE%A2%E9%AD%94%E6%94%B9/
         shadow: var(--marcus-shadow-blue)
         class: blue
         icon: fas fa-dove
-      - name: 中学
-        path: /categories/中学/
+      - name: bbtalk部署
+        path: /categories/bbtalk/
         shadow: var(--marcus-shadow-red)
         class: red
         icon: fas fa-burn
-      - name: 生活
-        path: /categories/生活/
+      - name: artitalk部署
+        path: /categories/artitalk/
         shadow: var(--marcus-shadow-green)
         class: green
         icon: fas fa-book
