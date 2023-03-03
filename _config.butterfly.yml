@@ -46,7 +46,6 @@ inject:
      - <script async data-pjax src="/js/flink_random.js"></script>
      - <script async data-pjax src="/js/card_author.js"></script>
      - <script src="/js/sun_moon.js" async></script>
-     - <script async data-pjax src="/js/rightside.js"></script> 
      - <script defer src="https://cdn1.tianli0.top/gh/nextapps-de/winbox/dist/winbox.bundle.min.js"></script> # winbox支持
      - <script type="text/javascript" src="/js/rightmenu.js"></script>
      - <script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script>
