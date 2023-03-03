@@ -9,6 +9,9 @@ nav#nav
           i.fas.fa-search.fa-fw
     !=partial('includes/header/menu_item', {}, {cache: true})
 
+      a.sun_moon.faa-parent.animated-hover(onclick='switchNightMode()',  title=_p('rightside.night_mode_title') id="nightmode-button")
+        svg.faa-tada(style="height:25px;width:25px;fill:currentColor;position:relative;top:7px", viewBox='0 0 1024 1024')
+          use#modeicon(xlink:href='#icon-moon')
     #toggle-menu
       a.site-page
         i.fas.fa-bars.fa-fw
