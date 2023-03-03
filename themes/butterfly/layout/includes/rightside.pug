@@ -11,8 +11,11 @@ mixin rightsideItem(array)
           button#translateLink(type="button" title=_p('rightside.translate_title'))= translate.default
       when 'darkmode'
         if darkmode.enable && darkmode.button
-          button#darkmode(type="button" title=_p('rightside.night_mode_title'))
-            i.fas.fa-adjust
+          //- button#darkmode(type="button" title=_p('rightside.night_mode_title'))
+          //-   i.fas.fa-adjust
+          a.icon-V.hidden(onclick='switchNightMode()',  title=_p('rightside.night_mode_title'))
+            svg(width='25', height='25', viewBox='0 0 1024 1024')
+              use#modeicon(xlink:href='#icon-moon')
       when 'hideAside'
         if aside.enable && aside.button && page.aside !== false
           button#hide-aside-btn(type="button" title=_p('rightside.aside'))
@@ -29,36 +32,23 @@ mixin rightsideItem(array)
         if commentsJsLoad
           a#to_comment(href="#post-comment" title=_p("rightside.scroll_to_comment"))
             i.fas.fa-comments
+      //- when 'bg'
+      //-   button(type="button" title='切换背景' onclick="toggleWinbox()")
+      //-     i.fa.fa-picture-o
+      when 'share'
+        button.share(type="button" title='分享链接' onclick="share()")
+          i.fas.fa-share-nodes
 
-#rightside-mask.hidden(onclick="rightside.switchRightSide();")
-#rightside.hidden
+      when 'mouse'
+        button.share(type="button" title='右键模式' onclick="changeMouseMode()")
+          i.fas.fa-mouse
 
-  #rightside-header
-    #rightside-back
-      i.fas.fa-chevron-left(onclick="rightside.backRightSide();")
-    #rightside-title= _p("rightside.setting")
-    #rightside-close(onclick="rightside.switchRightSide();")
-      i.fas.fa-xmark
-  #rightside-content
-    #card-post-content
-      if site.categories.length
-        .card-widget.card-categories
-          !=aside_categories({ limit: theme.aside.card_categories.limit === 0 ? 0 : theme.aside.card_categories.limit || 8 , expand: theme.aside.card_categories.expand })
 
-      if site.tags.length
-        .card-widget.card-tags
-          .item-headline
-            i.fas.fa-tags
-            span= _p('aside.card_tags')
-          if theme.aside.card_tags.color
-            .card-tag-cloud!= cloudTags({source: site.tags, minfontsize: 1.15, maxfontsize: 1.45, limit: 0, unit: 'em'})
-          else
-            .card-tag-cloud!= tagcloud({min_font: 1.1, max_font: 1.5, amount: 0 , color: true, start_color: '#999', end_color: '#99a9bf', unit: 'em'})
-
+#rightside
   - const { enable, hide, show } = theme.rightside_item_order
-  - const hideArray = enable ? hide && hide.split(',') : ['readmode','translate','darkmode','hideAside','toc','chat','comment']
-  - const showArray = enable ? show && show.split(',') : []
-
+  - const hideArray = enable ? hide && hide.split(',') : ['readmode','translate','darkmode','hideAside', 'mouse']
+  - const showArray = enable ? show && show.split(',') : ['toc','chat','share','comment']
+  //- - const showArray = enable ? show && show.split(',') : ['toc','chat','bg','comment']
   
   #rightside-config-hide
     if hideArray
@@ -67,18 +57,25 @@ mixin rightsideItem(array)
     if enable
       if hide
         button#rightside_config(type="button" title=_p("rightside.setting"))
-          i.fas.fa-cog.fa-spin
+          i.fas.fa-cog.right_side
     else
       if is_post()
         if (readmode || translate.enable || (darkmode.enable && darkmode.button))
           button#rightside_config(type="button" title=_p("rightside.setting"))
-            i.fas.fa-cog.fa-spin
-      else if translate.enable || (darkmode.enable && darkmode.button)
+            i.fas.fa-cog.right_side
+      //- else if translate.enable || (darkmode.enable && darkmode.button)
+      else if hideArray
         button#rightside_config(type="button" title=_p("rightside.setting"))
-          i.fas.fa-cog.fa-spin
+          i.fas.fa-cog.right_side
 
     if showArray
       +rightsideItem(showArray)
 
     button#go-up(type="button" title=_p("rightside.back_to_top"))
       i.fas.fa-arrow-up
+      span#percent 0
+        span %
+
+    button#go-down(type="button" title="直达底部" onclick="btf.scrollToDest(document.body.scrollHeight, 500)")
+      i.fas.fa-arrow-down
+
