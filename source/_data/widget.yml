@@ -3,7 +3,7 @@ top:
   - class_name:
     id_name: weibo
     name: 微博热搜
-    icon: fa-brands fa-weibo
+    icon: iconfont.icon-weibo
     order: 1
     html: <link rel="stylesheet" href="/css/weibo.css"><div id="weiboContent"><img src="https://www.leonus.cn/img/loading.gif"></div><script src="/js/weibo.js"></script> # 注意这里，我放了一个加载图片，在加载之前会显示，你可以选择删除或者放一个加载图片。
   - class_name:
