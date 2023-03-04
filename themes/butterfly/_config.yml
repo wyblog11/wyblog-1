@@ -683,6 +683,9 @@ aside:
     limit: 8 # if set 0 will show all
     expand: none # none/true/false
     sort_order: # Don't modify the setting unless you know how it works
+  card_friend_link: #友链通讯录
+    enable: true
+    sort_order: # Don't modify the setting unless you know
   card_tags:
     enable: true
     limit: 40 # if set 0 will show all
