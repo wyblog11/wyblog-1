@@ -49,12 +49,19 @@ class Musics {
                 songUrl: '/music/C4000006IqUe4exdjP.mp3',
                 imageUrl: 'https://y.qq.com/music/photo_new/T002R300x300M000003k1UYD0Epwsu_2.jpg?max_age=2592000'
             },
-			{
+	    {
                 id: 5,
                 title: '恋人心',
                 singer: '恋人心',
                 songUrl: '/music/C4000044Y3nm2fq1ll.mp3',
                 imageUrl: 'https://y.qq.com/music/photo_new/T002R300x300M000004NLEfZ1l1eYA_1.jpg?max_age=2592000'
+            },
+	    {
+                id: 6,
+                title: '生きる',
+                singer: '生きる',
+                songUrl: '/music/C400003UvZtn4OL5hk.m4a',
+                imageUrl: 'https://y.qq.com/music/photo_new/T002R300x300M0000003To2h3mMbdL_1.jpg?max_age=2592000'
             },
         ]
     }
