@@ -339,3 +339,6 @@ about:
   
 popularPosts:
   eyeCatchImageAttributeName: headimg
+
+# 友链样式，butterfly为默认样式，volantis为站点卡片样式.flexcard为弹性卡片样式
+flink_style: volantis # butterfly | volantis | flexcard
