@@ -60,7 +60,7 @@ class Musics {
                 id: 6,
                 title: '生きる',
                 singer: '生きる',
-                songUrl: '/music/C400003UvZtn4OL5hk.m4a',
+                songUrl: './C400003UvZtn4OL5hk.mp3',
                 imageUrl: 'https://y.qq.com/music/photo_new/T002R300x300M0000003To2h3mMbdL_1.jpg?max_age=2592000'
             },
         ]
