@@ -347,4 +347,4 @@ flink_style: volantis # butterfly | volantis | flexcard
 related_post:
   enable: true
   limit: 6 # 顯示推薦文章數目
-  date_type: created # or created or updated 文章日期顯示創建日或者更新日
+  date_type: updated # or created or updated 文章日期顯示創建日或者更新日
