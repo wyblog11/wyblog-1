@@ -177,13 +177,15 @@
     #post-meta a
       color: #78818a
 
+// 已修改 post-info文章头部大标题
 #post-info
   .post-title
     @extend .limit-more-line
     margin-bottom: 8px
-    color: var(--white)
+    font-weight: bold;
+    color: #000000; //修改颜色
     font-weight: normal
-    font-size: 2.5em
+    font-size: 4.5em
     line-height: 1.5
     -webkit-line-clamp: 3
 
@@ -194,8 +196,8 @@
       padding-left: 10px
 
   #post-meta
-    color: var(--light-grey)
-    font-size: 95%
+    color: #000000 //修改颜色
+    font-size: 120% //修改大小
 
     +minWidth768()
       > .meta-secondline
@@ -223,11 +225,11 @@
           display: none
 
     a
-      color: var(--light-grey)
+      color: #000000; //修改颜色
       transition: all .3s ease-out
 
       &:hover
-        color: $text-hover
+        color: #b9b9b9 //修改颜色
         text-decoration: underline
 
     if hexo-config('post_meta.post.date_format') == 'relative'
