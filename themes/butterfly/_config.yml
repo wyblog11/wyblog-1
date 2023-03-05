@@ -4,7 +4,7 @@
 nav:
   logo: #image
   display_title: true
-  fixed: true # fixed navigation bar
+  fixed: true
 
 menu:
   # Home: / || fas fa-home
