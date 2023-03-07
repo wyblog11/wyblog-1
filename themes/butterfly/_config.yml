@@ -1,11 +1,6 @@
 # Main menu navigation (導航目錄)
 # see https://butterfly.js.org/posts/4aa8abbe/#導航菜單
 # --------------------------------------
-nav:
-  logo: #image
-  display_title: true
-  fixed: true
-
 menu:
   # Home: / || fas fa-home
   # Archives: /archives/ || fas fa-archive
@@ -17,6 +12,11 @@ menu:
   # Link: /link/ || fas fa-link
   # About: /about/ || fas fa-heart
 
+nav:
+  logo: #image
+  display_title: true
+  fixed: true # fixed navigation bar
+  
 # Code Blocks (代碼相關)
 # --------------------------------------
 
@@ -220,7 +220,7 @@ post_edit:
 related_post:
   enable: true
   limit: 6 # Number of posts displayed
-  date_type: created # or created or updated 文章日期顯示創建日或者更新日
+  date_type: updated # or created or updated 文章日期顯示創建日或者更新日
 
 # figcaption (圖片描述文字)
 photofigcaption: false
