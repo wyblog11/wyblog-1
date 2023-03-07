@@ -34,13 +34,6 @@
   font-size: 24px; /*一定要把字体调大点，否则效果惨不忍睹！*/
 }
 
-.nav-fixed #nav{
-    transform: translateY(58px)!important;
-    -webkit-transform: translateY(58px)!important;
-    -moz-transform: translateY(58px)!important;
-    -ms-transform: translateY(58px)!important;
-    -o-transform: translateY(58px)!important;
-}
 #nav{
     transition: none!important;
     -webkit-transition: none!important;
