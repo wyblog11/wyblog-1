@@ -252,13 +252,6 @@
   -ms-transform: scale(0.5);
   -o-transform: scale(0.5);
 }
-/* 一级菜单居中 */
-#nav .menus_items {
-  position: absolute !important;
-  width: fit-content !important;
-  left: 50% !important;
-  transform: translateX(-50%) !important;
-}
 
 #home_top {
   margin: 1rem auto 0;
