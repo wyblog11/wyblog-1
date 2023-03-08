@@ -21,7 +21,7 @@
 }
 
 ::selection {
-    background: var(--heo-fontcolor);
+    background: var(--heo-white);
     color: var(--heo-background);
 }
 
@@ -99,7 +99,7 @@
     white-space: nowrap;
     overflow: hidden;
     /* margin-bottom: 1rem; */
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 @media screen and (max-width: 768px) {
