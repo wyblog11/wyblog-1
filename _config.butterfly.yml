@@ -45,6 +45,7 @@ inject:
      - <script async src="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/categoryBar/categoryBar.js"></script>
   bottom:  
      - <script defer src="/js/cursor.js"></script>
+     - <script async src="/js/fps.js"></script> # 帧率检测
      - <script async data-pjax src="/js/flink_random.js"></script>
      - <script async data-pjax src="/js/card_author.js"></script>
      - <script src="/js/sun_moon.js" async></script>
