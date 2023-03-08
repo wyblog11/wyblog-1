@@ -34,8 +34,8 @@ inject:
      - <script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script> # jQuery
      - <script async data-pjax src="/js/txmap.js"></script> # 腾讯位置API
      - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css"  media="defer" onload="this.media='all'">
-     - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_3895868_u7j7cp54mw.css" media="defer" onload="this.media='all'">
-     - <script async src="//at.alicdn.com/t/c/font_3895868_u7j7cp54mw.js"></script> 
+     - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_3895868_1p10hc0c3gd.css" media="defer" onload="this.media='all'">
+     - <script async src="//at.alicdn.com/t/c/font_3895868_1p10hc0c3gd.js"></script> 
      - <script src="/js/weibo.js"></script>
      - <script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
      - <link rel="stylesheet" href="/css/custom.css">
