@@ -16,7 +16,7 @@ menu:
 nav:
   logo: # image
   display_title: true
-  fixed: true # fixed navigation bar
+  fixed: true
 
 # Code Blocks (代碼相關)
 # --------------------------------------
