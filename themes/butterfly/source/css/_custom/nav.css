@@ -9,3 +9,38 @@
 .menus_items .menus_item:nth-child(2) .menus_item_child {
   left: 0px;
 }
+/* 导航栏居中 */
+
+#nav #menus {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  height: 60px;
+  left: 0;
+  margin: 0;
+}
+
+#nav .menus_items {
+  position: relative;
+  width: fit-content;
+  text-align: center;
+  left: 0;
+  top: 0;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#menus>div.menus_items>div>a {
+  letter-spacing: 0.3rem;
+  padding: 0 0.7rem 0 1rem;
+  font-weight: bold;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 40px;
+}
+#page-header.nav-fixed #nav #menus[style*="padding-right: 300px;"] .menus_items {
+  transform: translateX(-150px);
+}
