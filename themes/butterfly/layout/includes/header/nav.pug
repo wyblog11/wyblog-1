@@ -14,7 +14,11 @@ nav#nav
     !=partial('includes/header/menu_item', {}, {cache: true})
     center(id="name-container")
       a(id="page-name" href="javascript:scrollToTop()") PAGE_NAME
-
+  
+  #nav-right
+    #nav-totop.nav-button(onclick='btf.scrollToDest(0, 500)')
+      a.totopbtn(data-pjax-state='')
+        i.fas.fa-arrow-up
     #toggle-menu
       a.site-page(href="javascript:void(0);")
         i.fas.fa-bars.fa-fw
