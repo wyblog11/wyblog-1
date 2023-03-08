@@ -1,3 +1,6 @@
+.menus_items .menus_item:nth-child(2) .menus_item_child {
+  left: 0px;
+}
 /* 导航栏中的样式 */
 
 #nav {
