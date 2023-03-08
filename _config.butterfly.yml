@@ -38,7 +38,6 @@ inject:
      - <script async src="//at.alicdn.com/t/c/font_3895868_u7j7cp54mw.js"></script> 
      - <script src="/js/weibo.js"></script>
      - <script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
-     - <link rel="stylesheet" type="text/css" href="/css/404.css">
      - <link rel="stylesheet" href="/css/custom.css">
      - <link rel="stylesheet" href="/css/music.css">
      - <link rel="stylesheet" href="/css/footer.css">
