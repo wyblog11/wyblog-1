@@ -758,7 +758,6 @@ padding: 0 12px;
 /* 导航栏居中 */
 
 #nav #menus {
-  display: flex;
   justify-content: center;
   width: 100%;
   position: absolute;
