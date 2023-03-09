@@ -31,7 +31,6 @@ html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside
             if theme.aside.enable && page.aside !== false
               include widget/index.pug
 
-        include ./app.pug
         - var footerBg = theme.footer_bg
         if (footerBg)
           if (footerBg === true)
