@@ -9,7 +9,7 @@ if is_home()
             .tpl-tr.layui-clear(style='transform: translateX(0px);')
                 .list-top
                     ul
-                        each article, index in site.tags.findOne({name: 'artitalk'}).post.data
+                        each article, index in site.categories.findOne({name: 'artitalk'}).posts.data
                             if index < 9
                             li
                                 .fl
@@ -23,7 +23,7 @@ if is_home()
                                             a(href=url_for(article.path), target='_blank') 前往查看
                 .list-top
                     ul
-                        each article, index in site.categories.findOne({name: 'bbtalk'}).post.data
+                        each article, index in site.categories.findOne({name: 'bbtalk'}).posts.data
                             if index < 9
                             li
                                 .fl
