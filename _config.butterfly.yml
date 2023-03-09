@@ -291,9 +291,9 @@ swiper:
     default_descr: 再怎么看我也不知道怎么描述它的啦！
     swiper_css: /css/swiper.min.css #swiper css依赖
     swiper_js: https://cdn1.tianli0.top/npm/hexo-butterfly-swiper-marcus/lib/swiper.min.js #swiper js依赖 #swiper js依赖
-    custom_css: /css/swiperstyle.min.css # 适配主题样式补丁
+    custom_css: /css/swiperstyle.css # 适配主题样式补丁
     custom_js: /css/swiper_init.min.js # swiper初始化方法
-    categorygroup_css: /css/categoryGroup.min.css
+    categorygroup_css: /css/categoryGroup.css
 # Loading Animation (加载动画)
 preloader:
   enable: true
