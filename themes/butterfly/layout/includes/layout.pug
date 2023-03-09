@@ -21,6 +21,7 @@ html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside
         include ./header/index.pug
 
         if is_home()
+          include ./hometop1.pug
           #home_top
         main#content-inner.layout(class=hideAside)
           if body
