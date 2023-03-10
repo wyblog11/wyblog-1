@@ -18,7 +18,7 @@ menu:
 
 # Footer Background
 footer_bg: false
-background: url(https://source.fomal.cc/img/home_bg.webp)
+background: url()
 inject:
   head:
      - <script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script> # jQuery
