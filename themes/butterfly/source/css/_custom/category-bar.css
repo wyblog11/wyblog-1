@@ -83,8 +83,8 @@
 
 @media screen and (max-width: 768px) {
     :root {
-        --style-border: 0px solid var(--heo-card-border);
-        --style-border-hover: 0px solid var(--heo-theme);
+        --style-border: 0px solid var(--heo-white);
+        --style-border-hover: 0px solid var(--heo-white);
     }
 }
 
@@ -145,12 +145,12 @@
 }
 
 .category-bar-item:hover a {
-    background: var(--heo-main);
+    background: var(--heo-white);
     color: var(--heo-white);
 }
 
 .category-bar-item.select a {
-    background: var(--heo-main);
+    background: var(--heo-white);
     color: var(--heo-white);
     border-radius: 8px;
 }
