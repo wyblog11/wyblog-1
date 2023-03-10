@@ -21,6 +21,8 @@ footer_bg: false
 background: url()
 inject:
   head:
+     - <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/categoryBar/categoryBar.css">
+     - <script async src="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/categoryBar/categoryBar.js"></script>
      - <script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script> # jQuery
      - <script async data-pjax src="https://cdn.wpon.cn/2022-sucai/Gold-ingot.js"></script>  # 新年元宝
      - <script async data-pjax src="/js/newYear.js"></script>  # 新年倒计时
