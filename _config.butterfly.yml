@@ -16,9 +16,12 @@ menu:
     木鱼: /muyu/ || iconfont icon-muyu1 || faa-tada
 
 
+# The banner image of home page
+index_img: https://source.fomal.cc/img/home_bg.webp
+
 # Footer Background
 footer_bg: false
-background: url()
+background: url(https://source.fomal.cc/img/home_bg.webp)
 inject:
   head:
      - <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/categoryBar/categoryBar.css">
