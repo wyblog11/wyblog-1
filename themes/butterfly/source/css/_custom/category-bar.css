@@ -22,7 +22,7 @@
 
 ::selection {
     background: var(--heo-white);
-    color: var(--heo-background);
+    color: var(--heo-white);
 }
 
 [data-theme=light] {
@@ -94,7 +94,7 @@
     padding: 0.4rem 1rem 0.4rem 0.5rem;
     background: #fff;
     border-radius: 8px;
-    box-shadow: var(--card-box-shadow);
+    box-shadow: var(--heo-white);
     display: flex;
     white-space: nowrap;
     overflow: hidden;
