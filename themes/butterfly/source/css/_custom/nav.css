@@ -61,7 +61,7 @@
     font-size: 24px; /*一定要把字体调大点，否则效果惨不忍睹！*/
 }
 :root{
-    --lyx-theme:#ed709b /*我的主题色*/
+    --lyx-theme:#AC94DB /*我的主题色*/
 }
 /* 顶栏常驻 */
 .nav-fixed #nav{
