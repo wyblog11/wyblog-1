@@ -1,8 +1,7 @@
 extends includes/layout.pug
 
 block content
-  - let transparent = (is_current('/music/')) ? true : false
-  #page(class= (transparent === true) ? 'transparentpage' : '')
+  #page
     if top_img === false
       h1.page-title= page.title
 
