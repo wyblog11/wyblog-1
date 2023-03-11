@@ -187,7 +187,7 @@ remark42:
 # Artalk
 # https://artalk.js.org/guide/frontend/config.html
 artalk:
-  server: https://artalk.wyblog1.tk/
+  server: https://artalk.wyblog1.tk
   site: 无影的artalk
   visitor: true
   option:
