@@ -21,3 +21,8 @@
   margin: 80px 0 16px 0;
   justify-content: center;
 }
+#about-page .author-info {
+  display: flex;
+  align-items: center;
+  margin: 0 0 16px 0;
+}
