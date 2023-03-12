@@ -7,9 +7,4 @@ background: "#f8f9fe"
 comments: false
 type: "about"
 ---
-<link rel="stylesheet" href="https://wangxi.online/css/about.css">
-<link rel="stylesheet" href="https://wangxi.online/css/careers.css">
-<link rel="stylesheet" href="https://wangxi.online/css/genshinimpact.css">
-<link rel="stylesheet" href="https://wangxi.online/css/skills.css">
-<link rel="stylesheet" href="https://wangxi.online/css/site.css">
-<link rel="stylesheet" href="https://wangxi.online/css/hello-about.css">
+<script src="https://unpkg.com/mini-sandbox@0.3.11"></script>
