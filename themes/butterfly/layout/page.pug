@@ -3,7 +3,7 @@ extends includes/layout.pug
 block content
   - let transparent = (is_current('/muaic/')) ? true : false
   - let music = is_current('/music/') ? true : false
-  #page(class= (transparent === true) ? 'transparentpage' : '')(class= (bb === true) ? 'bb-transparent' : '')
+  #page(class= (transparent === true) ? 'transparentpage' : '')(class= (music === true) ? 'bb-transparent' : '')
     if top_img === false
       h1.page-title= page.title
 
