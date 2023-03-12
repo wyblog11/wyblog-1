@@ -6,5 +6,11 @@
 #about-page .author-tag-right {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
+}
+#about-page .author-tag-left .author-tag:first-child, #about-page .author-tag-left .author-tag:last-child {
+  margin-right: -16px;
+}
+#about-page .author-tag-right .author-tag:first-child, #about-page .author-tag-right .author-tag:last-child {
+  margin-left: -16px;
 }
