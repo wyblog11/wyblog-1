@@ -1,3 +1,11 @@
+#about-page .author-main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+}
 #gitcalendar {
   margin: 0 auto;
   border-radius: 24px;
