@@ -14,3 +14,10 @@
 #about-page .author-tag-right .author-tag:first-child, #about-page .author-tag-right .author-tag:last-child {
   margin-left: -16px;
 }
+  #about-page .author-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 80px 0 16px 0;
+    justify-content: center;
+  }
