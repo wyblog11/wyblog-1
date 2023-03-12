@@ -1,0 +1,10 @@
+#about-page .author-tag-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#about-page .author-tag-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
