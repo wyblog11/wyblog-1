@@ -1,3 +1,20 @@
+.author-box::before{
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent,transparent,transparent,#8758FF);
+    animation: animate 4s linear infinite;
+    animation-delay: -2s;
+}
+.author-box::after{
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-image: conic-gradient(transparent,transparent,transparent,#5CB8E4);
+    animation: animate 4s linear infinite;
+}
 @keyframes animate {
     0% {
       transform: rotate(0deg);
