@@ -9,6 +9,13 @@
   overflow: hidden;
 }
 
+#page:has(#about-page) {
+  border: 0;
+  box-shadow: none !important;
+  padding: 0 !important;
+  background: transparent !important;
+}
+
 #page:has(#about-page) .page-title {
   display: none;
 }
@@ -32,14 +39,14 @@
   margin: auto;
   border-radius: 50%;
   overflow: hidden;
-  width: 190px;
-  height: 190px;
+  width: 180px;
+  height: 180px;
 }
 #about-page .author-box .author-img img {
   border-radius: 50%;
   overflow: hidden;
-  width: 190px;
-  height: 190px;
+  width: 180px;
+  height: 180px;
 }
 
 #about-page .author-box .image-dot {
@@ -48,7 +55,7 @@
   background: #6bdf8f;
   position: absolute;
   border-radius: 50%;
-  border: 6px solid var(--heo-white);
+  border: 6px solid var(--anzhiyu-background);
   top: 50%;
   left: 50%;
   transform: translate(35px, 45px);
@@ -76,7 +83,7 @@
 .author-content-item {
   width: 49%;
   border-radius: 24px;
-  background: #fcfbfb;
+  background: var(--anzhiyu-card-bg);
   border: var(--style-border-always);
   box-shadow: var(--anzhiyu-shadow-border);
   position: relative;
