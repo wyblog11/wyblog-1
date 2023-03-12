@@ -354,3 +354,92 @@ related_post:
   enable: true
   limit: 6 # 顯示推薦文章數目
   date_type: updated # or created or updated 文章日期顯示創建日或者更新日
+
+# about(关于页面)
+# --------------------------------------
+about:
+  reward: #关于打赏模块开启
+    enable: false
+  info:
+    right:
+      # - 🤖️ 数码爱好者
+      # - 🔍 分享与热心帮助
+      # - 🏠 智能家居小能手
+      # - 🔨 开发小萌新
+    left:
+      # - 专修交互设计 🤝
+      # - 脚踏实地行动派 🏃
+      # - 专攻各种困难 🧱
+      # - 人狠话不多 💢
+  job: #学生、独立开发者、博主
+  live: #中国，北京市
+  born: #1997
+  school: #大连工业大学
+  can: #产品设计
+  work: #UI/产品
+  character: #逻辑学家
+  character2: #INTP-T
+  personalities: #https://cdn.zhheo.com/public/svg/INTP-T.svg
+  selfie: #https://p.zhheo.com/202352d98ec86bef3388a0152b33cf9d06ad082002.png!cover
+  maxim1: #荆棘之路，
+  maxim2: #劈风斩浪。
+  tc1: #玄学流电脑疑难问题
+  tc2: #解决专家
+  tc3: #软件学习能力
+  tc4: #MAX
+  uid: #'UID:125766904'
+  fanjuname: #刺客伍六七
+  fanjulink: #'https://www.bilibili.com/bangumi/play/ss36594/?spm_id_from=333.999.0.0'
+  liketechnology: #数码科技
+  liketechnologyand: #手机、电脑软硬件
+  sllctitle: #为什么建站？
+  xllc: #创建这个站的时候，想要就是能够有一个自己能够积累知识、积累兴趣的地方。和他人分享，会让这些成为积累和沉淀。如果能够帮助到更多的人，帮助更多人解决问题，那一定是非常棒的事情。分享这件事我从很早就开始了，起初做的微信公众号，现在做的网站。因为我比较喜欢研究数码和软件，想要探究在互联网上的事物是如何被创造和发展。网络给我带来了非常多的知识和眼界，我也想力所能及的分享一些我生活的琐碎知识。与大多数垂直类的技术博客不同，这里的种类会非常的繁杂，有技能的教程干货、有生活上的吐槽和妙招、有话题上的思考和想法。一般我研究什么、发现了什么都会分享在这里。这些就是创造这个小站的本意，也是我分享生活的方式。有幸能和你相遇在这里，相信我们能共同留下一段美好记忆。
+  skills_list:
+    - name: Vue
+      color: "#b8f0ae"
+      icon: https://img02.anzhiy.cn/adminuploads/1/2022/09/25/633001374747b.png
+    - name: React
+      color: "#222"
+      icon: data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K
+    - name: Docker
+      color: "#57b6e6"
+      icon: https://img02.anzhiy.cn/adminuploads/1/2022/09/25/63300647df7fa.png
+    - name: Photoshop
+      color: "#4082c3"
+      icon: https://img02.anzhiy.cn/adminuploads/1/2022/09/25/63300647e1f10.png
+    - name: Node
+      color: "#333"
+      icon: https://npm.elemecdn.com/anzhiyu-blog@2.1.1/img/svg/node-logo.svg
+    - name: Webpack
+      color: "#2e3a41"
+      icon: https://img02.anzhiy.cn/adminuploads/1/2022/09/26/6330ff27e5c9b.png
+    - name: Pinia
+      color: "#fff"
+      icon: https://npm.elemecdn.com/anzhiyu-blog@2.0.8/img/svg/pinia-logo.svg
+    - name: Python
+      color: "#fff"
+      icon: https://img02.anzhiy.cn/adminuploads/1/2022/09/25/63300647dea51.png
+    - name: Vite
+      color: "#937df7"
+      icon: https://npm.elemecdn.com/anzhiyu-blog@2.0.8/img/svg/vite-logo.svg
+    - name: Flutter
+      color: "#4499e4"
+      icon: https://img02.anzhiy.cn/adminuploads/1/2022/09/25/633004063ff15.png
+    - name: Java
+      color: "#fff"
+      icon: https://img02.anzhiy.cn/adminuploads/1/2022/09/25/633005bf0fd1e.jpg
+    - name: CSS3
+      color: "#2c51db"
+      icon: https://img02.anzhiy.cn/adminuploads/1/2022/09/25/633006cc55e07.png
+    - name: JS
+      color: "#f7cb4f"
+      icon: https://img02.anzhiy.cn/adminuploads/1/2022/09/25/633006eee047b.png
+    - name: HTML
+      color: "#e9572b"
+      icon: https://img02.anzhiy.cn/adminuploads/1/2022/09/25/633006f9ab27d.png
+    - name: Git
+      color: "#df5b40"
+      icon: https://img02.anzhiy.cn/adminuploads/1/2022/09/25/633006e37c7fd.webp
+    - name: Apifox
+      color: "#e65164"
+      icon: https://img02.anzhiy.cn/adminuploads/1/2022/09/25/633007087a4dc.webp
