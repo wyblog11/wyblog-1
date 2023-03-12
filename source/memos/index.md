@@ -7,9 +7,9 @@ date: 2021-03-14 20:00:00
 <div id="bber"></div>
 <script type="text/javascript">
   var bbMemos = {
-    memos : 'https://memos-memos-612901.cloud.okteto.net',
+    memos : 'https://s.dusays.com',
     limit : '',
-    creatorId:'1' ,
+    creatorId:'2' ,
     domId: '',
   }
 </script>
