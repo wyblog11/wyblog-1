@@ -55,7 +55,7 @@
   background: #6bdf8f;
   position: absolute;
   border-radius: 50%;
-  border: 6px solid var(--anzhiyu-background);
+  border: 6px solid var(--heo-white);
   top: 50%;
   left: 50%;
   transform: translate(35px, 45px);
@@ -83,7 +83,7 @@
 .author-content-item {
   width: 49%;
   border-radius: 24px;
-  background: var(--anzhiyu-card-bg);
+  background: #fcfbfb;
   border: var(--style-border-always);
   box-shadow: var(--anzhiyu-shadow-border);
   position: relative;
