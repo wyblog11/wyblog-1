@@ -33,7 +33,7 @@
   animation: 6s ease-in-out 0s infinite normal none running floating;
 }
 #about-page .author-tag-left .author-tag:first-child, #about-page .author-tag-left .author-tag:last-child {
-  margin-right: -16px;
+  margin-right: 20px;
 }
 #about-page .author-tag:nth-child(1) {
   animation-delay: 0s;
