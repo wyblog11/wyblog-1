@@ -44,3 +44,9 @@
 #about-page .author-tag:nth-child(1) {
   animation-delay: 0s;
 }
+[data-theme='dark'] img {
+  filter: brightness(0.8);
+}
+[data-theme='light'] img {
+  filter: brightness(0.8);
+}
