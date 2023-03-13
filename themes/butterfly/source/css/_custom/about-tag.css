@@ -8,12 +8,6 @@
   flex-direction: column;
   align-items: flex-start;
 }
-#about-page .author-tag-left .author-tag:first-child, #about-page .author-tag-left .author-tag:last-child {
-  margin-right: -16px;
-}
-#about-page .author-tag-right .author-tag:first-child, #about-page .author-tag-right .author-tag:last-child {
-  margin-left: -16px;
-}
 #about-page .author-box {
   position: relative;
   display: flex;
@@ -43,12 +37,6 @@
 }
 #about-page .author-tag:nth-child(1) {
   animation-delay: 0s;
-}
-[data-theme='dark'] img {
-  filter: brightness(0.8);
-}
-[data-theme='light'] img {
-  filter: brightness(0.8);
 }
 .author-main{
     height: 100%;
