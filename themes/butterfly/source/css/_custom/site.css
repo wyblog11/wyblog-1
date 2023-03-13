@@ -276,33 +276,3 @@
   align-items: center;
   margin: 0 0 16px 0;
 }
-/* about关于页 */
-.la-widget.la-data-widget__container {
-  border-radius: 12px;
-  border: var(--style-border) !important;
-  box-shadow: var(--heo-shadow-border);
-  border-color: var(--heo-card-border);
-}
-
-#about-page {
-  display: flex;
-  padding-top: 1rem;
-  flex-direction: column;
-  align-items: center;
-}
-
-@keyframes floating {
-  0% { transform: translate(0,  -4px); }
-  50%  { transform: translate(0, 4px); }
-  100%   { transform: translate(0, -4px); }   
-}
-#about-page .author-img img {
-    border-radius: 200px;
-    width: 200px;
-}
-p.p.center.logo.large {
-  font-size: 2rem !important;
-  font-weight: bold !important;
-  margin: 1rem 0 !important;
-  line-height: 1 !important;
-}
