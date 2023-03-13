@@ -966,5 +966,5 @@ CDN:
     # prismjs_js:
     # prismjs_lineNumber_js:
     # prismjs_autoloader:
-     artalk_js: https://unpkg.com/artalk@2.4.4/dist/Artalk.js
-     artalk_css: https://unpkg.com/artalk@2.4.4/dist/Artalk.js
+      artalk_js: https://unpkg.com/artalk@2.4.4/dist/Artalk.js
+      artalk_css: https://unpkg.com/artalk@2.4.4/dist/Artalk.js
