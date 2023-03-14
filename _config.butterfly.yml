@@ -47,6 +47,8 @@ inject:
      - <link rel="stylesheet" href="/css/music.css">
      - <link rel="stylesheet" href="/css/footer.css">
      - <span id="fps"></span> # 帧率检测
+     - <link rel="stylesheet" href="https://www.antmoe.com/pluginsSrc/artalk/dist/Artalk.css">
+     - <script src="https://www.antmoe.com/pluginsSrc/artalk/dist/Artalk.js"></script>
   bottom:  
      - <script defer src="/js/cursor.js"></script>
      - <script async src="/js/fps.js"></script> # 帧率检
