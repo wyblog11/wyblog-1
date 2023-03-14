@@ -80,11 +80,11 @@ katex:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: https://www.wyblog1.tk/media/images/custom-headerLogo.ico
+favicon: https://www.wyblog1.tk/Cover/1.jpg
 
 # Avatar (頭像)
 avatar:
-  img: https://www.wyblog1.tk/media/images/custom-headerLogo.ico
+  img: https://www.wyblog1.tk/Cover/1.jpg
   effect: false
 
 # Disable all banner image
