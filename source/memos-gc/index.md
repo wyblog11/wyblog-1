@@ -9,6 +9,14 @@ title: 说说广场
 
 点击 [此处](https://memos.wyblog1.tk/auth) 注册账号。点击下方头像，即可看到指定用户所发布的说说：
 
+<div class="post" style="max-width:1000px">
+<div id="bbs"></div>
+<script src="https://fastly.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://fastly.jsdelivr.net/gh/Tokinx/ViewImage/view-image.min.js"></script>
+<script src="https://fastly.jsdelivr.net/gh/Tokinx/Lately/lately.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
+<script src="/bbs-lmm.js"></script>
 <style>
 #bbs{padding: 2rem 0;}
 #bbs-urls{margin-top: 2rem;}
@@ -106,12 +114,3 @@ title: 说说广场
 .video-wrapper{position:relative;padding-bottom:55%;width:100%;height:0}
 .video-wrapper iframe{position:absolute;height:100%;width:100%;}
 </style>
-<div class="post" style="max-width:1000px">
-<div id="bbs"></div>
-<script src="https://fastly.jsdelivr.net/npm/marked/marked.min.js"></script>
-<script src="https://fastly.jsdelivr.net/gh/Tokinx/ViewImage/view-image.min.js"></script>
-<script src="https://fastly.jsdelivr.net/gh/Tokinx/Lately/lately.min.js"></script>
-<script src="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
-<script src="https://fastly.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
-<script src="/bbs-lmm.js"></script>
-</div>
