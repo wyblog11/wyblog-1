@@ -8,8 +8,6 @@ title: 说说广场
 ---
 
 点击 [此处](https://memos.wyblog1.tk/auth) 注册账号。点击下方头像，即可看到指定用户所发布的说说：
-
-<div class="post" style="max-width:1000px">
 <div id="bbs"></div>
 <script src="https://fastly.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script src="https://fastly.jsdelivr.net/gh/Tokinx/ViewImage/view-image.min.js"></script>
