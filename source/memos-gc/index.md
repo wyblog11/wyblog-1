@@ -115,5 +115,3 @@ title: 说说广场
 <script src="https://fastly.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
 <script src="/bbs-lmm.js"></script>
 </div>
-<script type="text/javascript" src="https://immmmm.com/theme-main-1.js"></script>
-<script>
