@@ -25,7 +25,6 @@ footer_bg: false
 background: url(https://source.fomal.cc/img/home_bg.webp)
 inject:
   head:
-     - "<style>#article-container.post-content h1:before, h2:before, h3:before, h4:before, h5:before, h6:before { -webkit-animation: avatar_turn_around 1s linear infinite; -moz-animation: avatar_turn_around 1s linear infinite; -o-animation: avatar_turn_around 1s linear infinite; -ms-animation: avatar_turn_around 1s linear infinite; animation: avatar_turn_around 1s linear infinite; }</style>"
      - <script async src="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/categoryBar/categoryBar.js"></script>
      - <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/categoryBar/categoryBar.css">
      - <script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script> # jQuery
@@ -35,7 +34,6 @@ inject:
      - <script src="/zhheo/random.js"></script>
      - <canvas id="universe"></canvas>
      - <script defer src="/js/universe.js"></script>
-     - <script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script> # jQuery
      - <script async data-pjax src="/js/txmap.js"></script> # 腾讯位置API
      - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css"  media="defer" onload="this.media='all'">
      - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_3895868_1p10hc0c3gd.css" media="defer" onload="this.media='all'">
