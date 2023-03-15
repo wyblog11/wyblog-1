@@ -1,5 +1,6 @@
 const urls = [
-  {host:"https://memos.wyblog1.tk/",creatorId:"1",imgsrc:"https://www.wyblog1.tk/Cover/1.jpg"}
+  {host:"https://memos.wyblog1.tk/",creatorId:"1",imgsrc:"https://www.wyblog1.tk/Cover/1.jpg"},
+  {host:"https://s.dusays.com/",creatorId:"2",imgsrc:"https://cravatar.cn/avatar/0d0462a44b088c433b8191135979efd4"}
 ]
 var bbDom = document.querySelector('#bbs');
 var load = '<div id="load" onclick="nextFetch()" ><button class="load-btn button-load">加载更多</button></div>'
