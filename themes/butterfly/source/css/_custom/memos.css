@@ -14,13 +14,17 @@ div#main_top {
     }
 }
 
-@media screen and (max-width: 768px)
+@media screen and (min-width: 768px) {
+    div#main_top {
+        max-width: 768px;
+    }
+}
+
 #bber-talk {
     border-radius: 8px!important;
     background: rgba(245,249,255,.6);
 }
 
-@media screen and (max-width: 768px)
 #bber-talk {
     min-height: 44px;
     padding: 0 12px 0 8px;
@@ -30,7 +34,7 @@ div#main_top {
     cursor: pointer;
     width: 100%;
     min-height: 50px;
-    background: rgba(245,249,255,.6);
+    background: rgba(245,249,255);
     padding: .5rem 1rem;
     display: flex;
     align-items: center;
