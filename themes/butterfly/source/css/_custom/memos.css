@@ -1,6 +1,7 @@
 /* maintop */
 
 div#main_top {
+    max-width: 1500px;
     margin: 20px auto 15px;
     padding: 0 15px;
 }
