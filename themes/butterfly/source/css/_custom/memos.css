@@ -1,10 +1,7 @@
 /* maintop */
 
 div#main_top {
-    z-index: 1;
-    max-width: 1200px;
     margin: 20px auto 15px;
-    width: 100%;
     padding: 0 15px;
 }
 
@@ -14,16 +11,23 @@ div#main_top {
     }
 }
 
+@media screen and (max-width: 768px)
 #bber-talk {
-    border-radius: 12px;
-    box-shadow: none;
-    border: 1px solid #e0e3ed;
-    box-sizing: border-box;
-    transition: all .3s ease-in-out;
+    border-radius: 8px!important;
+    background: rgba(245,249,255,.6);
+}
+
+@media screen and (max-width: 768px)
+#bber-talk {
+    min-height: 44px;
+    padding: 0 12px 0 8px;
+}
+
+#bber-talk {
     cursor: pointer;
-    width: 101%;
+    width: 100%;
     min-height: 50px;
-    background: var(--card-bg);
+    background: rgba(245,249,255,.6);
     padding: .5rem 1rem;
     display: flex;
     align-items: center;
