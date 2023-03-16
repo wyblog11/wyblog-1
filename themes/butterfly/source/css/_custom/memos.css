@@ -3,7 +3,7 @@
 div#main_top {
     z-index: 1;
     max-width: 1200px;
-    margin: 20px auto -15px;
+    margin: 20px auto 15px;
     width: 100%;
     padding: 0 15px;
 }
@@ -21,7 +21,7 @@ div#main_top {
     box-sizing: border-box;
     transition: all .3s ease-in-out;
     cursor: pointer;
-    width: 100%;
+    width: 101%;
     min-height: 50px;
     background: var(--card-bg);
     padding: .5rem 1rem;
