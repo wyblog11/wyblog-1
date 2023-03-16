@@ -1,8 +1,10 @@
 /* maintop */
 
 div#main_top {
-    max-width: 1500px;
-    margin: 20px auto 15px;
+    z-index: 1;
+    max-width: 1400px;
+    margin: 20px auto -15px;
+    width: 100%;
     padding: 0 15px;
 }
 
