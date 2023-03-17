@@ -6,16 +6,19 @@ menu:
    社交 || iconfont icon-shejiao || faa-tada:
     友链: /links/ || iconfont icon-pengyou || faa-tada
     友圈: /friends/ || iconfont icon-iconfontzhizuobiaozhunbduan36　|| faa-tada
-    短文: /ispeak/ || iconfont icon-xiegenjin　|| faa-tada
+   关于 || iconfont icon-geren || faa-tada:
+    说说 || iconfont icon-xiegenjin　|| faa-tada:
+     短文: /ispeak/ || iconfont icon-xiegenjin　|| faa-tada
+     说说: /artitalk/ || iconfont icon-shejiao || faa-tada
+     memos说说: /memos-gc/ || iconfont icon-shejiao || faa-tada
+     说说广场: /memos-gc/ || iconfont icon-shejiao || faa-tada
+     哔哔点啥: /bbtalk/ || iconfont icon-shejiao || faa-tada
     关于: /about/ || iconfont icon-geren || faa-tada
+    音乐: /music/ || iconfont icon-yinle || faa-tada
    小功能 || iconfont icon-gengduo || faa-tada:  
     报纸: https://news.wyblog1.tk/ || iconfont icon-xinwen || faa-tada
-    说说: /artitalk/ || iconfont icon-shejiao || faa-tada
-    说说广场: /memos-gc/ || iconfont icon-shejiao || faa-tada
-    哔哔点啥: /bbtalk/ || iconfont icon-shejiao || faa-tada
-    音乐: /music/ || iconfont icon-yinle || faa-tada
     木鱼: /muyu/ || iconfont icon-muyu1 || faa-tada
-
+    
 
 # The banner image of home page
 index_img: https://source.fomal.cc/img/home_bg.webp
