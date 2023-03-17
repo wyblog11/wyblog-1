@@ -1,8 +1,8 @@
 const urls = [
   {host:"https://memos.wyblog1.tk/",creatorId:"1",imgsrc:"https://www.wyblog1.tk/Cover/1.jpg"},
   {host:"https://s.dusays.com/",creatorId:"2",imgsrc:"https://cravatar.cn/avatar/0d0462a44b088c433b8191135979efd4"},
-  {host:"https://memos.itisn.cyou/",creatorId:"26",imgsrc:"https://cravatar.cn/avatar/0d0462a44b088c433b8191135979efd4"},
-  {host:"https://memos.itisn.cyou/",creatorId:"2",imgsrc:"https://www.imcharon.com/author/1/"}
+  {host:"https://s.dusays.com/",creatorId:"1",imgsrc:"https://cravatar.cn/avatar/28b57baa4e8f13fe4292ccb2de267e30"},
+  {host:"https://memos.itisn.cyou/",creatorId:"2",imgsrc:"https://img.cdn.nesxc.com/upload/wordpress/bedf33e068e4abe0beceb1d1ab00f99f-150x150.jpg"}
 ]
 var bbDom = document.querySelector('#bbs');
 var load = '<div id="load" onclick="nextFetch()" ><button class="load-btn button-load">加载更多</button></div>'
