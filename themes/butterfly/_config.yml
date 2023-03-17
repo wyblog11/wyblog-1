@@ -966,5 +966,3 @@ CDN:
     # prismjs_js:
     # prismjs_lineNumber_js:
     # prismjs_autoloader:
-    artalk_js: https://www.antmoe.com/pluginsSrc/artalk/dist/Artalk.js
-    artalk_css: https://www.antmoe.com/pluginsSrc/artalk/dist/Artalk.css
