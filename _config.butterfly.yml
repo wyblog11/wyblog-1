@@ -349,6 +349,8 @@ CDN:
   option:
     # main_css:
     # main:
+    main: https://jsd.onmicrosoft.cn/npm/hexo-theme-butterfly@4.5.1/source/js/main.min.js
+    utils: https://jsd.onmicrosoft.cn/npm/hexo-theme-butterfly@4.5.1/source/js/utils.min.js
     # utils:
     # translate:
     # local_search:
