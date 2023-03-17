@@ -1,7 +1,7 @@
 ---
 title: memos
 top_img: false
-comments: false
+comments: true
 date: 2021-03-14 20:00:00
 ---
 <style>
