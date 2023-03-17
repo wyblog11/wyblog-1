@@ -197,10 +197,10 @@ span.talk_tag{
 </style>
 
 <div id="talk">
-<div class='loading'><img src="/img/loading.svg" alt="加载中..."></div>
+<div class='loading'><img src="https://www.wyblog1.tk/Cover/1.jpg" alt="加载中..."></div>
 </div>
 
-<div class="limit">- 只展示最近30条说说 -</div>
+<div class="limit">- 只展示最近100条说说 -</div>
 <script>
 pageTalk();
 // 页面说说
