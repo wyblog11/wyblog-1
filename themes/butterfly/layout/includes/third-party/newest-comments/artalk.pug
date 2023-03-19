@@ -70,7 +70,7 @@ script.
       if (document.querySelector('#card-newest-comments .aside-list')) {
         const data = saveToLocal.get('artalk-newest-comments')
         if (data) {
-          generateHtml(JSON.parse(data))
+          generateHtml(JSON.parse(data)
         } else {
           getComment()
         }
