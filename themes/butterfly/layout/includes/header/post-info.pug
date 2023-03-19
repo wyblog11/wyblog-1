@@ -29,12 +29,17 @@
         span.post-meta-categories
           if (theme.post_meta.post.date_type)
             span.post-meta-separator |
-
+    
           each item, index in page.categories.data
             i.fas.fa-inbox.fa-fw.post-meta-icon
             a(href=url_for(item.path)).post-meta-categories #[=item.name]
             if (index < page.categories.data.length - 1)
               i.fas.fa-angle-right.post-meta-separator
+    span.post-meta-orlike
+        i.iconfont.icon-aixin.fa-fw.post-meta-icon
+        span.post-meta-label= '点赞数:'
+        a(href=url_for(page.path) + '#orlike-box')
+            span.orlike-count  
 
     .meta-secondline
       - let postWordcount = theme.wordcount.enable && (theme.wordcount.post_wordcount || theme.wordcount.min2read)
