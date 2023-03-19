@@ -189,7 +189,7 @@ remark42:
 # Artalk
 # https://artalk.js.org/guide/frontend/config.html
 artalk:
-  server: https://wyblog-artalk.itisn.cyou/
+  server: https://wyblog-artalk.itisn.cyou
   site: 无影的artalk
   visitor: true
   option:
