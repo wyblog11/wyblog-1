@@ -10,4 +10,15 @@
           a(href=url_for(clickTo) target='_blank')
             img.post-qr-code-img(src=url_for(item.img) alt=item.text)
           .post-qr-code-desc=item.text
-
+#orlike-box.orlike-box
+  script.
+    (() => {
+      function loadOrLike () {
+        new OrLike({
+          serverUrl: "你的api",
+          el: ".orlike-box",
+          days: 30,
+        });
+      }
+      window.pjax ? loadOrLike() : window.addEventListener('load', loadOrLike)
+    })()
