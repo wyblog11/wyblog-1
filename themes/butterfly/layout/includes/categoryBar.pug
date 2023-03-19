@@ -1,4 +1,7 @@
-#category-bar
-  .category-bar-items#category-bar-items
-    !=getarray_bar("category")
-  a.category-bar-more(href="/categories/") 更多
+.home-catalog-bar#catalog-bar
+    i.fa-fw.fas.fa-shapes
+    #catalog-list
+      .catalog-list-item.catalog-shouye-item(id= (is_current('/') === true) ? 'home-catalog-item' : '')
+        a(href="/") 首页
+      !=catalog_list("categories")
+    a.catalog-more(href="/categories/")!= '更多'
