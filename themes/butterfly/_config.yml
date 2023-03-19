@@ -907,7 +907,7 @@ CDN:
 
   # Custom format
   # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
-  custom_format: https://jsd.onmicrosoft.cn/npm/${name}/${min_file}
+  custom_format: https://cdn.jsdelivr.net/npm/${name}/${min_file}
 
   option:
     swiper_css: https://cdn.cbd.int/hexo-butterfly-swiper-anzhiyu-pro/lib/swiper.min.css #swiper css依赖
