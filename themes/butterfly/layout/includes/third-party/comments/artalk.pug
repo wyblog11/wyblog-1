@@ -4,7 +4,7 @@ script.
   function addArtalkSource () {
     const ele = document.createElement('link')
     ele.rel = 'stylesheet'
-    ele.href= 'https://www.antmoe.com/pluginsSrc/artalk/dist/Artalk.css'
+    ele.href= '!{theme.asset.artalk_css}'
     document.getElementsByTagName('head')[0].appendChild(ele)
   }
 
@@ -23,7 +23,7 @@ script.
     if (typeof window.artalkItem === 'object') setTimeout(()=>{initArtalk()},200)
     else {
       addArtalkSource()
-      typeof Artalk !== 'function' ? getScript('https://www.antmoe.com/pluginsSrc/artalk/dist/Artalk.js').then(initArtalk)
+      typeof Artalk !== 'function' ? getScript('!{theme.asset.artalk_js}').then(initArtalk)
                                   : setTimeout(()=>{initArtalk()},200)
     }
   }
