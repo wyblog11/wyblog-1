@@ -28,8 +28,6 @@ footer_bg: false
 background: url(https://source.fomal.cc/img/home_bg.webp)
 inject:
   head:
-     - <script async src="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/categoryBar/categoryBar.js"></script>
-     - <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/categoryBar/categoryBar.css">
      - <script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script> # jQuery
      - <script async data-pjax src="https://cdn.wpon.cn/2022-sucai/Gold-ingot.js"></script>  # 新年元宝
      - <script async data-pjax src="/js/newYear.js"></script>  # 新年倒计时
@@ -346,8 +344,6 @@ CDN:
   option:
     # main_css:
     # main:
-    main: https://jsd.onmicrosoft.cn/npm/hexo-theme-butterfly@4.5.1/source/js/main.min.js
-    utils: https://jsd.onmicrosoft.cn/npm/hexo-theme-butterfly@4.5.1/source/js/utils.min.js
     # utils:
     # translate:
     # local_search:
