@@ -55,6 +55,8 @@ inject:
      - <script defer src="https://cdn1.tianli0.top/gh/nextapps-de/winbox/dist/winbox.bundle.min.js"></script> # winbox支持
      - <script type="text/javascript" src="/js/rightmenu.js"></script>
      - <script defer src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script>
+     - <script defer="true" src="https://npm.elemecdn.com/jquery@latest/dist/jquery.min.js"></script>
+     - <script defer="true" src="https://www.qcqx.cn/js/orlike.js"></script>
      - <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js">
      - <script charset="UTF-8" id="LA_COLLECT" src="https://sdk.51.la/js-sdk-pro.min.js"></script>
      - <script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
