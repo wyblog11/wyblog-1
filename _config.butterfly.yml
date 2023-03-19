@@ -193,7 +193,15 @@ artalk:
   site: 无影的artalk
   visitor: true
   option:
-
+    el: #Comments
+    locale: zh-CN
+    pagination: {
+      pageSize: 20,   // 每页评论数
+      readMore: true, // 加载更多 or 分页条
+      autoLoad: true, // 自动加载 (加载更多)
+    }
+ 
+ 
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
 font:
