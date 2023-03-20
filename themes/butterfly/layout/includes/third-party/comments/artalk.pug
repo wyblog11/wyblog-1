@@ -11,7 +11,7 @@ script.
         darkMode: document.documentElement.getAttribute('data-theme') === 'dark',
         countEl: '.artalk-count',
         onCommentLoaded: function () {
-          btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+          btf.loadLightbox(document.querySelectorAll('#artalk .atk-content img:not(.atk-owo-emotion)'))
         }
       },!{JSON.stringify(option)}))
     }
@@ -36,7 +36,7 @@ script.
       !{count ? 'GLOBAL_CONFIG_SITE.isPost && getCount()' : ''}
     }
 
-    const loadTwikoo = () => {
+    const loadArtalk = () => {
       if (typeof artalk === 'object') {
         setTimeout(runFn,0)
         return
@@ -44,12 +44,11 @@ script.
       getScript('!{url_for(theme.asset.artalk)}').then(runFn)
     }
 
-    if ('!{use[0]}' === 'Artalk' || !!{lazyload}) {
-      if (!{lazyload}) btf.loadComment(document.getElementById('artalk-wrap'), loadArtalk)
-      else loadArtalk()
-    } else {
-      window.loadOtherComment = () => {
-        loadArtalk()
-      }
+     if ('!{theme.comments.use[0]}' === 'Artalk' || !!{theme.comments.lazyload}) {
+    if (!{theme.comments.lazyload}) btf.loadComment(document.getElementById('artalk-wrap'), loadArtalk)
+    else loadArtalk()
+  } else {
+    function loadOtherComment () {
+      loadArtalk()
     }
-  })()
+  }
