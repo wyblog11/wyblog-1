@@ -19,7 +19,21 @@ script.
         countEl: '.artalk-count'
       },!{JSON.stringify(option)}))
     }
-
+    const getCount = () => {
+      const countELement = document.getElementById('artalk-count')
+      if(!countELement) return
+      artalk.getCommentsCount({
+        server: '!{server}',
+        site: '!{site}',
+        pageKey: location.pathname,
+         darkMode: document.documentElement.getAttribute('data-theme') === 'dark'
+      }).then(function (res) {
+        countELement.innerText = res[0].count
+      }).catch(function (err) {
+        console.error(err);
+      });
+    }
+    
     if (typeof window.artalkItem === 'object') setTimeout(()=>{initArtalk()},200)
     else {
       addArtalkSource()
