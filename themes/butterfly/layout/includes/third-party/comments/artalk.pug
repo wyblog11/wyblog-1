@@ -1,50 +1,41 @@
 - const { server, site, option } = theme.artalk
 
 script.
-  (()=>{
-    const init = () => {
-      artalk.init(Object.assign({
+  function addArtalkSource () {
+    const ele = document.createElement('link')
+    ele.rel = 'stylesheet'
+    ele.href= '!{theme.asset.artalk_css}'
+    document.getElementsByTagName('head')[0].appendChild(ele)
+  }
+
+  function loadArtalk () {
+    function initArtalk () {
+      window.artalkItem = new Artalk(Object.assign({
         el: '#artalk-wrap',
         server: '!{server}',
         site: '!{site}',
         pageKey: location.pathname,
         darkMode: document.documentElement.getAttribute('data-theme') === 'dark',
-        countEl: '.artalk-count',
-        onCommentLoaded: function () {
-          btf.loadLightbox(document.querySelectorAll('#artalk .atk-content img:not(.atk-owo-emotion)'))
-        }
+        countEl: '.artalk-count'
       },!{JSON.stringify(option)}))
     }
-    
-    const getCount = () => {
-      const countELement = document.getElementById('artalk-count')
-      if(!countELement) return
-      artalk.getCommentsCount({
-        server: '!{server}',
-        site: '!{site}',
-        pageKey: location.pathname,
-         darkMode: document.documentElement.getAttribute('data-theme') === 'dark'
-      }).then(function (res) {
-        countELement.innerText = res[0].count
-      }).catch(function (err) {
-        console.error(err);
-      });
-    }
-    
-    const runFn = () => {
-      init()
-      !{count ? 'GLOBAL_CONFIG_SITE.isPost && getCount()' : ''}
-    }
 
-    const loadArtalk = () => {
-      if (typeof artalk === 'object') {
-        setTimeout(runFn,0)
-        return
-      } 
-      getScript('!{url_for(theme.asset.artalk)}').then(runFn)
+    if (typeof window.artalkItem === 'object') setTimeout(()=>{initArtalk()},200)
+    else {
+      addArtalkSource()
+      typeof Artalk !== 'function' ? getScript('!{theme.asset.artalk_js}').then(initArtalk)
+                                  : setTimeout(()=>{initArtalk()},200)
     }
+  }
 
-     if ('!{theme.comments.use[0]}' === 'Artalk' || !!{theme.comments.lazyload}) {
+  document.getElementById('darkmode').addEventListener('click',()=> {
+    if (typeof window.artalkItem !== 'object') return
+    let isDark = document.documentElement.getAttribute('data-theme') === 'dark'
+    window.artalkItem.setDarkMode(!isDark)
+  })
+
+  
+  if ('!{theme.comments.use[0]}' === 'Artalk' || !!{theme.comments.lazyload}) {
     if (!{theme.comments.lazyload}) btf.loadComment(document.getElementById('artalk-wrap'), loadArtalk)
     else loadArtalk()
   } else {
