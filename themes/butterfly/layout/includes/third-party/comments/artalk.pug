@@ -35,7 +35,7 @@ script.
   })
 
   
-  if ('!{theme.comments.use[0]}' === 'Artalk' || !!{theme.comments.lazyload}) {
+  if ('!{theme.comments.use[1]}' === 'Artalk' || !!{theme.comments.lazyload}) {
     if (!{theme.comments.lazyload}) btf.loadComment(document.getElementById('artalk-wrap'), loadArtalk)
     else loadArtalk()
   } else {
