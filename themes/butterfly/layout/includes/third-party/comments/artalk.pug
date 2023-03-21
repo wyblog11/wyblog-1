@@ -10,7 +10,7 @@ script.
 
   function loadArtalk () {
     function initArtalk () {
-      window.artalkItem = new Artalk(Object.assign({
+      all.artalkItem = new Artalk(Object.assign({
         el: '#artalk-wrap',
         server: '!{server}',
         site: '!{site}',
@@ -20,7 +20,7 @@ script.
       },!{JSON.stringify(option)}))
     }
 
-    if (typeof window.artalkItem === 'object') setTimeout(()=>{initArtalk()},200)
+    if (typeof all.artalkItem === 'object') setTimeout(()=>{initArtalk()},200)
     else {
       addArtalkSource()
       typeof Artalk !== 'function' ? getScript('!{theme.asset.artalk_js}').then(initArtalk)
@@ -35,7 +35,7 @@ script.
   })
 
   
-  if ('!{theme.comments.use[1]}' === 'Artalk' || !!{theme.comments.lazyload}) {
+  if ('!{theme.comments.use[0]}' === 'Artalk' || !!{theme.comments.lazyload}) {
     if (!{theme.comments.lazyload}) btf.loadComment(document.getElementById('artalk-wrap'), loadArtalk)
     else loadArtalk()
   } else {
