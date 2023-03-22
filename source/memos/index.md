@@ -2,15 +2,11 @@
 title: memos
 top_img: false
 comments: true
+aside: false
 date: 2021-03-14 20:00:00
 ---
 <style>
 /* 页面初始化 */
-div#page {
-    background: none;
-    border: 0;
-    padding: 0;
-}
 .page-title{
     display: none;
 }
