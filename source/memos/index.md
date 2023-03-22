@@ -5,7 +5,15 @@ comments: true
 date: 2021-03-14 20:00:00
 ---
 <style>
-
+/* 页面初始化 */
+div#page {
+    background: none;
+    border: 0;
+    padding: 0;
+}
+.page-title{
+    display: none;
+}
 [data-theme=dark] #twikoo .tk-content,
 #twikoo .tk-content {
     padding: 0;
@@ -17,15 +25,14 @@ date: 2021-03-14 20:00:00
 .tk-comments-container>.tk-comment,
 .tk-submit:nth-child(1){
     background: var(--card-bg);
-    border: 1px solid #e0e3ed;
-    box-shadow: 0 5px 10px rgb(189 189 189 / 10%);
+    border: var(--leonus-border);
     transition: all .3s ease-in-out;
     border-radius: 12px;
 }
 .talk_item:hover,
 .tk-comments-container>.tk-comment:hover,
 .tk-submit:nth-child(1):hover {
-    border-color: #49b1f5;
+    border-color: var(--leonus-purple);
 }
 
 .tk-submit {
@@ -36,11 +43,11 @@ date: 2021-03-14 20:00:00
     padding: 15px;
 }
 
-/* 页面初始化结束 */
-
-#talk{
-    margin-top: 1rem;
+.page-top-card {
+    background-color: #666;
+    margin-bottom:  12px
 }
+/* 页面初始化结束 */
 
 #talk .loading {
     display: flex;
@@ -54,45 +61,40 @@ date: 2021-03-14 20:00:00
 }
 
 .talk_item {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
+    display: inline-block;
+    width: 32.7%;
+    margin-right: 1%;
+    padding: 15px 1rem 12px;
     margin-bottom: 15px;
 }
 
 .avatar {
     margin: 0 !important;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 10px;
 }
 
-
-.talk_bottom,
 .talk_meta {
     display: flex;
     align-items: center;
     width: 100%;
     line-height: 1.5;
 }
-.talk_bottom{
-    justify-content: space-between;
-}
-.info {
+
+.talk_meta .info {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
 }
+
 span.talk_nick {
     color: #6dbdc3;
     font-size: 1.2rem;
 }
-svg.is-badge.icon {
-    width: 15px;
-    margin-left: 5px;
-    padding-top: 3px;
-}
+
 span.talk_date {
+    font-size: 14px;
     opacity: .6;
 }
 
@@ -100,52 +102,28 @@ span.talk_date {
     line-height: 1.5;
     margin-top: 10px;
 }
+
 .zone_imgbox {
     display: flex;
     flex-wrap: wrap;
-    --w: calc(25% - 8px);
+    --w: 177px;
     gap: 10px;
     margin-top: 5px;
 }
+
 .zone_imgbox a {
     display: block;
-    border-radius: 12px;
     width: var(--w);
-    aspect-ratio: 1/1;
+    max-height: var(--w);
     position: relative;
 }
 
 .zone_imgbox img {
+    border-radius: 5px !important;
     width: 100%;
     height: 100%;
     margin: 0 !important;
     object-fit: cover;
-}
-/* 底部 */
-
-.talk_bottom {
-    opacity: .9;
-}
-.talk_bottom .icon {
-    color: var(--font-color);
-    float: right;
-    transition: all .3s;
-}
-
-.talk_bottom .icon:hover {
-    color: #49b1f5;
-}
-
-span.talk_tag{
-    font-size: 14px;
-}
-.talk_content>a {
-    margin: 0 3px;
-    color: #ff7d73 !important;
-}
-.talk_content>a:hover{
-    text-decoration: none !important;
-    color: #ff5143 !important
 }
 
 /* 提醒 */
@@ -165,25 +143,32 @@ span.talk_tag{
     margin-top: 20px;
     color: var(--font-color);
 }
-@media screen and (max-width: 900px) {
+
+@media screen and (max-width: 1250px) {
     .zone_imgbox {
-        --w: calc(33% - 5px);
+        --w: 120px;
     }
-    #talk{
-        margin: 10px 3px 0
+}
+
+
+@media screen and (max-width: 1100px) {
+    .talk_item {
+        width: 49.3%;
+        margin-right: 1.4%;
     }
-    #post-comment{
-        margin: 0 3px
+
+    .zone_imgbox {
+        --w: 150px;
+        gap: 6px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .zone_imgbox {
-        gap: 6px;
+    .talk_item {
+        width: 100%;
+        margin-right: 0;
     }
-    .zone_imgbox {
-        --w: calc(50% - 3px);
-    }
+
     span.talk_date {
         font-size: 14px;
     }
