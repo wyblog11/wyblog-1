@@ -29,6 +29,7 @@ background: url(https://source.fomal.cc/img/home_bg.webp)
 inject:
   head:
      - <script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script> # jQuery
+     - <link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"> 
      - <script async data-pjax src="https://cdn.wpon.cn/2022-sucai/Gold-ingot.js"></script>  # 新年元宝
      - <script async data-pjax src="/js/newYear.js"></script>  # 新年倒计时
      - <script src="/js/nav.js"></script>
@@ -62,6 +63,8 @@ inject:
      - <script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
      - <script> LA.init({id:"JyPwGVBiTFkmpfwz",ck:"JyPwGVBiTFkmpfwz"})</script>
      - <script>new LingQue.Monitor().init({id:"YOU ID",sendSuspicious:true});</script>
+     - <script async src="https://cdn1.tianli0.top/npm/vue@2.6.14/dist/vue.min.js"></script> # 引入VUE(f12)
+     - <script async src="https://cdn1.tianli0.top/npm/element-ui@2.15.6/lib/index.js"></script> # 引入ElementUI(f12)
 wowjs:
   enable: true #控制动画开关。true是打开，false是关闭
   priority: 10 #过滤器优先级
