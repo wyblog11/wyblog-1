@@ -49,6 +49,8 @@ inject:
      - <span id="fps"></span> # 帧率检测
      - <script src="/js/notify.js"></script>
      - <script src="/js/moom.js"></script>
+     - <script src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
+     - <script src="/js/wyblog.js"></script>
   bottom:  
      - <script defer src="/js/cursor.js"></script>
      - <script async src="/js/fps.js"></script> # 帧率检
