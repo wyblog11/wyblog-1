@@ -53,6 +53,7 @@ inject:
      - <script src="/js/wyblog.js"></script>
   bottom:  
      - <script defer src="/js/cursor.js"></script>
+     - <script defer type="text/javascript" src="https://cdn1.tianli0.top/npm/sweetalert2@8.19.0/dist/sweetalert2.all.js"></script> # 节日弹窗依赖
      - <script async src="/js/fps.js"></script> # 帧率检
      - <script async data-pjax src="/js/flink_random.js"></script>
      - <script async data-pjax src="/js/card_author.js"></script>
