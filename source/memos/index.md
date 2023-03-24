@@ -231,6 +231,11 @@ a.banner-button {
 a:hover {
     color: #4976f5;
 }
+@media screen and (max-width: 900px)
+.page-top-card {
+    padding: 10px 1rem;
+    height: 12rem;
+}
 </style>
 
 
