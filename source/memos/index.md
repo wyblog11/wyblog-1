@@ -198,6 +198,19 @@ span.talk_date {
     color: #fff;
     position: relative;
 }
+span.content-item-title {
+    font-size: 2.3em;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.content-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: calc(100% - 5.4rem);
+    bottom: 1rem;
+}
 </style>
 
 
