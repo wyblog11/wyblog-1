@@ -7,6 +7,10 @@ date: 2021-03-14 20:00:00
 ---
 <style>
 /* 页面初始化 */
+div#page {
+    background: none;
+}
+    
 .page-title{
     display: none;
 }
