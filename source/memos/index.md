@@ -17,6 +17,31 @@ date: 2021-03-14 20:00:00
 </div>
 
 <style>
+@media screen and (max-width: 900px)
+a.banner-button {
+    width: 50px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a.banner-button {
+    cursor: pointer;
+    color: #fff!important;
+    backdrop-filter: saturate(180%) blur(20px);
+    background: rgb(120 120 120 / 30%);
+    padding: 5px 15px;
+    border-radius: 100px;
+    text-decoration: none!important;
+}
+a:hover {
+    color: #4976f5;
+}
+@media screen and (max-width: 900px)
+.page-top-card {
+    padding: 10px 1rem;
+    height: 12rem;
+}
 div#page {
     background: none;
 }
@@ -210,31 +235,6 @@ span.content-item-title {
     position: absolute;
     width: calc(100% - 5.4rem);
     bottom: 1rem;
-}
-@media screen and (max-width: 900px)
-a.banner-button {
-    width: 50px;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-a.banner-button {
-    cursor: pointer;
-    color: #fff!important;
-    backdrop-filter: saturate(180%) blur(20px);
-    background: rgb(120 120 120 / 30%);
-    padding: 5px 15px;
-    border-radius: 100px;
-    text-decoration: none!important;
-}
-a:hover {
-    color: #4976f5;
-}
-@media screen and (max-width: 900px)
-.page-top-card {
-    padding: 10px 1rem;
-    height: 12rem;
 }
 </style>
 
