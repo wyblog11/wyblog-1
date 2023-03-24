@@ -211,6 +211,26 @@ span.content-item-title {
     width: calc(100% - 5.4rem);
     bottom: 1rem;
 }
+@media screen and (max-width: 900px)
+a.banner-button {
+    width: 50px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a.banner-button {
+    cursor: pointer;
+    color: #fff!important;
+    backdrop-filter: saturate(180%) blur(20px);
+    background: rgb(120 120 120 / 30%);
+    padding: 5px 15px;
+    border-radius: 100px;
+    text-decoration: none!important;
+}
+a:hover {
+    color: #4976f5;
+}
 </style>
 
 
