@@ -5,18 +5,6 @@ comments: true
 aside: false
 date: 2021-03-14 20:00:00
 ---
-<div class="page-top-card" style="background-image: url(https://cdn.leonus.cn/cover/zongbg.webp);">
-    <div class="content-item-tips">动态</div>
-    <span class="content-item-title">空间说说</span>
-    <div class="content-bottom">
-        <div class="tips">我的生活、吐槽、闲话...</div>
-        <a class="banner-button" onclick="pjax.loadUrl('/memos/')" data-pjax-state="">
-            <i class="fa-solid fa-image"></i><span>说说</span>
-        </a>
-    </div>
-</div>
-
-
 <style>
 div#page {
     background: none;
