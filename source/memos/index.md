@@ -212,7 +212,7 @@ function pageTalk() {
         data.data.forEach(item => { items.push(Format(item)) });
         if (items.length == 30) document.querySelector('.limit').style.display = 'block';
         items.forEach(item => {
-            html += `<div class="talk_item"><div class="talk_meta"><img class="no-lightbox avatar" src="https://www.wyblog1.tk/Cover/1.jpg"><div class="info"><span class="talk_nick">无影博客${icon}</span><span class="talk_date">${item.date}</span></div></div><div class="talk_content">${item.content}</div><div class="talk_bottom"><div><span class="talk_tag"># ${item.tag}</span></div><a href="javascript:;"onclick="goComment('${item.text}')"><span class="icon"><i class="fa-solid fa-message fa-fw"></i></span></a></div></div>` // 注意修改头像链接和名称
+            html += `<div class="talk_item"><div class="talk_meta"><img class="no-lightbox avatar" src="https://www.wyblog1.tk/Cover/1.jpg"><div class="info"><span class="talk_nick">无影博客${icon}</span><span class="talk_date">${item.date}</span></div></div><div class="talk_content">${item.content}</div><div class="talk_bottom"><div>` // 注意修改头像链接和名称
         })
         document.getElementById('talk').innerHTML = html
     })
