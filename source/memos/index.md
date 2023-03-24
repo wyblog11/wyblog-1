@@ -187,7 +187,7 @@ span.talk_date {
 
 @media screen and (max-width: 1100px) {
     .talk_item {
-        width: 49.3%;
+        width: 100%;
         margin-right: 1.4%;
     }
 
