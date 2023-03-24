@@ -5,6 +5,17 @@ comments: true
 aside: false
 date: 2021-03-14 20:00:00
 ---
+<div class="page-top-card" style="background-image: url(https://www.wyblog1.tk/Cover/cover04.jpg);">    
+    <div class="content-item-tips">动态</div>
+    <span class="content-item-title">空间说说</span>
+    <div class="content-bottom">
+        <div class="tips">我的生活、吐槽、闲话...</div>
+        <a class="banner-button" onclick="pjax.loadUrl('/photos/')" data-pjax-state="">
+            <i class="fa-solid fa-image"></i><span>生活相册</span>
+        </a>
+    </div>
+</div>
+
 <style>
 div#page {
     background: none;
@@ -176,17 +187,6 @@ span.talk_date {
 
 <div id="talk">
 <div class='loading'><img src="/img/loading.svg" alt="加载中..."></div>
-</div>
-
-<div class="page-top-card" style="background-image: url(https://cdn.leonus.cn/cover/zongbg.webp);">
-    <div class="content-item-tips">动态</div>
-    <span class="content-item-title">空间说说</span>
-    <div class="content-bottom">
-        <div class="tips">我的生活、吐槽、闲话...</div>
-        <a class="banner-button" onclick="pjax.loadUrl('/photos/')" data-pjax-state="">
-            <i class="fa-solid fa-image"></i><span>生活相册</span>
-        </a>
-    </div>
 </div>
 
 <div class="limit">- 只展示最近100条说说 -</div>
