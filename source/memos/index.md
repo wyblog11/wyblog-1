@@ -182,6 +182,22 @@ span.talk_date {
         font-size: 14px;
     }
 }
+
+
+@media screen and (max-width: 900px)
+.page-top-card {
+    padding: 10px 1rem;
+    height: 12rem;
+}
+.page-top-card {
+    background-size: cover;
+    background-position: center;
+    height: 20rem;
+    padding: 10px 2.7rem;
+    border-radius: 20px;
+    color: #fff;
+    position: relative;
+}
 </style>
 
 
