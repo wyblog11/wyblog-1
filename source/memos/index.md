@@ -9,11 +9,10 @@ date: 2021-03-14 20:00:00
 /* 页面初始化 */
 div#page {
     background: none;
+    border: 0;
+    padding: 0;
 }
-    
-.page-title{
-    display: none;
-}
+
 [data-theme=dark] #twikoo .tk-content,
 #twikoo .tk-content {
     padding: 0;
@@ -25,14 +24,15 @@ div#page {
 .tk-comments-container>.tk-comment,
 .tk-submit:nth-child(1){
     background: var(--card-bg);
-    border: var(--leonus-border);
+    border: 1px solid #e0e3ed;
+    box-shadow: 0 5px 10px rgb(189 189 189 / 10%);
     transition: all .3s ease-in-out;
     border-radius: 12px;
 }
 .talk_item:hover,
 .tk-comments-container>.tk-comment:hover,
 .tk-submit:nth-child(1):hover {
-    border-color: var(--leonus-purple);
+    border-color: #49b1f5;
 }
 
 .tk-submit {
@@ -43,11 +43,11 @@ div#page {
     padding: 15px;
 }
 
-.page-top-card {
-    background-color: #666;
-    margin-bottom:  12px
-}
 /* 页面初始化结束 */
+
+#talk{
+    margin-top: 1rem;
+}
 
 #talk .loading {
     display: flex;
@@ -61,40 +61,45 @@ div#page {
 }
 
 .talk_item {
-    display: inline-block;
-    width: 32.7%;
-    margin-right: 1%;
-    padding: 15px 1rem 12px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
     margin-bottom: 15px;
 }
 
 .avatar {
     margin: 0 !important;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 10px;
 }
 
+
+.talk_bottom,
 .talk_meta {
     display: flex;
     align-items: center;
     width: 100%;
     line-height: 1.5;
 }
-
-.talk_meta .info {
+.talk_bottom{
+    justify-content: space-between;
+}
+.info {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
 }
-
 span.talk_nick {
     color: #6dbdc3;
     font-size: 1.2rem;
 }
-
+svg.is-badge.icon {
+    width: 15px;
+    margin-left: 5px;
+    padding-top: 3px;
+}
 span.talk_date {
-    font-size: 14px;
     opacity: .6;
 }
 
@@ -102,28 +107,52 @@ span.talk_date {
     line-height: 1.5;
     margin-top: 10px;
 }
-
 .zone_imgbox {
     display: flex;
     flex-wrap: wrap;
-    --w: 177px;
+    --w: calc(25% - 8px);
     gap: 10px;
     margin-top: 5px;
 }
-
 .zone_imgbox a {
     display: block;
+    border-radius: 12px;
     width: var(--w);
-    max-height: var(--w);
+    aspect-ratio: 1/1;
     position: relative;
 }
 
 .zone_imgbox img {
-    border-radius: 5px !important;
     width: 100%;
     height: 100%;
     margin: 0 !important;
     object-fit: cover;
+}
+/* 底部 */
+
+.talk_bottom {
+    opacity: .9;
+}
+.talk_bottom .icon {
+    color: var(--font-color);
+    float: right;
+    transition: all .3s;
+}
+
+.talk_bottom .icon:hover {
+    color: #49b1f5;
+}
+
+span.talk_tag{
+    font-size: 14px;
+}
+.talk_content>a {
+    margin: 0 3px;
+    color: #ff7d73 !important;
+}
+.talk_content>a:hover{
+    text-decoration: none !important;
+    color: #ff5143 !important
 }
 
 /* 提醒 */
@@ -143,38 +172,30 @@ span.talk_date {
     margin-top: 20px;
     color: var(--font-color);
 }
-
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 900px) {
     .zone_imgbox {
-        --w: 120px;
+        --w: calc(33% - 5px);
     }
-}
-
-
-@media screen and (max-width: 1100px) {
-    .talk_item {
-        width: 49.3%;
-        margin-right: 1.4%;
+    #talk{
+        margin: 10px 3px 0
     }
-
-    .zone_imgbox {
-        --w: 150px;
-        gap: 6px;
+    #post-comment{
+        margin: 0 3px
     }
 }
 
 @media screen and (max-width: 768px) {
-    .talk_item {
-        width: 100%;
-        margin-right: 0;
+    .zone_imgbox {
+        gap: 6px;
     }
-
+    .zone_imgbox {
+        --w: calc(50% - 3px);
+    }
     span.talk_date {
         font-size: 14px;
     }
 }
 </style>
-
 <div id="talk">
 <div class='loading'><img src="https://www.wyblog1.tk/Cover/1.jpg" alt="加载中..."></div>
 </div>
@@ -191,7 +212,7 @@ function pageTalk() {
         data.data.forEach(item => { items.push(Format(item)) });
         if (items.length == 30) document.querySelector('.limit').style.display = 'block';
         items.forEach(item => {
-            html += `<div class="talk_item"><div class="talk_meta"><img class="no-lightbox avatar" src="https://q1.qlogo.cn/g?b=qq&nk=990320751&s=5"><div class="info"><span class="talk_nick">Leonus${icon}</span><span class="talk_date">${item.date}</span></div></div><div class="talk_content">${item.content}</div><div class="talk_bottom"><div><span class="talk_tag"># ${item.tag}</span></div><a href="javascript:;"onclick="goComment('${item.text}')"><span class="icon"><i class="fa-solid fa-message fa-fw"></i></span></a></div></div>` // 注意修改头像链接和名称
+            html += `<div class="talk_item"><div class="talk_meta"><img class="no-lightbox avatar" src="https://www.wyblog1.tk/Cover/1.jpg"><div class="info"><span class="talk_nick">无影博客${icon}</span><span class="talk_date">${item.date}</span></div></div><div class="talk_content">${item.content}</div><div class="talk_bottom"><div><span class="talk_tag"># ${item.tag}</span></div><a href="javascript:;"onclick="goComment('${item.text}')"><span class="icon"><i class="fa-solid fa-message fa-fw"></i></span></a></div></div>` // 注意修改头像链接和名称
         })
         document.getElementById('talk').innerHTML = html
     })
