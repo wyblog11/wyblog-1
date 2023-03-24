@@ -60,7 +60,7 @@ div#page {
 
 .talk_item {
     display: inline-block;
-    width: 32.7%;
+    width: 32%;
     margin-right: 1%;
     padding: 15px 1rem 12px;
     margin-bottom: 15px;
