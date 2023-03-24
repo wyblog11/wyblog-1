@@ -9,8 +9,6 @@ date: 2021-03-14 20:00:00
 /* 页面初始化 */
 div#page {
     background: none;
-    border: 0;
-    padding: 0;
 }
 
 [data-theme=dark] #twikoo .tk-content,
