@@ -359,8 +359,8 @@ CDN:
   custom_format: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
 
   option:
-    coin_js: https://www.fomal.cc/js/coin.js
-    coin_css: https://www.fomal.cc/css/coin.css
+    coin_js: /js/coin.js
+    coin_css: /css/coin.css
     # main_css:
     # main:
     # utils:
