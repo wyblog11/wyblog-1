@@ -1,3 +1,15 @@
+.post-reward .reward-button {
+  display: inline-block;
+  padding: .2rem 1.2rem;
+  background: var(--btn-bg);
+  color: var(--btn-color);
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+  -o-transition: all .4s;
+  -ms-transition: all .4s;
+  transition: all .4s;
+  border-radius: 30px;
+}
 .tip-button {
   border: 0;
   border-radius: 0.25rem;
