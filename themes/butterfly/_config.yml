@@ -203,12 +203,12 @@ reward:
   enable: true
   coinAudio: https://npm.elemecdn.com/akilar-candyassets@1.0.36/audio/aowu.m4a
   QR_code:
-    # - img: /img/wechat.jpg
-    #   link:
-    #   text: wechat
-    # - img: /img/alipay.jpg
-    #   link:
-    #   text: alipay
+    - img: https://tuchuang.voooe.cn/images/2023/01/04/2.webp
+      link:
+      text: 微信
+    - img: https://tuchuang.voooe.cn/images/2023/01/04/20f8e49805975b8f8.webp
+      link:
+      text: 支付宝
 
 # Post edit
 # Easily browse and edit blog source code online.
