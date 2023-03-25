@@ -200,7 +200,8 @@ post_copyright:
 
 # Sponsor/reward
 reward:
-  enable: false
+  enable: true
+  coinAudio: https://npm.elemecdn.com/akilar-candyassets@1.0.36/audio/aowu.m4a
   QR_code:
     # - img: /img/wechat.jpg
     #   link:
