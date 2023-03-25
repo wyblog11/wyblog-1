@@ -2,6 +2,7 @@
 title: '2023年artitalk部署方式'
 date: 2023-01-26 20:05:10
 categories: [artitalk]
+tags: 说说
 published: true
 hideInList: true
 isTop: false
