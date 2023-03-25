@@ -4,6 +4,7 @@ date: 2023-01-27 20:05:10
 published: true
 hideInList: true
 categories: [bbtalk]
+tags: 说说
 isTop: false
 cover: https://images.boysec.cn/cover2.webp
 description: 最新bbtalk部署方式
