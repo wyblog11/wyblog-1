@@ -1,6 +1,3 @@
-#pagination .next-post img, #pagination .prev-post img, #pagination.pagination-post, .postImgHover img, .relatedPosts>.relatedPosts-list>div, .relatedPosts>.relatedPosts-list>div img {
-  border-radius: 12px;
-}
 /* 鼠标样式 */
 #cursor {
   position: fixed;
