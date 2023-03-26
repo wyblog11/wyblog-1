@@ -1,0 +1,6 @@
+/* 图片圆角和边框 */
+.post-content img,
+#article-container:has(.fj-gallery, #gitZone, .about_page) img {
+  border-radius: 12px;
+  border: 0.5px solid #80808030;
+}
