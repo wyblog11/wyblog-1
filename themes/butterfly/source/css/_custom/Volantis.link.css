@@ -23,3 +23,9 @@
     width: calc(100% / 2 - 16px) !important;
   }
 }
+/* 友链描述 */
+.flink-desc {
+  font-size: 1.1em;
+  padding: 0px 0px 20px 10px;
+  font-weight: bold;
+}
