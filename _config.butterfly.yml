@@ -491,7 +491,7 @@ subtitle:
 tag_plugins:
   enable: true # 开关
   priority: 5 #过滤器优先权
-  issues: false #issues标签开关
+  issues: true #issues标签开关
   link:
     placeholder: "/assets/coffee.png" #link_card标签默认的图标图片
   CDN:
