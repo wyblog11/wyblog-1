@@ -35,15 +35,6 @@ top_img: false
 var Url = 'https://kkapi.wyblog1.tk/api/ispeak?author=63c28a71aa610fa0dc9b6f1a&&pageSize=200'
 var items = []
 
-// 获取数据
-function getNew() {
-    fetch(Url).then(res => res.json()).then((res) => {
-        items = res.data.items
-    }).then(() => {
-        bb();
-    })
-}
-
 // 渲染数据
 function bb() {
     let bb = document.getElementById('bibi')
