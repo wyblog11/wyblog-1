@@ -48,7 +48,7 @@ top_group_index: 5 #右侧磁帖顺序，需填非负整数，数字越大越靠
 在你的 Hexo 根目錄裏
 
 ```powershell
-git clone -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly
+git clone -b main https://github.com/612901/hexo-themes-heaven.git themes/heaven
 ```
 
 **測試版**
@@ -58,7 +58,7 @@ git clone -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes
 如果想要安裝比較新的 dev 分支，可以
 
 ```powershell
-git clone -b dev https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly
+git clone -b dev https://github.com/612901/hexo-themes-heaven.git themes/heaven
 ```
 
 {% note info %}
