@@ -137,5 +137,3 @@ npm install hexo-renderer-pug hexo-renderer-stylus --save
 > 如果使用了 `_config.butterfly.yml`， 配置主題的 `_config.yml` 將不會有效果。
 
 Hexo會自動**合併**主題中的`_config.yml`和 `_config.heaven.yml`裏的配置，如果存在同名配置，會使用`_config.butterfly.yml`的配置，其優先度較高。
-
-![image-20200805191531090](https://file.crazywong.com/gh/jerryc127/CDN/img/butterfly-docs-install-suggestion-1.png)
