@@ -35,7 +35,6 @@ top_img: false
 var Url = 'https://kkapi.wyblog1.tk/api/ispeak?author=63c28a71aa610fa0dc9b6f1a&&pageSize=200'
 var items = []
 
-// 渲染数据
 function bb() {
     let bb = document.getElementById('bibi')
     if (items.length == 30) {
@@ -73,7 +72,6 @@ function contentToText(s) {
     return s
 }
 
-// content格式化
 function contentFormat(s) {
     let br = /<\/*br>|^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
     let re_forimg = /<img(.*?)src=[\"|\']?(.*?)[\"|\']?(.*?)>|!\[(.*?)\]\((.*?)\)/g;
