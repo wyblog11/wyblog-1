@@ -485,3 +485,18 @@ subtitle:
   sub:
     - "Welcome to 无影のTiny Home!🤣🤣🤣"
     - "Hope you have a nice day!🍭🍭🍭"
+# 标签外挂
+# tag-plugins-plus
+# see https://akilar.top/posts/615e2dec/
+tag_plugins:
+  enable: true # 开关
+  priority: 5 #过滤器优先权
+  issues: false #issues标签开关
+  link:
+    placeholder: "/assets/coffee.png" #link_card标签默认的图标图片
+  CDN:
+    anima: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css #动画标签anima的依赖
+    jquery: https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js #issues标签依赖
+    issues: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/issues.js #issues标签依赖
+    carousel: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js
+    tag_plugins_css: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css
