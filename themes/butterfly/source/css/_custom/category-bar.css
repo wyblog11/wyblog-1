@@ -80,9 +80,20 @@
   --heo-card-border: #42444a;
 }
 
-@media screen and (max-width: 768px){
-  :root{
-    --style-border: 0px solid var(--heo-card-border);
-    --style-border-hover: 0px solid var(--heo-theme);
-  }
+
+.layout #recent-posts .home-catalog-bar {
+    background: var(--mj-card-bg);
+    border: var(--style-border);
+    margin-top: 12px;
+    border-radius: 11px!important;
+    transition: .3s;
+    font-size: 15px;
+    padding: 5px .8rem;
+}
+#catalog-bar {
+    padding: .4rem .8rem;
+    border-radius: .5rem;
+    display: flex;
+    border: 1px solid rgba(150,150,150,.2);
+    justify-content: space-between;
 }
