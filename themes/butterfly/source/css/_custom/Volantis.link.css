@@ -7,19 +7,3 @@
   height: 165px !important;
   border-radius: 18px !important;
 }
-/* 适应宽度不同的设备 */
-@media screen and (max-width: 1200px) {
-  .site-card {
-    width: calc(100% / 4 - 16px) !important;
-  }
-}
-@media screen and (max-width: 900px) {
-  .site-card {
-    width: calc(100% / 3 - 16px) !important;
-  }
-}
-@media screen and (max-width: 600px) {
-  .site-card {
-    width: calc(100% / 2 - 16px) !important;
-  }
-}
