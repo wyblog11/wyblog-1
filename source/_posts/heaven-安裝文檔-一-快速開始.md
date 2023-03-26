@@ -10,10 +10,9 @@ tags:
   - 主题
 
 isTop: false
-cover: https://www.wyblog1.tk/Cover/cover01.jpg
+cover: https://www.wyblog1.tk/Cover/cover02.jpg
 description: heaven主题文档
 swiper_index: 5 #置顶轮播图顺序，非负整数，数字越大越靠前
-top_group_index: 5 #右侧磁帖顺序，需填非负整数，数字越大越靠前
 ---
 
 {% note blue 'fas fa-bullhorn' %}
