@@ -465,7 +465,7 @@ noticeOutdate:
   message_next: days since the last update, the content of the article may be outdated.
 
 # 友链样式，butterfly为默认样式，volantis为站点卡片样式.flexcard为弹性卡片样式
-flink_style: butterfly # butterfly | volantis | flexcard
+flink_style: volantis # butterfly | volantis | flexcard
 
 # the subtitle on homepage (主頁subtitle)
 subtitle:
