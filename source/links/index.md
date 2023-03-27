@@ -5,12 +5,6 @@ date: 2022-05-03 21:21:51
 type: link
 aside: false
 ---
-{% sitegroup %}
-{% site Ethan.Tzy,  url=https://tzy1997.com/, screenshot=https://bu.dusays.com/2022/06/01/6296ceb2e4935.jpg, avatar=https://bu.dusays.com/2022/05/02/626f92e193879.jpg, description=古今之成大事者，不惟有超世之才，亦必有坚忍不拔之志%}
-{% site Ethan.Tzy,  url=https://tzy1997.com/, screenshot=https://bu.dusays.com/2022/06/01/6296ceb2e4935.jpg, avatar=https://bu.dusays.com/2022/05/02/626f92e193879.jpg, description=古今之成大事者，不惟有超世之才，亦必有坚忍不拔之志%}
-{% site Ethan.Tzy,  url=https://tzy1997.com/, screenshot=https://bu.dusays.com/2022/06/01/6296ceb2e4935.jpg, avatar=https://bu.dusays.com/2022/05/02/626f92e193879.jpg, description=古今之成大事者，不惟有超世之才，亦必有坚忍不拔之志%}
-{% site Ethan.Tzy,  url=https://tzy1997.com/, screenshot=https://bu.dusays.com/2022/06/01/6296ceb2e4935.jpg, avatar=https://bu.dusays.com/2022/05/02/626f92e193879.jpg, description=古今之成大事者，不惟有超世之才，亦必有坚忍不拔之志%}
-{% endsitegroup %}
 {% tabs link %}
 <!-- tab 🙋 butterfly-💭candy -->
 ```yml
