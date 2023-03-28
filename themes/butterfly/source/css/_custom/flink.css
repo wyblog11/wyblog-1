@@ -1,46 +1,19 @@
-.tags-group-all.nowrapMove {
-    transform: rotate(0);
-    padding-bottom: 2rem;
+.flink#article-container .site-card:hover .site-card-tag { left: -50px; }
+.flink-list-item:hover .site-card-tag { left: -70px; }
+.flink#article-container .site-card .info { display: flex; border: none; padding: 0.5rem; width: 100%; height: 90px; margin: 0px; border-radius: 0px 0px 12px 12px; }
+.flink#article-container .site-card .img img { border-radius: 12px 12px 0px 0px; transform: scale(1.03); transition: all 0.3s ease 0s; }
+@media screen and (min-width: 769px) {
+  .flink#article-container .site-card:hover .img img { transform: scale(1.1); filter: brightness(0.3); }
+  .flink#article-container .site-card:hover .img { height: 80px; }
 }
-
-.tags-group-all.nowrapMove {
-    transform: rotate(0);
-    padding-bottom: 2rem;
-}
-/* 头像微调 */
-.flink-item-icon {
-    margin-right: 0 !important;
-    transition: .5s !important;
-}
-
-.flink-item-name,
-.flink-item-desc {
-    padding-left: 10px !important;
-}
-
-/* 去掉原来自带的before */
-#article-container .flink .flink-list>.flink-list-item::before {
-    content: none;
-}
-
-/* 鼠标经过改变背景 */
-#article-container .flink .flink-list>.flink-list-item:hover {
-    background-color: #61bcf2cc;
-    box-shadow: 0 0 20px rgba(0, 0, 0, .3);
-}
-
-/* 鼠标经过改变文字颜色 */
-#article-container .flink .flink-list>.flink-list-item:hover a {
-    color: white !important;
-}
-
-/* 鼠标经过头像滚动 */
-#article-container .flink .flink-list>.flink-list-item:hover .flink-item-icon {
-    width: 60px;
-    margin-left: -70px;
-    -webkit-transform: rotate(-180deg);
-    -moz-transform: rotate(-180deg);
-    -o-transform: rotate(-180deg);
-    -ms-transform: rotate(-180deg);
-    transform: rotate(-180deg);
+.flink#article-container .site-card .img {-webkit-mask-image: -webkit-radial-gradient(center center, rgb(255, 255, 255), rgb(0, 0, 0));/* border-radius: 12px 12px 0px 0px; *//* height: 120px; *//* width: 100%; */display: flex;/* border: none; *//* padding: 0px !important; */}
+.flink#article-container .site-card .info img { border-radius: 32px; margin: 2px 8px 0px 0px; width: 20px; height: 20px; min-width: 20px; min-height: 20px; background: var(--Jay-secondbg); transition: all 0.3s ease 0s !important; }
+.flink#article-container .site-card-group { padding: 20px 0px; }
+.flink#article-container .site-card:hover .info img { width: 0px; height: 0px; opacity: 0; min-width: 0px; min-height: 0px; }
+.flink#article-container .site-card:hover { border: var(--style-border-hover); box-shadow: var(--Jay-shadow-main); }
+.article-sort-item-info a { margin-right: auto; overflow: hidden; text-overflow: ellipsis; }
+@media screen and (max-width: 768px) {
+  #letlink { flex-direction: column !important; text-align: center !important; }
+  #letlogo { display: none !important; }
+  #footer-wrap { margin-top: 1rem !important; }
 }
