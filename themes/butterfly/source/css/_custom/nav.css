@@ -1,27 +1,11 @@
 /* 一级菜单居中 */
 #nav .menus_items {
-  position: absolute !important;
-  width: fit-content !important;
-  left: 50% !important;
-  transform: translateX(-50%) !important;
+/* display: inline; 这个带不带都可以，本来就是inline */
+position: absolute;
+width: fit-content;
+left: 50%;
+transform: translateX(-50%);
 }
-/* 子菜单横向布局 */
-.menus_item_child li:not(#sidebar-menus li){
-    float: left;
-    border-radius: 6px!important;
-    -webkit-border-radius: 6px!important;
-    -moz-border-radius: 6px!important;
-    -ms-border-radius: 6px!important;
-    -o-border-radius: 6px!important;
-}
-.menus_item_child:not(#sidebar-menus ul){
-  /*
-    left:calc(-150%)!important;这是估算值，为了保持元素居中的，如果不合适可以自己调
-  在网友的建议下，改为：*/
-  left:50%;
-  translate:-50%;
-}
-/* 去掉导航栏项目底下的蓝色长条 */
 #nav *::after{
     background-color: transparent!important;
 }
