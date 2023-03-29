@@ -1,6 +1,3 @@
-/* 图片圆角和边框 */
-.post-content img,
-#article-container:has(.fj-gallery, #gitZone, .about_page) img {
-  border-radius: 12px;
-  border: 0.5px solid #80808030;
+#pagination .next-post img, #pagination .prev-post img, #pagination.pagination-post, .postImgHover img, .relatedPosts>.relatedPosts-list>div, .relatedPosts>.relatedPosts-list>div img {
+    border-radius: 12px;
 }
