@@ -30,7 +30,7 @@ transform: translateX(-50%);
     height:100%;
     content: "\f015";
     box-shadow: 0 0 5px var(--lyx-theme);
-    --lyx-theme: #B99ED3
+    --lyx-theme: #B99ED3;
     font-family: "Font Awesome 6 Free";
     text-align: center;
     color:white;
