@@ -8,6 +8,8 @@ nav#nav
         a.site-page.social-icon.search
           i.fas.fa-search.fa-fw
     !=partial('includes/header/menu_item', {}, {cache: true})
+    center(id="name-container")
+      a(id="page-name" href="javascript:scrollToTop()") PAGE_NAME
 
     a.sun_moon.faa-parent.animated-hover(onclick='switchNightMode()',  title=_p('rightside.night_mode_title') id="nightmode-button")
       svg.faa-tada(style="height:25px;width:25px;fill:currentColor;position:relative;top:7px", viewBox='0 0 1024 1024')
