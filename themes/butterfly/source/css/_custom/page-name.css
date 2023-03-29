@@ -31,6 +31,7 @@
   -o-transition: all 0.3s;
   opacity: 0;
   box-shadow: 0 0 3px var(--wyblog-bg);
+  line-height: 45px; /*如果垂直位置不居中可以微调此值，也可以删了*/  
 }
 #page-name:hover:before {
   opacity: 1;
