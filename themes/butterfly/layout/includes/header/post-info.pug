@@ -30,10 +30,10 @@
           if (theme.post_meta.post.date_type)
             span.post-meta-separator |
         span.post-meta-orlike
-            i.iconfont.icon-aixin.fa-fw.post-meta-icon
-            span.post-meta-label= '点赞数:'
-            a(href=url_for(page.path) + '#orlike-box')
-                span.orlike-count    
+          i.iconfont.icon-aixin.fa-fw.post-meta-icon
+          span.post-meta-label= '点赞数:'
+          a(href=url_for(page.path) + '#orlike-box')
+            span.orlike-count    
 
           each item, index in page.categories.data
             i.fas.fa-inbox.fa-fw.post-meta-icon
