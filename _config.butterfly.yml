@@ -25,6 +25,10 @@ index_img: https://source.fomal.cc/img/home_bg.webp
 # Footer Background
 footer_bg: false
 background: url(https://source.fomal.cc/img/home_bg.webp)
+  default: var(--default-bg)
+  darkmode: var(--darkmode-bg)
+  mobileday: var(--mobileday-bg)
+  mobilenight: var(--mobilenight-bg)
 inject:
   head:
      - <style id="themeColor"></style> # 主题色
@@ -545,13 +549,6 @@ darkmode:
   # Set the switch time. The value is between 0 and 12. If not set, the default value is 6
   am: 6
   pm: 6
-
-# 背景由js指定
-background:
-  default: var(--default-bg)
-  darkmode: var(--darkmode-bg)
-  mobileday: var(--mobileday-bg)
-  mobilenight: var(--mobilenight-bg)
   
 # 字体由js指定  
 font:
