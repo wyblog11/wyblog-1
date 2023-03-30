@@ -38,8 +38,8 @@ inject:
      - <script defer src="/js/universe.js"></script>
      - <script async data-pjax src="/js/txmap.js"></script> # 腾讯位置API
      - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css"  media="defer" onload="this.media='all'">
-     - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_3895868_1p10hc0c3gd.css" media="defer" onload="this.media='all'">
-     - <script async src="//at.alicdn.com/t/c/font_3895868_1p10hc0c3gd.js"></script> 
+     - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_3895868_mv3ae2gjui.css" media="defer" onload="this.media='all'">
+     - <script async src="//at.alicdn.com/t/c/font_3895868_mv3ae2gjui.js"></script> 
      - <script src="/js/weibo.js"></script>
      - <script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script>
      - <link rel="stylesheet" href="/css/custom.css">
