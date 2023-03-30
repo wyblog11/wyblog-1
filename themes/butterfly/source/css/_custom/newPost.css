@@ -1,0 +1,12 @@
+.newPost-left {
+    left: 15px;
+}
+.newPost-left, .newPost-right {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    color: rgba(255,255,255,.92);
+    padding: 0 15px;
+    background-color: #49b0f5b9;
+    border-radius: 0 0 10px 10px;
+}
