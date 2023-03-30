@@ -149,30 +149,3 @@ center#name-container {
   opacity: 0;
   font-weight: bold;
 }
-
-#page-header #nav #nav-right .nav-button a.totopbtn {
-  width: 25px;
-  height: 25px;
-  border-radius: 40px;
-  background: var(--heo-fontcolor);
-  color: var(--heo-card-bg);
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  transition: 0.3s;
-}
-
-#page-header #nav #nav-right .nav-button.long a.totopbtn {
-  width: 70px;
-}
-
-#page-header #nav #nav-right .nav-button:hover a.totopbtn {
-  background: var(--heo-main);
-}
-
-#page-header #nav #nav-right .nav-button:not(.long):hover a.totopbtn {
-  width: 35px;
-  height: 35px;
-  top: 0;
-  right: 0;
-}
