@@ -57,6 +57,9 @@ mixin postUI(posts)
                 a(href=url_for(item.path)).article-meta__tags #[=item.name]
                 if (index < article.tags.data.length - 1)
                   span.article-meta-link #[='•']
+          if (numberone !== 1 && is_current('/') && (!article.top || (article.new && article.top)))
+            span.newPost 最新
+              - var numberone = 1
           
           mixin countBlockInIndex
             - needLoadCountJs = true
