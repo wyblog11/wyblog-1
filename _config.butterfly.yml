@@ -53,6 +53,7 @@ inject:
      - <link rel="stylesheet" href="https://blog.leonus.cn/css/leonus.css?v1.11.23">
      - <script async src="https://raphamorim.io/waterfall.js/"></script> 
   bottom:  
+     - <canvas id="universe"></canvas> # 创建画布
      - <script defer src="/js/cursor.js"></script>
      - <script defer="true" src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
      - <script defer type="text/javascript" src="https://cdn1.tianli0.top/npm/sweetalert2@8.19.0/dist/sweetalert2.all.js"></script> # 节日弹窗依赖
