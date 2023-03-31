@@ -546,10 +546,6 @@ darkmode:
   am: 6
   pm: 6
 
-blog_title_font:
-  font_link:
-  font-family: var(--global-font)
-
 # 主题色由js指定，因此部分需要留空，避免冗余加载  
 theme_color:
   enable: true
