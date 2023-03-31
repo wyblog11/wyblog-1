@@ -545,13 +545,6 @@ darkmode:
   # Set the switch time. The value is between 0 and 12. If not set, the default value is 6
   am: 6
   pm: 6
-  
-# 字体由js指定  
-font:
-  global-font-size: "15px"
-  code-font-size: "14px"
-  font-family: var(--global-font), -apple-system, 'Quicksand', 'Nimbus Roman No9 L', 'PingFang SC', 'Hiragino Sans GB', 'Noto Serif SC', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif;
-  code-font-family: Consolas_1, var(--global-font), "Microsoft YaHei", Menlo, "PingFang SC", "Microsoft JhengHei", sans-serif
 
 blog_title_font:
   font_link:
