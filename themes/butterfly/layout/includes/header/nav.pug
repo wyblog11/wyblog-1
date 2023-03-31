@@ -3,17 +3,16 @@ nav#nav
     a#site-name(href=url_for('/')) #[=config.title]
     
   #menus
+    div.nav-button#console-button
+      a.site-page.social-icon.console(onclick="rightside.switchRightSide()" title="设置")
+        i.fas.fa-screwdriver-wrench.fa-fw 
     !=partial('includes/header/menu_item', {}, {cache: true})
     center(id="name-container")
       a(id="page-name" href="javascript:scrollToTop()") PAGE_NAME
 
     a.sun_moon.faa-parent.animated-hover(onclick='switchNightMode()',  title=_p('rightside.night_mode_title') id="nightmode-button")
       svg.faa-tada(style="height:25px;width:25px;fill:currentColor;position:relative;top:7px", viewBox='0 0 1024 1024')
-        use#modeicon(xlink:href='#icon-moon') 
-        
-    div.nav-button#console-button
-      a.site-page.social-icon.console(onclick="rightside.switchRightSide()" title="设置")
-        i.fas.fa-screwdriver-wrench.fa-fw   
+        use#modeicon(xlink:href='#icon-moon')   
         
   #nav-right
     if (theme.algolia_search.enable || theme.local_search.enable)
