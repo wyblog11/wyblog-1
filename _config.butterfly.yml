@@ -25,10 +25,6 @@ index_img: https://source.fomal.cc/img/home_bg.webp
 # Footer Background
 footer_bg: false
 background: url(https://source.fomal.cc/img/home_bg.webp)
-  default: var(--default-bg)
-  darkmode: var(--darkmode-bg)
-  mobileday: var(--mobileday-bg)
-  mobilenight: var(--mobilenight-bg)
 inject:
   head:
      - <style id="themeColor"></style> # 主题色
