@@ -1,7 +1,6 @@
 /* 右下角设置按钮 */
 #rightside {
   z-index: 100;
-  opacity: 1 !important;
   width: 1200px;
   max-width: 80vw;
   min-height: 250px;
