@@ -603,30 +603,3 @@ input[name="colors"] {
   src: url(https://data-static.netdun.net/Fomalhaut/fonts/ZhuZiAWan2.woff2);
   font-display: swap;
 }
-
-/* 特定部件字体调用 */
-div#menus {
-  font-weight: bold !important;
-}
-h1#site-title {
-  font-size: 3em !important;
-  font-weight: bold !important;
-}
-a.article-title,
-a.blog-slider__title,
-a.categoryBar-list-link,
-h1.post-title {
-  font-weight: bold !important;
-}
-
-.iconfont {
-  font-family: "iconfont" !important;
-  font-size: 3em;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-zhongbiao::before {
-  color: #f7c768;
-}
