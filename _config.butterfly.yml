@@ -517,13 +517,10 @@ tag_plugins:
 
 theme_color:
   enable: true
-  main: # "#49b1f5"
   paginator: # "#49b1f5"
   button_hover: # "#FF7242"
   text_selection: # "#49b1f5" # "#00c4b6"
-  link_color: "#a591e0"
   meta_color: "#858585"
-  hr_color: "#A4D8FA"
   code_foreground: # "#F47466"
   code_background: # "rgba(27, 31, 35, .05)"
   toc_color: # "#49b1f5" # "#00c4b6"
