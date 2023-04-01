@@ -27,6 +27,7 @@ footer_bg: false
 background: url(https://source.fomal.cc/img/home_bg.webp)
 inject:
   head:
+     - <link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"> # 引入组件库(f12)
      - <style id="themeColor"></style> # 主题色
      - <style id="rightSide"></style> # 侧边栏
      - <style id="transPercent"></style> # 透明度调节
@@ -34,6 +35,7 @@ inject:
      - <style id="settingStyle"></style> # 模糊效果开关
      - <span id="fps"></span> # 帧率检测
      - <style id="defineBg"></style> # 自定义背景选项
+     - <style id="menu_shadow"></style> # 菜单发光样式
      - <script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script> # jQuery
      - <link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"> 
      - <script async data-pjax src="https://cdn.wpon.cn/2022-sucai/Gold-ingot.js"></script>  # 新年元宝
@@ -52,7 +54,6 @@ inject:
      - <link rel="stylesheet" href="/css/custom.css">
      - <link rel="stylesheet" href="/css/music.css">
      - <link rel="stylesheet" href="/css/footer.css">
-     - <span id="fps"></span> # 帧率检测
      - <script src="/js/notify.js"></script>
      - <script src="/js/moom.js"></script>
      - <script src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
@@ -60,7 +61,6 @@ inject:
      - <link rel="stylesheet" href="https://blog.leonus.cn/css/leonus.css?v1.11.23">
      - <script async src="https://raphamorim.io/waterfall.js/"></script> 
   bottom:  
-     - <canvas id="universe"></canvas> # 创建画布
      - <script defer src="/js/cursor.js"></script>
      - <script defer="true" src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
      - <script defer type="text/javascript" src="https://cdn1.tianli0.top/npm/sweetalert2@8.19.0/dist/sweetalert2.all.js"></script> # 节日弹窗依赖
@@ -81,7 +81,7 @@ inject:
      - <script async src="https://cdn1.tianli0.top/npm/vue@2.6.14/dist/vue.min.js"></script> # 引入VUE(f12)
      - <script async src="https://cdn1.tianli0.top/npm/element-ui@2.15.6/lib/index.js"></script> # 引入ElementUI(f12)
      - <script defer src="https://cdn1.tianli0.top/gh/nextapps-de/winbox/dist/winbox.bundle.min.js"></script> # winbox支持
-     - <script defer data-pjax src="/static/js/meihua.js"></script> # 美化模块    
+     
 wowjs:
   enable: true #控制动画开关。true是打开，false是关闭
   priority: 10 #过滤器优先级
