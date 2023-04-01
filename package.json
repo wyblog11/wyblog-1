@@ -12,7 +12,6 @@
     "gulp-uglify": "^2.1.0",
     "gulp": "^4.0.2",
     "gulp-htmlclean": "^2.7.22",
-    "gulp-html-minifier-terser": "^1.0.1",
     "gulp-fontmin": "^2.3.1",
     "gulp-terser": "^2.1.0",
     "gulp-cli": "^5.0.1",
