@@ -34,7 +34,9 @@
   "scripts": {
     "dev": "hexo server -p $PORT",
     "build": "hexo generate",
-    "link.js": "node link.js"
+    "deploy": "hexo deploy",
+    "server": "hexo server",
+    "gulp": "gulp"
   },
   "devDependencies": {
     "@babel/core": "^7.20.5",
