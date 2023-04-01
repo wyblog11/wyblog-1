@@ -35,7 +35,7 @@
     "dev": "hexo server -p $PORT",
     "build": "hexo generate",
     "link.js": "node link.js"
-  }
+  },
   "devDependencies": {
     "@babel/core": "^7.21.4",
     "@babel/preset-env": "^7.21.4",
