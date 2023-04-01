@@ -512,24 +512,6 @@ tag_plugins:
     carousel: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js
     tag_plugins_css: https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css
 
-# Theme color for customize
-# Notice: color value must in double quotes like "#000" or may cause error!
-
-theme_color:
-  enable: false
-  paginator: # "#49b1f5"
-  button_hover: # "#FF7242"
-  text_selection: # "#49b1f5" # "#00c4b6"
-  meta_color: "#858585"
-  code_foreground: # "#F47466"
-  code_background: # "rgba(27, 31, 35, .05)"
-  toc_color: # "#49b1f5" # "#00c4b6"
-  blockquote_padding_color: # "#49b1f5"
-  blockquote_background_color: # "#49b1f5"
-  scrollbar_color: # "#49b1f5"
-  meta_theme_color_light: "ffffff"
-  meta_theme_color_dark: "#0d0d0d"
-
 darkmode:
   enable: true
   # Toggle Button to switch dark/light mode
