@@ -722,6 +722,8 @@ OrLike.prototype.orl = function (obj, method) { server_url = obj.serverUrl; req_
 OrLike.prototype.like = function (event) { obj = event.data.obj; obj.orl(obj, 'like'); }
 OrLike.prototype.dislike = function (event) { obj = event.data.obj; obj.orl(obj, 'dislike'); }
 
+//----------------------------------------------------------------
+
 /* 美化模块 start */
 
 // 更新版本需要每个用户都恢复一次默认设置
@@ -1189,38 +1191,29 @@ function createWinbox() {
 <div id="article-container" style="padding:12px;">
 <br>
 <center><p><button onclick="reset()" style="background:linear-gradient(to right, #fc354c, #0abfbc);display:block;width:40%;padding:15px 0;border-radius:30px;color:white;font-size:1.1em;"><i class="fa-solid fa-arrows-rotate"></i>&nbsp;恢复默认设置</button></p></center>
-
 <h2>一、显示偏好</h2>
-
-<div class="transValue" style="font-weight:bold;padding-left:10px">透明度 (0%-100%): </div>
+<div class="transValue" style="font-weight:bold;padding-left:10px">透明度 (0%-100%): ${curTransNum}%</div>
 <div class="range">
   <input id="transSet" type="range" min="0" max="100" step="1" value=${curTransNum} oninput="setTrans()">
   <p class="rang_width" id="rang_trans" style="width:${curTransMini}%"></p>
 </div>
-
-<div class="blurValue" style="font-weight:bold;padding-left:10px">模糊半径 (开启模糊生效 0px-100px): px</div>
+<div class="blurValue" style="font-weight:bold;padding-left:10px">模糊半径 (开启模糊生效 0px-100px): ${curBlur} px</div>
 <div class="range">
   <input id="blurSet" type="range" min="0" max="100" step="1" value="${curBlur}" oninput="setBlurNum()">
   <p class="rang_width" id="rang_blur" style="width:${miniBlur}%"></p>
 </div>
-
-
 <div class="content" style="display:flex">
   <div class="content-text" style="font-weight:bold; padding-left:10px"> 星空特效 (夜间模式) </div><input type="checkbox" id="universeSet" onclick="setUniverse()">
   <div class="content-text" style="font-weight:bold; padding-left:20px"> 霓虹灯 (夜间模式) </div><input type="checkbox" id="lightSet" onclick="setLight()">
 </div>
-
 <div class="content" style="display:flex">
   <div class="content-text" style="font-weight:bold; padding-left:10px"> 模糊效果 (消耗性能) </div><input type="checkbox" id="blur" onclick="setBlur()">
   <div class="content-text" style="font-weight:bold; padding-left:20px"> 侧边栏 (默认开) </div><input type="checkbox" id="rightSideSet" onclick="toggleRightside()">
 </div>
-
 <div class="content" style="display:flex">
   <div class="content-text" style="font-weight:bold; padding-left:10px"> 帧率监测 (刷新生效) </div><input type="checkbox" id="fpson" onclick="fpssw()">
   <div class="content-text" style="font-weight:bold; padding-left:10px"> 雪花特效 (白天模式) </div><input type="checkbox" id="snowSet" onclick="setSnow()">
 </div>
-
-
 <h2>二、字体设置</h2>
 {% note warning modern %}非商免字体未经授权只能个人使用。本站为完全非商业、非盈利性质的网站，平时用于个人学习交流，如有侵权请联系站长删除，谢谢！ —— 致版权方{% endnote %}
 <p id="swfs">
@@ -1232,7 +1225,6 @@ function createWinbox() {
 <a class="swf" id="swf_MiSans" href="javascript:;" rel="noopener external nofollow" style="font-family:'MiSans'!important;color:black" onclick="setFont('MiSans')">MiSans</a>
 <a class="swf" id="swf_default" href="javascript:;" rel="noopener external nofollow" style="font-family:-apple-system, IBM Plex Mono ,monosapce,'微软雅黑', sans-serif;!important;color:black" onclick="setFont('default')">系统默认</a>
 </p>
-
 <h2>三、主题色设置</h2>
 <div class="content" style="display:flex"><input type="radio" id="red" name="colors" value=" "
         onclick="setColor('red')"><input type="radio" id="orange" name="colors" value=" "
@@ -1246,38 +1238,26 @@ function createWinbox() {
         onclick="setColor('pink')" checked="checked"><input type="radio" id="black" name="colors" value=" "
         onclick="setColor('black')"><input type="radio" id="blackgray" name="colors" value=" "
         onclick="setColor('blackgray')"></div>
-
 <h2>四、背景设置</h2>
 <center><button onclick="resetBg()" style="background:var(--theme-color);display:block;width:35%;padding:15px 0;border-radius:30px;color:white;"><i class="fa-solid fa-arrows-rotate"></i>&nbsp;恢复默认背景</button></center>
-
 <h3>1. 二次元</h3>
 {% folding cyan, 查看二次元背景 %}
 <div class="bgbox">
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://lskypro.acozycotage.net/Fomalhaut/img/home_bg.webp)" class="imgbox" onclick="changeBg('url(https://lskypro.acozycotage.net/Fomalhaut/img/home_bg.webp)')"></a>
-
 </div>
 {% endfolding %}
-
-
 <h3>2. 风景</h3>
-
 {% folding cyan, 查看风景背景 %}
 <div class="bgbox">
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://lskypro.acozycotage.net/Fomalhaut/img/fj1.webp)" class="imgbox" onclick="changeBg('url(https://lskypro.acozycotage.net/Fomalhaut/img/fj1.webp)')"></a>
-
-
 </div>
 {% endfolding %}
-
 <h3>3. 萌宠</h3>
-
 {% folding cyan, 查看萌宠背景 %}
 <div class="bgbox">
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://lskypro.acozycotage.net/Fomalhaut/img/mc1.webp)" class="imgbox" onclick="changeBg('url(https://lskypro.acozycotage.net/Fomalhaut/img/mc1.webp)')"></a>
-
 </div>
 {% endfolding %}
-
 <h3>4. 渐变色</h3>
 {% folding cyan, 查看渐变色背景 %}
 <div class="bgbox">
@@ -1291,8 +1271,6 @@ function createWinbox() {
 <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: linear-gradient(to top, #355c7d, #6c5b7b, #c06c84)" onclick="changeBg('linear-gradient(to top, #355c7d, #6c5b7b, #c06c84)')"></a>
 </div>
 {% endfolding %}
-
-
 <h3>5. 纯色</h3>
 {% folding cyan, 查看纯色背景 %}
 <div class="bgbox">
@@ -1306,18 +1284,12 @@ function createWinbox() {
 <input type="color" id="define_colors" href="javascript:;" rel="noopener external nofollow" class="box" autocomplete="on" value="${defineColor}" oninput="changeBgColor()"></input>
 </div>
 {% endfolding %}
-
-
-
 <h3>6. 适配手机</h3>
 {% folding cyan, 查看适配手机的背景 %}
 <div class="bgbox">
 <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://lskypro.acozycotage.net/Fomalhaut/img/mb4.webp)" class="pimgbox" onclick="changeBg('url(https://lskypro.acozycotage.net/Fomalhaut/img/mb4.webp)')"></a>
-
 </div>
 {% endfolding %}
-
-
 <h3>8. 自定义背景</h3>
 {% folding cyan, 设置自定义背景 %}
 <p><center>
@@ -1327,15 +1299,11 @@ function createWinbox() {
 <button type="button" onclick="getPicture()" style="background:var(--theme-color);width:35%;padding: 5px 0px 7px 0px;border-radius:30px;color:white;line-height:2;">🌈切换背景🌈</button>
 </center></p>
 {% endfolding %}
-
 <br>
 <center><div style="font-size:1.2em;color:var(--theme-color);font-weight:bold;">------ ( •̀ ω •́ )y 到底啦 ------</div></center>
 <br>
-
 </div>
-
 </div>
-
 `;
 
   // 打开小窗时候初始化
