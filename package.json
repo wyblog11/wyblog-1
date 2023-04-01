@@ -14,7 +14,7 @@
     "gulp": "^4.0.2",
     "gulp-htmlmin": "^5.0.1",
     "gulp-terser": "^2.1.0",
-    "gulp-cli": "^5.0.1",
+    "gulp-cli": "^2.3.0",
     "hexo-related-popular-posts": "^5.0.1",
     "hexo-butterfly-tag-plugins-plus": "^1.0.17",
     "hexo-helper-qrcode": "^1.0.0",
