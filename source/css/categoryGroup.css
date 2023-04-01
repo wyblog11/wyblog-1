@@ -20,9 +20,6 @@
 #category-bar.category-bar {
   height: 60px;
 }
-#category-bar {
-  border-radius: var(--marcus-border-radius);
-}
 
 #category #category-bar {
   padding: 0;
