@@ -887,67 +887,6 @@ function toggleRightside() {
   }
 }
 
-
-// 透明度调节滑块
-if (localStorage.getItem("transNum") == undefined) {
-  localStorage.setItem("transNum", 95);
-}
-var curTransNum = localStorage.getItem("transNum");
-var curTransMini = curTransNum * 0.95;
-document.getElementById("transPercent").innerText = `:root{--trans-light: rgba(253, 253, 253, ${curTransNum}%) !important; --trans-dark: rgba(25, 25, 25, ${curTransNum}%) !important} `;
-function setTrans() {
-  var elem = document.getElementById("transSet");
-  var newTransNum = elem.value;
-  var target = document.querySelector('.transValue');
-  target.innerHTML = "透明度 (0%-100%): " + newTransNum + "%";
-  localStorage.setItem("transNum", newTransNum);
-  curTransMini = newTransNum * 0.95;
-  curTransNum = newTransNum;  // 更新当前透明度
-  document.querySelector('#rang_trans').style.width = curTransMini + "%";
-  document.getElementById("transPercent").innerText = `:root{--trans-light: rgba(253, 253, 253, ${newTransNum}%) !important; --trans-dark: rgba(25, 25, 25, ${newTransNum}%) !important} `;
-};
-
-
-// 模糊度调节滑块
-if (localStorage.getItem("blurRad") == undefined) {
-  localStorage.setItem("blurRad", 20);
-}
-var curBlur = localStorage.getItem("blurRad"); // 当前模糊半径
-var miniBlur = curBlur * 0.95;
-document.getElementById("blurNum").innerText = `:root{--blur-num: blur(${curBlur}px) saturate(120%) !important`;
-function setBlurNum() {
-  var elem = document.getElementById("blurSet");
-  var newBlur = elem.value;
-  var target = document.querySelector('.blurValue');
-  target.innerHTML = "模糊半径 (开启模糊生效 0px-100px): " + newBlur + "px";
-  localStorage.setItem("blurRad", newBlur);
-  curBlur = newBlur;
-  miniBlur = curBlur * 0.95;
-  // var max = elem.getAttribute("max");
-  document.querySelector('#rang_blur').style.width = miniBlur + "%";
-  document.getElementById("blurNum").innerText = `:root{--blur-num: blur(${curBlur}px) saturate(120%) !important`;
-};
-
-
-// 模糊效果开关
-if (localStorage.getItem("blur") == undefined) {
-  localStorage.setItem("blur", 0);
-}
-if (localStorage.getItem("blur") == 0) {
-  document.getElementById("settingStyle").innerText = `:root{--backdrop-filter: none}`;
-} else {
-  document.getElementById("settingStyle").innerText = `:root{--backdrop-filter: var(--blur-num)}`;
-}
-function setBlur() {
-  if (document.getElementById("blur").checked) {
-    localStorage.setItem("blur", 1);
-    document.getElementById("settingStyle").innerText = `:root{--backdrop-filter: var(--blur-num)}`;
-  } else {
-    localStorage.setItem("blur", 0);
-    document.getElementById("settingStyle").innerText = `:root{--backdrop-filter: none}`;
-  }
-}
-
 // 更换背景(原来Leonus的代码)
 // 存数据
 // name：命名 data：数据
@@ -1105,22 +1044,6 @@ function checkImgExists(imgurl) {
 if (localStorage.getItem("light") == undefined) {
   localStorage.setItem("light", "true");
 }
-// 这里要适配Pjax
-document.addEventListener('pjax:complete', function () {
-  changeLight(localStorage.getItem("light") == "true" ? true : false)
-});
-document.addEventListener('DOMContentLoaded', function () {
-  changeLight(localStorage.getItem("light") == "true" ? true : false)
-});
-function setLight() {
-  if (document.getElementById("lightSet").checked) {
-    changeLight(true);
-    localStorage.setItem("light", "true");
-  } else {
-    changeLight(false);
-    localStorage.setItem("light", "false");
-  }
-}
 // 更换霓虹灯状态
 function changeLight(flag) {
   if (document.getElementById("site-name"))
@@ -1174,7 +1097,7 @@ function createWinbox() {
     minwidth: "300px",
     height: "60%",
     // "#76c8f1"
-    background: 'var(--theme-color)',
+    background: 'var(--btn-bg)',
     onmaximize: () => {
       div.innerHTML = `<style>body::-webkit-scrollbar {display: none;} div#meihuaBox {width: 100% !important;}</style>`;
     },
@@ -1192,15 +1115,6 @@ function createWinbox() {
 <br>
 <center><p><button onclick="reset()" style="background:linear-gradient(to right, #fc354c, #0abfbc);display:block;width:40%;padding:15px 0;border-radius:30px;color:white;font-size:1.1em;"><i class="fa-solid fa-arrows-rotate"></i>&nbsp;恢复默认设置</button></p></center>
 <h2>一、显示偏好</h2>
-<div class="transValue" style="font-weight:bold;padding-left:10px">透明度 (0%-100%): ${curTransNum}%</div>
-<div class="range">
-  <input id="transSet" type="range" min="0" max="100" step="1" value=${curTransNum} oninput="setTrans()">
-  <p class="rang_width" id="rang_trans" style="width:${curTransMini}%"></p>
-</div>
-<div class="blurValue" style="font-weight:bold;padding-left:10px">模糊半径 (开启模糊生效 0px-100px): ${curBlur} px</div>
-<div class="range">
-  <input id="blurSet" type="range" min="0" max="100" step="1" value="${curBlur}" oninput="setBlurNum()">
-  <p class="rang_width" id="rang_blur" style="width:${miniBlur}%"></p>
 </div>
 <div class="content" style="display:flex">
   <div class="content-text" style="font-weight:bold; padding-left:10px"> 星空特效 (夜间模式) </div><input type="checkbox" id="universeSet" onclick="setUniverse()">
