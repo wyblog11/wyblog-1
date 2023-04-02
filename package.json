@@ -36,6 +36,6 @@
     "dev": "hexo server -p $PORT",
     "build": "hexo generate",
     "deploy": "hexo deploy",
-    "server": "hexo server",
+    "server": "hexo server"
   }
 }
