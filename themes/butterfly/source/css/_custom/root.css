@@ -1,0 +1,273 @@
+/* 字体引入 */
+@font-face {
+  font-family: YSHST;
+  src: url(https://data-static.netdun.net/Fomalhaut/fonts/优设好身体.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: MiSans;
+  src: url(https://data-static.netdun.net/Fomalhaut/fonts/MiSans.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: HYTMR;
+  src: url(https://data-static.netdun.net/Fomalhaut/fonts/HYTangMeiRen55W.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: LXGW;
+  src: url(https://data-static.netdun.net/Fomalhaut/fonts/霞鹜文楷.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: TTQHB;
+  src: url(https://data-static.netdun.net/Fomalhaut/fonts/甜甜圈海报字体.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Consolas_1;
+  src: url(https://data-static.netdun.net/Fomalhaut/fonts/Consolas.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: ZhuZiAWan;
+  src: url(https://data-static.netdun.net/Fomalhaut/fonts/ZhuZiAWan2.woff2);
+  font-display: swap;
+}
+
+
+/* winbox样式(这块照抄即可) */
+.winbox {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.wb-body {
+  background-color: #e5f1f5;
+}
+
+.wb-full {
+  display: none;
+}
+
+.wb-min {
+  background-position: center;
+}
+
+[data-theme="dark"] .wb-body,
+[data-theme="dark"] #changeBgBox {
+  background: #333 !important;
+}
+
+.bgbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pimgbox,
+.imgbox,
+.box {
+  height: 100px;
+  width: 166px;
+  margin: 10px;
+  border-radius: 10px !important;
+  background-size: cover;
+}
+
+.pimgbox,
+.imgbox {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.imgbox:hover,
+.pimgbox:hover,
+.box:hover {
+  border: 3px solid var(--text-bg-hover);
+}
+
+.pimgbox {
+  height: 240px;
+}
+
+.imgbox {
+  height: 95px;
+}
+
+@media screen and (max-width: 768px) {
+  /* 背景 */
+  .pimgbox,
+  .imgbox,
+  .box {
+    height: 73px;
+    width: 135px;
+  }
+  .pimgbox {
+    height: 205px;
+  }
+
+  /* 2.0新增内容 */
+  .wb-min {
+    display: none;
+  }
+  #changeBgBox .wb-body::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+
+
+/* 背景图片链接输入框placeholder*/
+input#pic-link::-webkit-input-placeholder {
+  color: rgb(150, 150, 150);
+}
+
+input#pic-link {
+  width: 82%;
+  border-radius: 30px;
+  border: 1px solid var(--theme-color);
+  padding: 5px 10px 5px 10px;
+  line-height: 2;
+  outline: 1px solid var(--theme-color);
+}
+
+
+/* 开关按钮 */
+.settings input[type="checkbox"] {
+  width: 37px;
+  height: 20px;
+  position: relative;
+  border: 1px solid #000000;
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  background-clip: content-box;
+  display: inline-block;
+  -webkit-appearance: none;
+  user-select: none;
+  outline: none;
+  transform: translateY(5px);
+}
+.settings input[type="checkbox"]:before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  border-radius: 10px;
+  background-color: #000;
+}
+.settings input[type="checkbox"]:checked {
+  background-color: var(--theme-color);
+  border-color: var(--theme-color);
+}
+.settings input[type="checkbox"]:checked:before {
+  left: 19px;
+  background-color: white !important;
+}
+.settings input[type="checkbox"] {
+  transition: border background-color box-shadow;
+}
+.settings input[type="checkbox"]:before {
+  transition: left 0.2s;
+}
+.settings input[type="checkbox"]:checked {
+  background-color: var(--theme-color);
+}
+.settings input[type="checkbox"]:checked:before {
+  transition: left 0.2s;
+}
+.settings input[type="checkbox"]:checked:hover {
+  opacity: 0.8;
+}
+.settings input[type="checkbox"]:active {
+  background-color: #666666 !important;
+  border-color: #666666 !important;
+}
+.settings input[type="checkbox"]:active::before {
+  background-color: white !important;
+}
+.content-text {
+  margin-right: 5px;
+}
+
+
+/* 透明度和模糊半径滑块 */
+input[type="range"] {
+  display: block;
+  -webkit-appearance: none;
+  background-color: #bdc3c7;
+  width: 100%;
+  height: 5px;
+  border-radius: 3px;
+  margin: 0 auto;
+  outline: 0;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: var(--theme-color);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  z-index: 100;
+}
+.range {
+  position: relative;
+  width: 300px;
+  margin: 20px 0px 32px 10px;
+}
+.rang_width {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: var(--theme-color);
+  height: 5px;
+  border-radius: 2px 0 0 2px;
+}
+
+/* 导航栏颜色 */
+#page-header.nav-fixed #nav {
+  background: linear-gradient(60deg, #ffd7e4 0, #c8f1ff 93%);
+  opacity: 0.95;
+  backdrop-filter: var(--backdrop-filter);
+}
+[data-theme="dark"] #page-header.nav-fixed #nav {
+  background: rgba(0, 0, 0, 0.95);
+}
+
+/* 夜间模式遮罩 */
+[data-theme="dark"] #recent-posts > .recent-post-item,
+[data-theme="dark"] #aside-content .card-widget,
+[data-theme="dark"] div#post,
+[data-theme="dark"] div#archive,
+[data-theme="dark"] div#page {
+  background: var(--trans-dark);
+}
+
+
+/* 调节字体显示栏目 */
+#swfs {
+  display: flex;
+  flex-wrap: wrap;
+}
+.swf {
+  padding: 10px;
+  font-size: 20px;
+  background-color: white;
+  /* 字体选择框边界由js指定 */
+  /* border: 2px solid var(--border-color); */
+  border-radius: 10px !important;
+  margin: 10px;
+}
+
+.swf:hover {
+  text-decoration: none !important;
+  background: var(--text-bg-hover);
+}
