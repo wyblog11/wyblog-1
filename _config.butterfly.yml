@@ -293,22 +293,6 @@ swiper:
       type: id
       name: home_top
       index: 1
-    category:
-      - name: 博客魔改
-        path: /categories/%E5%8D%9A%E5%AE%A2%E9%AD%94%E6%94%B9/
-        shadow: var(--marcus-shadow-blue)
-        class: blue
-        icon: fas fa-dove
-      - name: bbtalk部署
-        path: /categories/bbtalk/
-        shadow: var(--marcus-shadow-red)
-        class: red
-        icon: fas fa-burn
-      - name: artitalk部署
-        path: /categories/artitalk/
-        shadow: var(--marcus-shadow-green)
-        class: green
-        icon: fas fa-book
     above_title: 人间值得
     below_title: 未来可期
     subtitle: BLOG.MARCUS233.TOP
