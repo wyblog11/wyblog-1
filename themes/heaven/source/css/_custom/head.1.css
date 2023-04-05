@@ -1,0 +1,14 @@
+/* 页脚与头图透明 */
+#page-header {
+  background: transparent !important;
+}
+
+/* 白天模式遮罩透明 */
+#page-header::before {
+  background: transparent !important;
+}
+
+/* 夜间模式遮罩透明 */
+[data-theme="dark"] #page-header::before {
+  background: transparent !important;
+}
