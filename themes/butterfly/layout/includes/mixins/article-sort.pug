@@ -1,0 +1,46 @@
+mixin articleSort(posts, current)
+  .article-sort
+    - var year
+    - posts.each(function (article, post_index) {
+      - let tempYear = date(article.date, 'YYYY')
+      - let no_cover = article.cover === false || !theme.cover.archives_enable ? 'no-article-cover' : ''
+      - let title = article.title || _p('no_title')
+      - let iconAnimal = '#'+ getAnimalIcon(tempYear)
+      - let updated_post = article.updated > article.date ? 'article-title-update' : ''
+      if tempYear !== year
+        - year = tempYear
+        .article-sort-item.year
+          span= year
+          svg.icon(aria-hidden='true' style='width: 2em; height: 1.5em;')
+            use(xlink:href=iconAnimal)
+      .article-sort-item(class=no_cover)
+        if article.cover && theme.cover.archives_enable
+          a.article-sort-item-img(href=url_for(article.path) title=title)
+            if article.cover_type === 'img'
+              img(src=url_for(article.cover) alt=title onerror=`this.onerror=null;this.src='${url_for(theme.error_img.post_page)}'`)
+            else
+              div(style=`background: ${article.cover}`)
+        .article-sort-item-info
+          a.article-sort-item-title(href=url_for(article.path) title=title class=updated_post)= title
+          span.article-sort-item-index= (current - 1) * config.per_page + post_index + 1
+          .article-meta-wrap
+            if (theme.post_meta.page.categories && article.categories.data.length > 0)
+              span.article-sort-item-categories
+                i.fas.fa-shapes
+                each item, index in article.categories.data
+                  a(href=url_for(item.path)).article-meta__categories #[=(config.emoji && config.emoji.categories && config.emoji.categories[item.name] || '') + item.name]
+                  if (index < article.categories.data.length - 1)
+                    i.fas.fa-angle-right
+            if (theme.post_meta.page.tags && article.tags.data.length > 0)
+              span.article-sort-item-tags
+                i.fas.fa-tags
+                each item, index in article.tags.data
+                  a(href=url_for(item.path)).article-meta__tags #[=(config.emoji && config.emoji.tags && config.emoji.tags[item.name] || '') + item.name]
+                  if (index < article.tags.data.length - 1)
+                    span.article-meta__link #[='•']
+            .article-sort-item-time
+              i.far.fa-calendar-alt
+              time.post-meta-date-created(datetime=date_xml(article.date) title=_p('post.created') + ' ' + full_date(article.date))= date(article.date, config.date_format)
+              //- i.fas.fa-history
+              //- time.post-meta-date-updated(datetime=date_xml(article.updated) title=_p('post.updated') + ' ' + full_date(article.updated))= date(article.updated, config.date_format)
+    - })
