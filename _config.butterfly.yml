@@ -209,12 +209,7 @@ remark42:
 artalk:
   server: https://wyblog-artalk.itisn.cyou/
   site: 无影的artalk
-  visitor: true
-  el: #artalk-wrap
-  locale: zh-CN
-  pageSize: 20   // 每页评论数
-  readMore: true // 加载更多 or 分页条
-  autoLoad: true // 自动加载 (加载更多)
+  visitor: false
   option:
  
  
