@@ -1,0 +1,121 @@
+- const { readmode, translate, darkmode, aside, chat_btn } = theme
+mixin rightsideItem(array)
+  each item in array
+    case item
+      when 'readmode'
+        if is_post() && readmode
+          button#readmode(type="button" title=_p('rightside.readmode_title'))
+            i.fas.fa-book-open
+      when 'translate'
+        if translate.enable
+          button#translateLink(type="button" title=_p('rightside.translate_title'))= translate.default
+      when 'darkmode'
+        if darkmode.enable && darkmode.button
+          button#darkmode(type="button" title=_p('rightside.night_mode_title'))
+            //- i.fas.fa-adjust
+            i.fas.fa-sun
+            i.fas.fa-moon
+      when 'barrage'
+        button#barrage-btn(type="button" title=_p('热评开关') onclick="eurkon.switchCommentBarrage()")
+          i.fas.fa-message
+      when 'hideAside'
+        if aside.enable && aside.button && page.aside !== false
+          button#hide-aside-btn(type="button" title=_p('rightside.aside'))
+            i.fas.fa-arrows-alt-h
+      when 'toc'
+        if showToc
+          button#mobile-toc-button.close(type="button" title=_p("rightside.toc"))
+            i.fas.fa-list-ul
+      when 'chat'
+        if chat_btn
+          button#chat_btn(type="button" title=_p("rightside.chat"))
+            i.fas.fa-sms
+      when 'comment'
+        if commentsJsLoad
+          a#to_comment(href="#post-comment" title=_p("rightside.scroll_to_comment"))
+            i.fas.fa-comments
+
+#rightside-mask.hidden(onclick="eurkon.switchRightSide();")
+#rightside.hidden
+
+  #rightside-header
+    #rightside-back
+      i.fas.fa-chevron-left(onclick="eurkon.backRightSide();")
+    #rightside-title= _p("rightside.setting")
+    #rightside-close(onclick="eurkon.switchRightSide();")
+      i.fas.fa-xmark
+  #rightside-content
+    if theme.newest_comments.enable && theme.comments && !['Livere','Facebook Comments','Giscus'].includes(theme.comments.use[0])
+      #card-newest-comments
+        .item-headline
+          i.fas.fa-comment-dots
+          span= _p('aside.card_newest_comments.headline')
+        .aside-list
+          span= _p('aside.card_newest_comments.loading_text')
+    //- .card-recent-post
+    //-   .item-headline
+    //-     i.fas.fa-history
+    //-     span= _p('aside.card_recent_post')
+    //-   .aside-list
+    //-     - let postLimit = theme.aside.card_recent_post.limit === 0 ? site.posts.length : theme.aside.card_recent_post.limit || 5
+    //-     - let sort = theme.aside.card_recent_post.sort === 'updated' ? 'updated' : 'date'
+    //-     - site.posts.sort(sort, -1).limit(postLimit).each(function(article){
+    //-       - let link = article.link || article.path
+    //-       - let title = article.title || _p('no_title')
+    //-       - let no_cover = article.cover === false || !theme.cover.aside_enable ? 'no-cover' : ''
+    //-       - let post_cover = article.cover
+    //-       .aside-list-item(class=no_cover)
+    //-         if post_cover && theme.cover.aside_enable
+    //-           a.thumbnail(href=url_for(link) title=title)
+    //-             img(src=url_for(post_cover) onerror=`this.onerror=null;this.src='${url_for(theme.error_img.post_page)}'` alt=title)
+    //-         .content
+    //-           a.title(href=url_for(link) title=title)= title
+    //-           if theme.aside.card_recent_post.sort === 'updated'
+    //-             time(datetime=date_xml(article.updated) title=_p('post.updated') + ' ' + full_date(article.updated)) #[=date(article.updated, config.date_format)]
+    //-           else
+    //-             time(datetime=date_xml(article.date) title=_p('post.created') + ' ' + full_date(article.date)) #[=date(article.date, config.date_format)]
+    //-     - })
+
+    #card-post-content
+      if site.categories.length
+        .card-widget.card-categories
+          !=aside_categories({ limit: theme.aside.card_categories.limit === 0 ? 0 : theme.aside.card_categories.limit || 8 , expand: theme.aside.card_categories.expand })
+
+      if site.tags.length
+        .card-widget.card-tags
+          .item-headline
+            i.fas.fa-tags
+            span= _p('aside.card_tags')
+          if theme.aside.card_tags.color
+            .card-tag-cloud!= cloudTags({source: site.tags, minfontsize: 1.15, maxfontsize: 1.45, limit: 0, unit: 'em'})
+          else
+            .card-tag-cloud!= tagcloud({min_font: 1.1, max_font: 1.5, amount: 0 , color: true, start_color: '#999', end_color: '#99a9bf', unit: 'em'})
+
+  - const { enable, hide, show } = theme.rightside_item_order
+  - const hideArray = enable ? hide && hide.split(',') : ['readmode','translate','darkmode','hideAside']
+  - const showArray = enable ? show && show.split(',') : ['toc','chat','comment']
+
+  
+  #rightside-config-hide
+    if hideArray
+      +rightsideItem(hideArray)
+  #rightside-config-show
+    if enable
+      if hide
+        button#rightside_config(type="button" title=_p("rightside.setting"))
+          i.fas.fa-cog.fa-spin
+    else
+      if is_post()
+        if (readmode || translate.enable || (darkmode.enable && darkmode.button))
+          button#rightside_config(type="button" title=_p("rightside.setting"))
+            i.fas.fa-cog.fa-spin
+      else if translate.enable || (darkmode.enable && darkmode.button)
+        button#rightside_config(type="button" title=_p("rightside.setting"))
+          i.fas.fa-cog.fa-spin
+
+    if showArray
+      +rightsideItem(showArray)
+
+    button#go-up(type="button" title=_p("rightside.back_to_top"))
+      span.scroll-percent
+      i.fas.fa-arrow-up
