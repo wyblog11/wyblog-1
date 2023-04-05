@@ -293,18 +293,18 @@ swiper:
       name: home_top
       index: 1
     category:
-      - name: 前端
-        path: /categories/前端/
+      - name: 博客魔改
+        path: /categories/%E5%8D%9A%E5%AE%A2%E9%AD%94%E6%94%B9/
         shadow: var(--marcus-shadow-blue)
         class: blue
         icon: fas fa-dove
-      - name: 中学
-        path: /categories/中学/
+      - name: bbtalk部署
+        path: /categories/bbtalk/
         shadow: var(--marcus-shadow-red)
         class: red
         icon: fas fa-burn
-      - name: 生活
-        path: /categories/生活/
+      - name: artitalk部署
+        path: /categories/artitalk/
         shadow: var(--marcus-shadow-green)
         class: green
         icon: fas fa-book
@@ -316,7 +316,7 @@ swiper:
     swiper_js: https://cdn1.tianli0.top/npm/hexo-butterfly-swiper-marcus/lib/swiper.min.js #swiper js依赖 #swiper js依赖
     custom_css: https://cdn1.tianli0.top/npm/hexo-butterfly-swiper-marcus/lib/swiperstyle.min.css # 适配主题样式补丁
     custom_js: https://cdn1.tianli0.top/npm/hexo-butterfly-swiper-marcus/lib/swiper_init.min.js # swiper初始化方法
-    categorygroup_css: https://cdn1.tianli0.top/npm/hexo-butterfly-swiper-marcus/lib/categoryGroup.min.css
+    categorygroup_css: /css/categoryGroup.min.css
 # Loading Animation (加载动画)
 preloader:
   enable: true
