@@ -1,25 +1,32 @@
 {
-	"description": "A beautiful, powerful, and efficient Hexo theme developed by the hexo-theme-Acrylic team",
-	"version": "1.0.2",
-	"author": "hexo-themes-heaven<3227988@qq.com>",
-	"license": "Apache-2.0",
-	"bugs": {
-		"url": "https://github.com/612901/hexo-themes-heaven/issues",
-		"email": "3227988@qq.com"
-	},
-	"main": "package.json",
-	"homepage": "https://wyblog1.tk/",
-	"keywords": ["hexo", "theme", "butterfly","hexo-themes-heaven"],
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"dependencies": {
-		"hexo-renderer-pug": "^3.0.0",
-		"hexo-renderer-stylus": "^2.1.0"
-	},
-	"name": "hexo-themes-heaven",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/jerryc127/hexo-theme-butterfly.git"
-	}
+  "name": "hexo-theme-butterfly",
+  "version": "4.6.1",
+  "description": "A Simple and Card UI Design theme for Hexo",
+  "main": "package.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hexo",
+    "theme",
+    "butterfly",
+    "Card UI Design",
+    "Jerry",
+    "hexo-theme-butterfly"
+  ],
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/jerryc127/hexo-theme-butterfly.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jerryc127/hexo-theme-butterfly/issues",
+    "email": "my@crazywong.com"
+  },
+  "dependencies": {
+    "hexo-renderer-stylus": "^2.1.0",
+    "hexo-renderer-pug": "^3.0.0"
+  },
+  "homepage": "https://butterfly.js.org/",
+  "author": "Jerry <my@crazywong.com>",
+  "license": "Apache-2.0"
 }
