@@ -10,11 +10,13 @@
       if (theme.post_meta.post.date_type)
         span.post-meta-date
           if (theme.post_meta.post.date_type === 'both')
-            i.far.fa-calendar-alt.fa-fw.post-meta-icon
+            svg.meta_icon(style="width:30px;height:30px;position:relative;top:10px").post-meta-icon
+              use(xlink:href='#icon-rili')
             span.post-meta-label= _p('post.created')
             time.post-meta-date-created(datetime=date_xml(page.date) title=_p('post.created') + ' ' + full_date(page.date))=date(page.date, config.date_format)
             span.post-meta-separator |
-            i.fas.fa-history.fa-fw.post-meta-icon
+            svg.meta_icon(style="width:18px;height:18px;position:relative;top:5px").post-meta-icon
+              use(xlink:href='#icon-gengxin1')
             span.post-meta-label= _p('post.updated')
             time.post-meta-date-updated(datetime=date_xml(page.updated) title=_p('post.updated') + ' ' + full_date(page.updated))=date(page.updated, config.date_format)
           else
@@ -36,7 +38,8 @@
             span.orlike-count    
 
           each item, index in page.categories.data
-            i.fas.fa-inbox.fa-fw.post-meta-icon
+            svg.meta_icon(style="width:18px;height:18px;position:relative;top:5px").post-meta-icon
+              use(xlink:href='#icon-sekuaibiaoqian')
             a(href=url_for(item.path)).post-meta-categories #[=item.name]
             if (index < page.categories.data.length - 1)
               i.fas.fa-angle-right.post-meta-separator
