@@ -23,8 +23,8 @@ mixin postUI(posts)
         .article-meta-wrap
           if (is_home() && (article.top || article.sticky > 0))
             span.article-meta
-                svg.meta_icon(style="width:16px;height:16px;position:relative;top:3px").post-ui-icon
-                  use(xlink:href='#icon-tuding')
+              svg.meta_icon(style="width:16px;height:16px;position:relative;top:3px").post-ui-icon
+                use(xlink:href='#icon-tuding')
               span.sticky= _p('sticky')
               span.article-meta-separator |
           if (theme.post_meta.page.date_type)
