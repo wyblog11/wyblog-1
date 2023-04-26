@@ -46,6 +46,9 @@ inject:
      - <script async data-pjax src="/js/txmap.js"></script> # 腾讯位置API
      - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css"  media="defer" onload="this.media='all'">
      - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_3895868_mv3ae2gjui.css" media="defer" onload="this.media='all'">
+     - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_3586335_hsivh70x0fm.css" media="defer" onload="this.media='all'">
+     - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_3636804_gr02jmjr3y9.css" media="defer" onload="this.media='all'">
+     - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_3612150_kfv55xn3u2g.js.css" media="defer" onload="this.media='all'">
      - <script async src="//at.alicdn.com/t/c/font_3586335_hsivh70x0fm.js"></script> # js图标引入1
      - <script async src="//at.alicdn.com/t/c/font_3636804_gr02jmjr3y9.js"></script> # js图标引入2
      - <script async src="//at.alicdn.com/t/c/font_3612150_kfv55xn3u2g.js"></script> # js图标引入3
@@ -319,7 +322,7 @@ swiper:
     swiper_js: https://cdn1.tianli0.top/npm/hexo-butterfly-swiper-marcus/lib/swiper.min.js #swiper js依赖 #swiper js依赖
     custom_css: https://cdn1.tianli0.top/npm/hexo-butterfly-swiper-marcus/lib/swiperstyle.min.css # 适配主题样式补丁
     custom_js: https://cdn1.tianli0.top/npm/hexo-butterfly-swiper-marcus/lib/swiper_init.min.js # swiper初始化方法
-    categorygroup_css: /css/categoryGroup.min.css
+    categorygroup_css: https://cdn1.tianli0.top/npm/hexo-butterfly-swiper-marcus/lib/categoryGroup.min.css
 # Loading Animation (加载动画)
 preloader:
   enable: true
