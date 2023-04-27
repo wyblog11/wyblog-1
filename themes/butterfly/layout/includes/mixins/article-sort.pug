@@ -5,6 +5,7 @@ mixin articleSort(posts)
       - let tempYear = date(article.date, 'YYYY')
       - let no_cover = article.cover === false || !theme.cover.archives_enable ? 'no-article-cover' : ''
       - let title = article.title || _p('no_title')
+      - let iconAnimal = '#'+ getAnimalIcon(tempYear)
       if tempYear !== year
         - year = tempYear
         .article-sort-item.year= year
