@@ -4,6 +4,7 @@
 }
 
 #archive,#tag,#category {
+    background: var(--ichika-card-bg);
     padding: 25px 10px;
 }
 
