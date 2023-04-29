@@ -1,4 +1,5 @@
 mixin postUI(posts)
+  - let newTitle= newPost()
   each article , index in page.posts.data
     .recent-post-item
       -
@@ -15,7 +16,9 @@ mixin postUI(posts)
         .recent-post-cover
           img.article-cover(src=url_for(post_cover) onerror=`this.onerror=null;this.src='`+ url_for(theme.error_img.post_page) + `'` alt=title)
         .recent-post-info
-          a.article-title(href=url_for(link) title=title)
+        if newTitle == title
+          span(class=`newPost-${leftOrRight=='left'?'right':'left'}`) 最新文章
+            a.article-title(href=url_for(link) title=title)
             .article-title-link= title
           .recent-post-meta                
             .article-meta-wrap
@@ -43,7 +46,7 @@ mixin postUI(posts)
                   else
                     - let data_type_updated = theme.post_meta.page.date_type === 'updated'
                     - let date_type = data_type_updated ? 'updated' : 'date'
-                    - let date_icon = data_type_updated ? 'fas fa-history' :'far fa-calendar-alt'
+                    - let date_icon = data_type_updated ? 'iconfont icon-rili' :'far fa-calendar-alt'
                     - let date_title = data_type_updated ? _p('post.updated') : _p('post.created')
                     i(class=date_icon)
                     span.article-meta-label=date_title
