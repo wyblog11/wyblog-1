@@ -15,7 +15,7 @@ mixin postUI(posts)
         .recent-post-cover
           img.article-cover(src=url_for(post_cover) onerror=`this.onerror=null;this.src='`+ url_for(theme.error_img.post_page) + `'` alt=title)
         .recent-post-info
-            a.article-title(href=url_for(link) title=title)
+          a.article-title(href=url_for(link) title=title)
             .article-title-link= title
           .recent-post-meta                
             .article-meta-wrap
@@ -32,7 +32,7 @@ mixin postUI(posts)
                     //- i.far.fa-calendar-alt
                     svg.meta_icon(style="width:21px;height:21px;position:relative;top:6px").post-ui-icon
                       use(xlink:href='#icon-rili')
-                    span.article-meta-label=_p('post.created')
+                    span.article-meta-label=_p('post.created') + " "
                     time.post-meta-date-created(datetime=date_xml(article.date) title=_p('post.created') + ' ' + full_date(article.date))=date(article.date, config.date_format)
                     span.article-meta-separator  | 
                     //- i.fas.fa-history
@@ -43,7 +43,7 @@ mixin postUI(posts)
                   else
                     - let data_type_updated = theme.post_meta.page.date_type === 'updated'
                     - let date_type = data_type_updated ? 'updated' : 'date'
-                    - let date_icon = data_type_updated ? 'iconfont icon-rili' :'far fa-calendar-alt'
+                    - let date_icon = data_type_updated ? 'fas fa-history' :'far fa-calendar-alt'
                     - let date_title = data_type_updated ? _p('post.updated') : _p('post.created')
                     i(class=date_icon)
                     span.article-meta-label=date_title
