@@ -376,7 +376,7 @@ remark42:
 artalk:
   server: https://wyblog-artalk.itisn.cyou/
   site: 无影的artalk
-  visitor: false
+  visitor: true
   option:
 
 # Chat Services
@@ -416,8 +416,8 @@ gitter:
 # crisp
 # https://crisp.chat/en/
 crisp:
-  enable: false
-  website_id:
+  enable: true
+  website_id: cac30f8f-d954-44ad-a2e2-04f9acf8f415
 
 # messenger
 # https://developers.facebook.com/docs/messenger-platform/discovery/facebook-chat-plugin/
