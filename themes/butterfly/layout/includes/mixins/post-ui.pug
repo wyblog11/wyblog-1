@@ -32,7 +32,7 @@ mixin postUI(posts)
                     //- i.far.fa-calendar-alt
                     svg.meta_icon(style="width:21px;height:21px;position:relative;top:6px").post-ui-icon
                       use(xlink:href='#icon-rili')
-                    span.article-meta-label=_p('post.created') + " "
+                    span.article-meta-label=_p('post.created')
                     time.post-meta-date-created(datetime=date_xml(article.date) title=_p('post.created') + ' ' + full_date(article.date))=date(article.date, config.date_format)
                     span.article-meta-separator  | 
                     //- i.fas.fa-history
