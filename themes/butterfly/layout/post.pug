@@ -4,20 +4,6 @@ block content
   #post
     if top_img === false
       include includes/header/post-info.pug
-      if page.ai
-        .post-ai
-          .ai-title
-            i.fa-brands.fa-airbnb
-            .ai-title-text QX-AI
-            .ai-tag GPT-4
-          .ai-explanation QX-AI初始化中...
-          .ai-explanation-none #{page.ai}
-          .ai-btn-box
-            .ai-btn-item 介绍自己
-            .ai-btn-item 生成本文简介
-            .ai-btn-item 推荐相关文章
-            .ai-btn-item 前往主页
-          script(src="/js/post-ai.js" defer="true" data-pjax)
     article#article-container.post-content!=page.content
     include includes/post/post-copyright.pug
     .tag_share
