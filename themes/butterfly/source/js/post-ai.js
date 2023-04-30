@@ -15,11 +15,11 @@ function allAI() {
   let controller = new AbortController();//控制fetch
   let signal = controller.signal;
   //默认true，使用tianliGPT，false使用官方api，记得配置Key
-  const choiceApi = true;
-  const apiKey = "填入chatGPT的apiKey";
+  const choiceApi = false;
+  const apiKey = "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";
   //tianliGPT的参数
   const tlReferer = 'https://你的授权域名/';
-  const tlKey = '填入tianliGPT的key';
+  const tlKey = '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';
   //-----------------------------------------------
   const animate = (timestamp) => {
     if (!animationRunning) {
