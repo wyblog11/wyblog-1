@@ -5,15 +5,6 @@ block content
     if top_img === false
       include includes/header/post-info.pug
     article#article-container.post-content!=page.content
-    include includes/post/post-copyright.pug
-    .tag_share
-      if (theme.post_meta.post.tags)
-        .post-meta__tag-list
-          each item, index in page.tags.data
-            a(href=url_for(item.path)).post-meta__tags #[=item.name]
-      include includes/third-party/share/index.pug
-        
-    if theme.reward.enable && theme.reward.QR_code
       if page.ai
         .post-ai
           .ai-title
@@ -28,6 +19,15 @@ block content
             .ai-btn-item 推荐相关文章
             .ai-btn-item 前往主页
           script(src="/js/post-ai.js" defer="true" data-pjax)
+    include includes/post/post-copyright.pug
+    .tag_share
+      if (theme.post_meta.post.tags)
+        .post-meta__tag-list
+          each item, index in page.tags.data
+            a(href=url_for(item.path)).post-meta__tags #[=item.name]
+      include includes/third-party/share/index.pug
+        
+    if theme.reward.enable && theme.reward.QR_code
       !=partial('includes/post/reward', {}, {cache: true})
 
     //- ad
