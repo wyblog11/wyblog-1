@@ -2,9 +2,6 @@ extends includes/layout.pug
 
 block content
   #post
-    if top_img === false
-      include includes/header/post-info.pug
-    article#article-container.post-content!=page.content
       if page.ai
         .post-ai
           .ai-title
@@ -19,6 +16,9 @@ block content
             .ai-btn-item 推荐相关文章
             .ai-btn-item 前往主页
           script(src="/js/post-ai.js" defer="true" data-pjax)
+    if top_img === false
+      include includes/header/post-info.pug
+    article#article-container.post-content!=page.content
     include includes/post/post-copyright.pug
     .tag_share
       if (theme.post_meta.post.tags)
