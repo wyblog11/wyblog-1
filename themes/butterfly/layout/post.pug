@@ -14,6 +14,20 @@ block content
       include includes/third-party/share/index.pug
         
     if theme.reward.enable && theme.reward.QR_code
+      if page.ai
+        .post-ai
+          .ai-title
+            i.fa-brands.fa-airbnb
+            .ai-title-text QX-AI
+            .ai-tag GPT-4
+          .ai-explanation QX-AI初始化中...
+          .ai-explanation-none #{page.ai}
+          .ai-btn-box
+            .ai-btn-item 介绍自己
+            .ai-btn-item 生成本文简介
+            .ai-btn-item 推荐相关文章
+            .ai-btn-item 前往主页
+          script(src="/js/post-ai.js" defer="true" data-pjax)
       !=partial('includes/post/reward', {}, {cache: true})
 
     //- ad
