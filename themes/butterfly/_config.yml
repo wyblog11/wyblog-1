@@ -922,7 +922,7 @@ CDN:
     # main:
     # utils:
     # translate:
-    # local_search:
+    local_search: https://npm.elemecdn.com/anzhiyu-blog@2.1.2/js/search/local-search.js
     # algolia_js:
     # algolia_search_v4:
     # instantsearch_v4:
