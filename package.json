@@ -9,6 +9,7 @@
     "hexo": "^6.2.0",
     "yamljs": "^0.3.0",
     "yuque-hexo": "^1.9.2",
+    "hexo-browsersync": "^0.3.0",
     "@upupming/hexo-renderer-markdown-it-plus": "^2.0.2",
     "hexo-related-popular-posts": "^5.0.1",
     "hexo-butterfly-swiper-marcus": "^1.0.7",
