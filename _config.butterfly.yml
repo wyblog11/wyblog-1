@@ -27,13 +27,14 @@ footer_bg: false
 background: url(https://source.fomal.cc/img/home_bg.webp)
 inject:
   head:
-     - <link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"> # 引入组件库(f12)
+     - <style id="themeColor"></style> # 主题色
      - <style id="rightSide"></style> # 侧边栏
+     - <style id="transPercent"></style> # 透明度调节
      - <style id="blurNum"></style> # 模糊半径调节
      - <style id="settingStyle"></style> # 模糊效果开关
      - <span id="fps"></span> # 帧率检测
      - <style id="defineBg"></style> # 自定义背景选项
-     - <style id="menu_shadow"></style> # 菜单发光样式
+     - <link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"> # 引入组件库(f12)
      - <script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script> # jQuery
      - <link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"> 
      - <script async data-pjax src="https://cdn.wpon.cn/2022-sucai/Gold-ingot.js"></script>  # 新年元宝
