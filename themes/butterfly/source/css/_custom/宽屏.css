@@ -11,8 +11,8 @@
      }
  }
 /*分页适配宽屏*/
- #archive,#page,#category,#tag{
-     width:50%;
+ #archive,#category,#tag{
+     width:100%;
  }
  .page:not(.page.home) .aside-content{
      display: none;
