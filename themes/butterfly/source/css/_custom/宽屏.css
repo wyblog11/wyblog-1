@@ -12,7 +12,7 @@
  }
 /*分页适配宽屏*/
  #archive,#page,#category,#tag{
-     width:100%;
+     width:50%;
  }
  .page:not(.page.home) .aside-content{
      display: none;
