@@ -8,7 +8,7 @@
  #archive,#category,#tag{
      width:100%;
  }
- .page:not(.page.home) .aside-content{
+ .page.aside-content{
      display: none;
  }
  .flink-list-item{
