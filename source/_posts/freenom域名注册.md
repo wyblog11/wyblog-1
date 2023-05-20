@@ -31,3 +31,6 @@ swiper_index: 8 #置顶轮播图顺序，非负整数，数字越大越靠前
 **2.进入免费域名网址**
 进入以下链接
 {% link https://my.freenom.com/,freenom,https://my.freenom.com/templates/freenom/img/logo.png,人人都熟悉的名字。 %}
+就可以看到首页
+![freenom首页.jpg](https://cdn-us.imgs.moe/2023/05/20/646840579245f.jpg)
+我这里就注册一个示例域名，比如我注册一个
