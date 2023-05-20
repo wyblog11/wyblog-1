@@ -30,3 +30,4 @@ swiper_index: 8 #置顶轮播图顺序，非负整数，数字越大越靠前
 填完以后，对照这张图片![重定向.png](https://angang-us.imgs.moe/2023/05/20/646831d25488d.png)
 **2.进入免费域名网址**
 进入以下链接
+{% link https://my.freenom.com/,freenom,https://my.freenom.com/templates/freenom/img/logo.png,人人都熟悉的名字。 %}
