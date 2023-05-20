@@ -22,5 +22,9 @@ swiper_index: 8 #置顶轮播图顺序，非负整数，数字越大越靠前
 首先去网上下载一个Gooreplacer，任何一个可以下载的就下载下来，下载以后点击Gooreplacer的插件就可以了，在浏览器中打开以后会弹出这个![cooreplarcer.PNG](https://angang-us.imgs.moe/2023/05/19/6467718038da3.png)
 点击上面的配置选项，进入配置填入以下信息
 `````
-
+匹配模式:www.google.com/recaptcha
+目标地址:recaptcha.net/recaptcha
+匹配类型:通配符
+是否开启:开启
 `````
+填完以后，对照这张图片![重定向.png](https://angang-us.imgs.moe/2023/05/20/646831d25488d.png)
