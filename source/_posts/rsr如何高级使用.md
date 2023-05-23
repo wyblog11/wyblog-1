@@ -11,7 +11,7 @@ tags:
   - 滚动的天空
 
 isTop: false
-cover: https://angang-us.imgs.moe/2023/05/21/6469ce74945fd.jpg
+cover: https://cdn-us.imgs.moe/2023/05/23/646c40d411639.jpg
 description: 教你如何高级的创作rsr关卡
 swiper_index: 10 #置顶轮播图顺序，非负整数，数字越大越靠前
 ---
