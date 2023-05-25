@@ -8,8 +8,8 @@ on:
   repository_dispatch:
     types:
       - GetDataBase
-  # watch:
-  #   types: [started]
+    watch:
+      types: [started]
 
 jobs:
   Crawler:
@@ -35,8 +35,8 @@ jobs:
 
       - name: Commit ALL IN ONE files
         run: |
-          git config --local user.email "1043865083@qq.com"
-          git config --local user.name "xlenco"
+          git config --local user.email "3227988255@qq.com"
+          git config --local user.name "无影博客"
           git add .
           git commit -m "GitHub Actions Crawler ALL IN ONE at $(date +'%Y-%m-%d %H:%M:%S')"
 
