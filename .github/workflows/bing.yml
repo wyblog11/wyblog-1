@@ -27,7 +27,7 @@ jobs:
 
       - name: 'Install requirements'
         run: |
-          pip install -r ./tools/requirements.txt
+          pip install -r /tools/requirements.txt
 
       - name: 'GET BING'
         run: |
