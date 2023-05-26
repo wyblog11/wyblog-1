@@ -78,7 +78,7 @@ theme: butterfly
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: baidu_url_submitter ## 这是新加的
 
 butterfly_article_double_row:
   enable: true
