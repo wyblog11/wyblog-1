@@ -533,9 +533,3 @@ businesscard:
   back2: <a href="https://blog.4t.pw">银行卡签名：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;晋天杰</a>
   back3: 如果上天不给你机会，那你就自己创造机会，杀出重围 .
   back4: 再厉害的英雄也需要夫人的陪伴，所以我很爱我的夫人.
-
-baidu_url_submit:
-  count: 1 ## 比如3，代表提交最新的三个链接
-  host: wyblog1.tk ## 在百度站长平台中注册的域名
-  token: Gy23xFjGEe473a1a ## 请注意这是您的秘钥， 请不要发布在公众仓库里!
-  path: baidu_urls.txt ## 文本文档的地址， 新链接会保存在此文本文档里
