@@ -1,7 +1,7 @@
 .post-reward .reward-button {
   display: inline-block;
   padding: .2rem 1.2rem;
-  background: var(--btn-bg);
+  background: (--color-green);
   color: var(--btn-color);
   cursor: pointer;
   -webkit-transition: all .4s;
