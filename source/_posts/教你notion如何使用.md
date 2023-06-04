@@ -21,3 +21,6 @@ swiper_index: 13 #置顶轮播图顺序，非负整数，数字越大越靠前
 依次点击打开resources→App→renderer如下图所示（注意:notion默认安装C盘）![1685795332430.png](https://cdn-us.imgs.moe/2023/06/03/647b320515512.png)
 **网页端汉化**
 安装使用 NotionCn 插件即可。插件支持平台 ——Chrome、Firefox 火狐、360 浏览器。安装方法如下：直接在 NotionCn 页面点击插件链接跳转至插件市场，或者在上述三款浏览器的插件市检索 NotionCn, 点击安装插件。
+
+# 2.侧边栏功能使用
+当我们成功把notion给汉化后，我们接下来可以将
