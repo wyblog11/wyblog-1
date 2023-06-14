@@ -1,7 +1,7 @@
 ---
 title: 'notion和super搭建属于自己的博客'
 ai: 用super搭建属于自己的博客。
-date: 2023-01-26 20:05:10
+date: 2023-06-11 20:05:10
 categories: [notion]
 tags: 
   - super
