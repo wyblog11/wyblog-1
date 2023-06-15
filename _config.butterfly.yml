@@ -18,10 +18,6 @@ menu:
      报纸: https://news.wyblog1.tk/ || iconfont icon-xinwen || faa-tada
      木鱼: /muyu/ || iconfont icon-muyu1 || faa-tada
      
-    
-
-# The banner image of home page
-index_img: https://source.fomal.cc/img/home_bg.webp
 
 # Footer Background
 footer_bg: false
