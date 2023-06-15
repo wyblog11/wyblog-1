@@ -21,7 +21,7 @@ menu:
 
 # Footer Background
 footer_bg: false
-background: #efefef
+background: "#efefef"
 inject:
   head:
      - <meta name="baidu-site-verification" content="codeva-gUxvbnW0sv" />
