@@ -35,6 +35,7 @@ inject:
      - <script async src="/js/memos.js"></script>
      - <script src="/zhheo/random.js"></script>
      - <canvas id="universe"></canvas>
+     - <link rel="stylesheet" href="/css/bg.css"> 
      - <script defer src="/js/universe.js"></script>
      - <script async data-pjax src="/js/txmap.js"></script> # 腾讯位置API
      - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css"  media="defer" onload="this.media='all'">
