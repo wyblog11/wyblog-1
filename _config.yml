@@ -80,9 +80,6 @@ theme: butterfly
 deploy:
   type: baidu_url_submitter ## 这是新加的
 
-butterfly_article_double_row:
-  enable: true
-
 bangumi:
   enable: true 
   vmid: 1945630406
@@ -94,12 +91,3 @@ search:
   path: search.xml
   field: post
   content: true
-
-baidu_url_submit:
-  count: 10 ## 比如3，代表提交最新的三个链接
-  host: wyblog1.tk ## 在百度站长平台中注册的域名
-  token: Gy23xFjGEe473a1a ## 请注意这是您的秘钥， 请不要发布在公众仓库里!
-  path: baidu_urls.txt ## 文本文档的地址， 新链接会保存在此文本文档里
-
-baidusitemap:
-path: baidusitemap.xml
