@@ -10,7 +10,7 @@ tags:
   - 笔记
 
 isTop: false
-cover: https://cdn-us.imgs.moe/2023/06/05/647de033bef12.png
+cover: https://cdn-us.imgs.moe/2023/06/17/648d589f86496.jpg
 description: 如何制作一款适合自己的flowus模板
 swiper_index: 8 #置顶轮播图顺序，非负整数，数字越大越靠前
 ---
