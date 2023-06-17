@@ -62,6 +62,8 @@ inject:
      - <link rel="stylesheet" href="https://blog.leonus.cn/css/leonus.css?v1.11.23">
      - <script async src="https://raphamorim.io/waterfall.js/"></script> 
   bottom:  
+     - <script src="/js/add/nav.js"></script>
+     - <script src="/js/add/leftsidemenu.js"></script>
      - <script async src="//at.alicdn.com/t/font_2264842_3izu8i5eoc2.js"></script>
      - <script defer src="/js/cursor.js"></script>
      - <script defer="true" src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
