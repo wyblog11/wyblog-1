@@ -22,7 +22,6 @@ menu:
 # Footer Background
 footer_bg: false
 background: "#efefef"
-index_img: https://source.fomal.cc/img/home_bg.webp
 inject:
   head:
      - <meta name="baidu-site-verification" content="codeva-gUxvbnW0sv" />
@@ -432,15 +431,15 @@ toc:
   style_simple: true # for post
 
 post_copyright:
-  enable: true
-  decode: true
+  enable: false
+  decode: false
   author_href:
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 # Sponsor/reward
 reward:
-  enable: true
+  enable: false
   coinAudio: https://npm.elemecdn.com/akilar-candyassets@1.0.36/audio/aowu.m4a
   QR_code:
     - img: https://tuchuang.voooe.cn/images/2023/01/04/2.webp
@@ -499,19 +498,3 @@ darkmode:
   # autoChangeMode: 1  Following System Settings, if the system doesn't support dark mode, it will switch dark mode between 6 pm to 6 am
   # autoChangeMode: 2  Switch dark mode between 6 pm to 6 am
   # autoChangeMode: false
-  autoChangeMode: 2
-  # Set the switch time. The value is between 0 and 12. If not set, the default value is 6
-  am: 6
-  pm: 6
-
-businesscard:
-  enable: true #总开关
-  QR_code: https://s2.loli.net/2022/11/09/NuQ3V6fehArJl2E.webp #加群二维码
-  master: 退役老兵 #群主ID
-  group: QQ：1400000222 #QQ群号
-  created: 06/18/1993 #建群时间
-  front: 62262419930628356221 #卡面正面描述语
-  back1: 初次来到人间 #背面从上到下四行文字内容自定义
-  back2: <a href="https://blog.4t.pw">银行卡签名：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;晋天杰</a>
-  back3: 如果上天不给你机会，那你就自己创造机会，杀出重围 .
-  back4: 再厉害的英雄也需要夫人的陪伴，所以我很爱我的夫人.
